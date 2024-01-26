@@ -40,10 +40,10 @@ My hobbies are travelling, singing, and making crafts.
 
 ## Invited Talks
 ### Light AI for Sensory Data Analytics
-- The Academy of Digital China, Fuzhou University, Jan 2024
-- SIGMOD Conference, June 2023
-- College of Computer Science and Technology, Zhejiang University, Mar 2023
-- School of Cyber Engineering, Xidian University, Feb 2023
+- The Academy of Digital China, Fuzhou University, Jan 2024.
+- SIGMOD Conference, June 2023.
+- College of Computer Science and Technology, Zhejiang University, Mar 2023.
+- School of Cyber Engineering, Xidian University, Feb 2023.
 
 
 ## Services
@@ -54,6 +54,12 @@ My hobbies are travelling, singing, and making crafts.
 ### Program Committee Member
 - AAAI 2024, DSAA 2022, HDIS 2022.
 
+## Awards
+- Sichuan Provincial Outstanding Graduate,
+- SCU Outstanding Student,
+- SCU Outstanding Graduate,
+- Huawei-SCU Scholarship,
+- UESTC Excellent Bachelor Degree Dissertation, etc.
 
 
 
