@@ -1,53 +1,19 @@
-<h2 id="publications" style="margin: 2px 0px -15px;">Publications</h2>
+## Publications
 
-<div class="publications">
-<ol class="bibliography">
+1. **Lai, Z.**, Li, H., Zhang, D., Zhao, Y., Qian, W., Jensen, C. S., & Zhao, Y. (2024). *E2USD: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series*. **WWW 2024 (CCF-A)**.
 
-{% for link in site.data.publications.main %}
+2. **Lai, Z.**, Zhang, D., Li, H., Jensen, C. S., Lu, H., & Zhao, Y. (2023). *LightCTS: A Lightweight Framework for Correlated Time Series Forecasting*. **SIGMOD 2023 (CCF-A)**.
 
-<li>
-<div class="pub-row">
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    {% if link.image %} 
-    <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
-    {% endif %}
-    {% if link.conference_short %} 
-    <abbr class="badge">{{ link.conference_short }}</abbr>
-    {% endif %}
-  </div>
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
-      <div class="author">{{ link.authors }}</div>
-      <div class="periodical"><em>{{ link.conference }}</em>
-      </div>
-    <div class="links">
-      {% if link.pdf %} 
-      <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-      {% endif %}
-      {% if link.code %} 
-      <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
-      {% endif %}
-      {% if link.page %} 
-      <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
-      {% endif %}
-      {% if link.bibtex %} 
-      <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
-      {% endif %}
-      {% if link.notes %} 
-      <strong> <i style="color:#e74d3c">{{ link.notes }}</i></strong>
-      {% endif %}
-      {% if link.others %} 
-      {{ link.others }}
-      {% endif %}
-    </div>
-  </div>
-</div>
-</li>
+3. **Lai, Z.**, Cheng, X., Liu, X., Huang, L., & Liu, Y. (2022). *Multiscale Wavelet-driven Graph Convolutional Network for Blade Icing Detection of Wind Turbines*. **IEEE Sensors Journal (JCR Q1)**.
 
-<br>
+4. **Lai, Z.**, Tang, C., & Lv, J. (2020). *Arbitrary Chinese Font Generation from a Single Reference*. **IJCNN 2020 (CCF-C)**.
 
-{% endfor %}
+5. **Lai, Z.**, Tang, C., & Lv, J. (2019). *Multi-view Image Generation by Cycle CVAE-GAN Networks*. **ICONIP 2019 (CCF-C)**.
 
-</ol>
-</div>
+6. Liu, X., **Lai, Z.***, Wang, X., Huang, L., & Nielsen, P. S. (2020). *A Contextual Anomaly Detection Framework for Energy Smart Meter Data Stream*. **ICONIP 2020 (CCF-C)**.
 
+7. Li, M., Lv, J., Tang, C., Wang, J., **Lai, Z.**, & Huang, Y. (2020). *Combination of Certainty and Uncertainty: Using FusionGAN to Create Abstract Paintings*. **Neural Networks (CCF-B)**.
+
+8. Wan, P. K., Huang, L., **Lai, Z.**, Liu, X., Nowostawski, M., Holtskog, H., & Liu, Y. (2022). *Automated Infection Risks Assessments for Decision-making Using a Blockchain-based Alert System: A Case Study in a Representative Building*. **Environmental Research (JCR Q1)**.
+
+9. Chen, L., **Lai, Z.**, Liu, D., Lv, J., & Sang, Y. (2020). *Exploration on the Generation of Chinese Palindrome Poetry*. **ICONIP 2020 (CCF-C)**.
