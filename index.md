@@ -26,7 +26,7 @@ My hobbies are travelling, singing, and making crafts.
 
 5. **Lai, Z.**, Tang, C., & Lv, J. (2019). *Multi-view Image Generation by Cycle CVAE-GAN Networks*. **ICONIP 2019 (CCF-C)**.
 
-6. Liu, X., **Lai, Z.***, Wang, X., Huang, L., & Nielsen, P. S. (2020). *A Contextual Anomaly Detection Framework for Energy Smart Meter Data Stream*. **ICONIP 2020 (CCF-C)**.
+6. Liu, X., **Lai, Z.\***, Wang, X., Huang, L., & Nielsen, P. S. (2020). *A Contextual Anomaly Detection Framework for Energy Smart Meter Data Stream*. **ICONIP 2020 (CCF-C)**.
 
 7. Li, M., Lv, J., Tang, C., Wang, J., **Lai, Z.**, & Huang, Y. (2020). *Combination of Certainty and Uncertainty: Using FusionGAN to Create Abstract Paintings*. **Neural Networks (CCF-B)**.
 
