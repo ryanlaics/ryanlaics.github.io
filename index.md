@@ -35,11 +35,20 @@ My hobbies are travelling, singing, and making crafts.
 9. Chen, L., **Lai, Z.**, Liu, D., Lv, J., & Sang, Y. (2020). *Exploration on the Generation of Chinese Palindrome Poetry*. **ICONIP 2020 (CCF-C)**.
 
 
+## Invited Talks
+### Light AI for Sensory Data Analytics
+- The Academy of Digital China, Fuzhou University, Jan 2024
+- SIGMOD Conference, June 2023
+- College of Computer Science and Technology, Zhejiang University, Mar 2023
+- School of Cyber Engineering, Xidian University, Feb 2023
+
 
 ## Services
 
 ### Reviewer
-- IEEE TNNLS, Machine Learning, Expert Systems with Applications, AAAI, CIKM, IEEE BigData, ACM SIGSPATIAL ...
+- IEEE TNNLS, Machine Learning, Expert Systems with Applications, AAAI, CIKM, IEEE BigData, ACM SIGSPATIAL, etc.
 
 ### Program Committee Member
-- AAAI 2024, DSAA 2022, HDIS 2022
+- AAAI 2024, DSAA 2022, HDIS 2022.
+
+
