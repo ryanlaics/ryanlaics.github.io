@@ -4,7 +4,9 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. Candidate in the Department of Computer Science at [Aalborg University](https://www.en.aau.dk/) (AAU), Denmark, supervised by [Prof. Christian S. Jensen](https://csj.cs.aau.dk/), [Assoc. Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/). Additionally, I collaborate closely with [Prof. Hua Lu](https://luhua.ruc.dk/). I am a member of the Data Engineering, Science and Systems ([DESS](https://www.cs.aau.dk/research/Data-Engineering-Science-and-Systems)) group. I obtained my master's degree in Computer Science from the Data Intelligence and Computing Art Lab at [Sichuan University](https://en.scu.edu.cn/) (SCU), China, under the supervision of [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm) in 2021. Prior to that, I earned my bachelor's degree in Computer Science from [University of Electronic Science and Technology of China](https://en.uestc.edu.cn/) (UESTC) in 2018.
+I am a Ph.D. Candidate in the Department of Computer Science at [Aalborg University](https://www.en.aau.dk/) (AAU), Denmark, supervised by [Prof. Christian S. Jensen](https://csj.cs.aau.dk/), [Assoc. Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/). I am also a member of the Data Engineering, Science and Systems ([DESS](https://www.cs.aau.dk/research/Data-Engineering-Science-and-Systems)) group. Additionally, I collaborate closely with [Prof. Hua Lu](https://luhua.ruc.dk/).
+
+I obtained my master's degree in Computer Science from the Data Intelligence and Computing Art Lab at [Sichuan University](https://en.scu.edu.cn/) (SCU), China, under the supervision of [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm) in 2021. Prior to that, I earned my bachelor's degree in Computer Science from [University of Electronic Science and Technology of China](https://en.uestc.edu.cn/) (UESTC) in 2018.
 
 
 My primary research areas are Data Management and Analytics. Specifically, my current research interests are as follows:
