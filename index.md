@@ -14,7 +14,7 @@ My primary research areas are Data Management and Analytics. Specifically, my cu
 My hobbies are travelling, singing, and making crafts.
 
 
-## Publications
+## Selected Publications
 
 1. **Lai, Z.**, Li, H., Zhang, D., Zhao, Y., Qian, W., Jensen, C. S., & Zhao, Y. (2024). *E2USD: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series*. **WWW 2024 (CCF-A)**.
 
