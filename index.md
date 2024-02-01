@@ -51,7 +51,7 @@ My hobbies are travelling, singing, and making crafts.
 ## Services
 
 ### Reviewer
-- IEEE TNNLS, Machine Learning, Expert Systems with Applications, AAAI, CIKM, IEEE BigData, ACM SIGSPATIAL, etc.
+- IEEE TNNLS, AAAI, CIKM, Machine Learning, Expert Systems with Applications, IEEE BigData, ACM SIGSPATIAL, Royal Society Open Science, IJCNN, ICONIP etc.
 
 ### Program Committee Member
 - AAAI 2024, DSAA 2022, HDIS 2022.
