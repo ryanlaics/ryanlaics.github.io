@@ -40,7 +40,6 @@ My hobbies are travelling, singing, and making crafts.
 9. Wan, P. K., **Lai, Z.**, Liu, X., Nowostawski, M., & Holtskog, H. (2022). *Automated Infection Risks Assessments for Decision-making Using a Blockchain-based Alert System: A Case Study in a Representative Building*. **Environmental Research (JCR Q1)**.
 
 ## Invited Talks
-### Light AI for Sensory Data Analytics
 - The Academy of Digital China, Fuzhou University, Jan 2024.
 - SIGMOD Conference, June 2023.
 - College of Computer Science and Technology, Zhejiang University, Mar 2023.
