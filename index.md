@@ -25,7 +25,7 @@ My hobbies are travelling, singing, and making crafts.
 
 2. **Lai, Z.**, Zhang, D., Li, H., Jensen, C. S., Lu, H., & Zhao, Y. (2023). *LightCTS: A Lightweight Framework for Correlated Time Series Forecasting*. **SIGMOD 2023 (CORE-A\*, CCF-A)**.
 
-3. **Lai, Z.**, Cheng, X., Liu, X., Huang, L., & Liu, Y. (2022). *Multiscale Wavelet-driven Graph Convolutional Network for Blade Icing Detection of Wind Turbines*. **IEEE Sensors Journal (JCR Q1)**.
+3. **Lai, Z.**, Cheng, X., Liu, X. (2022). *Multiscale Wavelet-driven Graph Convolutional Network for Blade Icing Detection of Wind Turbines*. **IEEE Sensors Journal (JCR Q1)**.
 
 4. **Lai, Z.**, Tang, C., & Lv, J. (2020). *Arbitrary Chinese Font Generation from a Single Reference*. **IJCNN 2020 (CORE-A)**.
 
@@ -35,10 +35,9 @@ My hobbies are travelling, singing, and making crafts.
 
 7. Li, M., Lv, J., Tang, C., Wang, J., **Lai, Z.**, & Huang, Y. (2020). *Combination of Certainty and Uncertainty: Using FusionGAN to Create Abstract Paintings*. **Neural Networks (CCF-B)**.
 
-8. Wan, P. K., Huang, L., **Lai, Z.**, Liu, X., Nowostawski, M., Holtskog, H., & Liu, Y. (2022). *Automated Infection Risks Assessments for Decision-making Using a Blockchain-based Alert System: A Case Study in a Representative Building*. **Environmental Research (JCR Q1)**.
+8. Chen, L., **Lai, Z.**, Liu, D., Lv, J., & Sang, Y. (2020). *Exploration on the Generation of Chinese Palindrome Poetry*. **ICONIP 2020 (CORE-A)**.
 
-9. Chen, L., **Lai, Z.**, Liu, D., Lv, J., & Sang, Y. (2020). *Exploration on the Generation of Chinese Palindrome Poetry*. **ICONIP 2020 (CORE-A)**.
-
+9. Wan, P. K., **Lai, Z.**, Liu, X., Nowostawski, M., & Holtskog, H. (2022). *Automated Infection Risks Assessments for Decision-making Using a Blockchain-based Alert System: A Case Study in a Representative Building*. **Environmental Research (JCR Q1)**.
 
 ## Invited Talks
 ### Light AI for Sensory Data Analytics
