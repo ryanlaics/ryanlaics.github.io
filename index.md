@@ -52,7 +52,7 @@ My hobbies are travelling, singing, and making crafts.
 - KDD, IEEE TNNLS, AAAI, CIKM, Machine Learning, Expert Systems with Applications, IEEE BigData, ACM SIGSPATIAL, Royal Society Open Science, IJCNN, ICONIP etc.
 
 ### Program Committee Member
-- AAAI 2024, DSAA 2022, HDIS 2022.
+- KDD 2024, AAAI 2024, DSAA 2022, HDIS 2022.
 
 ## Awards
 - Sichuan Provincial Outstanding Graduate,
@@ -63,4 +63,4 @@ My hobbies are travelling, singing, and making crafts.
 
 
 
-_Last Updated 2024-01-27_
+_Last Updated 2024-02-22_
