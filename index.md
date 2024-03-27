@@ -4,15 +4,14 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. Candidate in the Department of Computer Science at [Aalborg University](https://www.en.aau.dk/) (AAU), Denmark, supervised by [Prof. Christian S. Jensen](https://csj.cs.aau.dk/), [Assoc. Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/). I am also a member of the Data Engineering, Science and Systems ([DESS](https://www.cs.aau.dk/research/Data-Engineering-Science-and-Systems)) group. Additionally, I collaborate closely with [Prof. Hua Lu](https://luhua.ruc.dk/).
+I am a Ph.D. Candidate in the Department of Computer Science at [Aalborg University](https://www.en.aau.dk/) (AAU), Denmark, supervised by [Prof. Christian S. Jensen](https://csj.cs.aau.dk/), [Assoc. Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/). I am also a member of the Data Engineering, Science and Systems ([DESS](https://www.cs.aau.dk/research/Data-Engineering-Science-and-Systems)) group. Additionally, I collaborate closely with [Prof. Hua Lu](https://luhua.ruc.dk/), [Assoc. Prof. Xiufeng Liu](https://xiufengliu.github.io/) and [Prof.Xu Cheng](https://scholar.google.com/citations?user=MjxvqBcAAAAJ&hl=en).
 
 I obtained my master's degree in Computer Science from the Data Intelligence and Computing Art Lab at [Sichuan University](https://en.scu.edu.cn/) (SCU), China, under the supervision of [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm) in 2021. Prior to that, I earned my bachelor's degree in Computer Science from [University of Electronic Science and Technology of China](https://en.uestc.edu.cn/) (UESTC) in 2018.
 
 
 My primary research areas are Data Management and Analytics. Specifically, my current research interests are as follows:
-- **Lightweight Deep Learning for Sensory Data Analytics**
+- **Lightweight AI for Sensory Data Analytics**
 - **Spatio-temporal Data Applications**
-- **Spatio-temporal Data Quality**
 - **Smart Meter Data Analytics**
 
 
@@ -31,9 +30,9 @@ My hobbies are travelling, singing, and making crafts.
 
 5. **Lai, Z.**, Tang, C., & Lv, J. (2019). *Multi-view Image Generation by Cycle CVAE-GAN Networks*. **ICONIP 2019 (CORE-A)**.
 
-6. Liu, X., **Lai, Z.\***, Wang, X., Huang, L., & Nielsen, P. S. (2020). *A Contextual Anomaly Detection Framework for Energy Smart Meter Data Stream*. **ICONIP 2020 (CORE-A)**.
+6. Liu, X., **Lai, Z.\***, Wang, X., & Nielsen, P. S. (2020). *A Contextual Anomaly Detection Framework for Energy Smart Meter Data Stream*. **ICONIP 2020 (CORE-A)**.
 
-7. Li, M., Lv, J., Tang, C., Wang, J., **Lai, Z.**, & Huang, Y. (2020). *Combination of Certainty and Uncertainty: Using FusionGAN to Create Abstract Paintings*. **Neural Networks (CCF-B)**.
+7. Li, M., Lv, J., Tang, C., Wang, J., **Lai, Z.**, & Huang, Y. (2020). *Combination of Certainty and Uncertainty: Using FusionGAN to Create Abstract Paintings*. **Neural Networks (JCR Q1, CCF-B)**.
 
 8. Chen, L., **Lai, Z.**, Liu, D., Lv, J., & Sang, Y. (2020). *Exploration on the Generation of Chinese Palindrome Poetry*. **ICONIP 2020 (CORE-A)**.
 
