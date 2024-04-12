@@ -19,7 +19,7 @@ My hobbies are travelling, singing, and making crafts.
 
 
 ## Selected Publications
-1. **Lai, Z.**, Zhang, D., Li, H., Jensen, C. S., Lu, H., & Zhao, Y. (2024). *LightCTS: A Lightweight Framework for Correlated Time Series Forecasting*. **IEEE Transactions on Knowledge and Data Engineering (Minor Revision, CORE-A\*, CCF-A)**.
+1. **Lai, Z.**, Zhang, D., Li, H., Jensen, C. S., Lu, H., & Zhao, Y. (2024). *LightCTS: A Lightweight Framework for Correlated Time Series Forecasting*. **IEEE Transactions on Knowledge and Data Engineering (** Minor Revision, **JCR Q1, CCF-A)**.
 
 2. **Lai, Z.**, Li, H., Zhang, D., Zhao, Y., Qian, W., Jensen, C. S., & Zhao, Y. (2024). *E2USD: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series*. **WWW 2024 (CORE-A\*, CCF-A)**.
 
