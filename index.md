@@ -30,7 +30,7 @@ My research interests include:
 
 7. **Lai, Z.**, Tang, C., & Lv, J. (2019). *Multi-view Image Generation by Cycle CVAE-GAN Networks*. **ICONIP 2019 (CORE-A)**.
 
-For my co-authored publications, please refer to [my Google Scholar profile](https://scholar.google.com/citations?user=aHrrknoAAAAJ&hl=en).
+_For my co-authored publications, please refer to [my Google Scholar profile](https://scholar.google.com/citations?user=aHrrknoAAAAJ&hl=en)._
 
 ## Talks
 - The Web Conference, Singapore, May 2024.
