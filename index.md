@@ -4,22 +4,19 @@ layout: homepage
 
 ## About Me
 
-Hi! My name is Zhichen Lai (pronounced Jhih-chen Lai). I am a final-year Ph.D. Candidate of the Department of Computer Science at [Aalborg University](https://www.en.aau.dk/) (AAU), Denmark, supervised by [Prof. Christian S. Jensen](https://csj.cs.aau.dk/), [Assoc. Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/) (Zhejiang University, China). I am also a member of the Data Engineering, Science and Systems ([DESS](https://www.cs.aau.dk/research/Data-Engineering-Science-and-Systems)) group. From June to August 2024, I will be a Junior Visiting Research Fellow at the School of Computer Science and Engineering, [the University of New South Wales](https://www.unsw.edu.au/) (UNSW), Australia.
+Hi! My name is Zhichen Lai. I am a final-year Ph.D. Candidate of the Department of Computer Science at [Aalborg University](https://www.en.aau.dk/) (AAU), Denmark, supervised by [Prof. Christian S. Jensen](https://csj.cs.aau.dk/), [Assoc. Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/). Currently, I am also a Junior Visiting Research Fellow at the School of Computer Science and Engineering, [the University of New South Wales](https://www.unsw.edu.au/) (UNSW), Australia.
 
-I obtained my master's degree in Computer Science from the Data Intelligence and Computing Art Lab at [Sichuan University](https://en.scu.edu.cn/) (SCU), China, under the supervision of [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm) in 2021. Prior to that, I earned my bachelor's degree in Computer Science from [University of Electronic Science and Technology of China](https://en.uestc.edu.cn/) (UESTC) in 2018.
+I obtained my master's degree in Computer Science from [Sichuan University](https://en.scu.edu.cn/) (SCU), China, under the supervision of [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm) in 2021. Prior to that, I earned my bachelor's degree in Computer Science from [University of Electronic Science and Technology of China](https://en.uestc.edu.cn/) (UESTC) in 2018.
 
 
-My primary research areas are Data Management and Analytics. Specifically, my current research interests are as follows:
+My research interests include:
 - **Lightweight AI for Sensory Data Analytics**
-- **Spatio-temporal Data Applications**
-- **Smart Meter Data Analytics**
+- **Spatio-temporal Data Mining**
+- **Spatio-temporal Data Management**
 
 
-My hobbies are travelling, singing, and making crafts.
-
-
-## First-author Publications
-1. **Lai, Z.**, Zhang, D., Li, H., Zhang, D., Lu, H., & Jensen, C. S.. (2024). *ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions*. **KDD 2024 (CORE-A\*, CCF-A)**.
+## First-authored Publications
+1. **Lai, Z.**, Zhang, D., Li, H., Zhang, D., Lu, H., & Jensen, C. S. (2024). *ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions*. **KDD 2024 (CORE-A\*, CCF-A)**.
 
 2. **Lai, Z.**, Zhang, D., Li, H., Jensen, C. S., Lu, H., & Zhao, Y. (2024). *Lightweight Correlated Time Series Forecasting Enhanced with Model Distillation*. **IEEE Transactions on Knowledge and Data Engineering (** Minor Revision, **JCR Q1, CCF-A)**.
 
@@ -33,18 +30,20 @@ My hobbies are travelling, singing, and making crafts.
 
 7. **Lai, Z.**, Tang, C., & Lv, J. (2019). *Multi-view Image Generation by Cycle CVAE-GAN Networks*. **ICONIP 2019 (CORE-A)**.
 
+For my co-authored publications, please refer to [my Google Scholar profile](https://scholar.google.com/citations?user=aHrrknoAAAAJ&hl=en).
+
 ## Talks
-- The Web Conference, May 2024.
-- Fuzhou University, Jan 2024.
-- SIGMOD Conference, June 2023.
-- Zhejiang University, Mar 2023.
-- Xidian University, Feb 2023.
+- The Web Conference, Singapore, May 2024.
+- Fuzhou University, Fuzhou, China, Jan 2024.
+- SIGMOD Conference, Seattle, U.S., June 2023.
+- Zhejiang University, Hangzhou, China, Mar 2023.
+- Xidian University, Online, Feb 2023.
 
 
 ## Services
 
 ### Reviewer
-- KDD, IEEE TNNLS, AAAI, CIKM, Machine Learning, Expert Systems with Applications, IEEE BigData, ACM SIGSPATIAL, Royal Society Open Science, IJCNN, ICONIP, Engineering Reports, etc.
+- KDD, IEEE TNNLS, AAAI, CIKM, Expert Systems with Applications, IEEE BigData, ACM SIGSPATIAL, Machine Learning, Royal Society Open Science, IJCNN, ICONIP, Engineering Reports, etc.
 
 ### Program Committee Member
 - KDD 2024, AAAI 2024, DSAA 2022, HDIS 2022.
@@ -53,7 +52,7 @@ My hobbies are travelling, singing, and making crafts.
 - Sichuan Provincial Outstanding Graduate,
 - SCU Outstanding Student,
 - SCU Outstanding Graduate,
-- Huawei-SCU Scholarship,
+- Huawei Scholarship,
 - UESTC Excellent Bachelor Degree Dissertation, etc.
 
 
