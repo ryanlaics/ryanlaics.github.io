@@ -6,7 +6,7 @@ layout: homepage
 
 Hi! My name is Zhichen Lai. I am a final-year Ph.D. Candidate of the Department of Computer Science at [Aalborg University](https://www.en.aau.dk/) (AAU), Denmark, supervised by [Prof. Christian S. Jensen](https://csj.cs.aau.dk/), [Assoc. Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/). Currently, I am also a Junior Visiting Research Fellow at the School of Computer Science and Engineering, [the University of New South Wales](https://www.unsw.edu.au/) (UNSW), Australia.
 
-I obtained my master's degree in Computer Science from [Sichuan University](https://en.scu.edu.cn/) (SCU), China, under the supervision of [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm) in 2021. Prior to that, I earned my bachelor's degree in Computer Science from [University of Electronic Science and Technology of China](https://en.uestc.edu.cn/) (UESTC) in 2018.
+I obtained my master's degree in Computer Science from [Sichuan University](https://en.scu.edu.cn/) (SCU), China, under the supervision of [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm) in 2021. Prior to that, I earned my bachelor's degree in Computer Science from [the University of Electronic Science and Technology of China](https://en.uestc.edu.cn/) (UESTC) in 2018.
 
 
 My research interests include:
@@ -43,7 +43,7 @@ _For my co-authored publications, please refer to [my Google Scholar profile](ht
 ## Services
 
 ### Reviewer
-- KDD, IEEE TNNLS, AAAI, CIKM, Expert Systems with Applications, IEEE BigData, ACM SIGSPATIAL, Machine Learning, Royal Society Open Science, IJCNN, ICONIP, Engineering Reports, etc.
+- KDD, AAAI, CIKM, IEEE TNNLS, ESWA, IEEE BigData, ACM SIGSPATIAL, etc.
 
 ### Program Committee Member
 - KDD 2024, AAAI 2024, DSAA 2022, HDIS 2022.
