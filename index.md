@@ -33,6 +33,7 @@ My research interests include:
 _For my co-authored publications, please refer to [my Google Scholar profile](https://scholar.google.com/citations?user=aHrrknoAAAAJ&hl=en)._
 
 ## Talks
+- Tianjin University of Technology & Technical University of Denmark, Online, May 2024.
 - The Web Conference, Singapore, May 2024.
 - Fuzhou University, Fuzhou, China, Jan 2024.
 - SIGMOD Conference, Seattle, U.S., June 2023.
