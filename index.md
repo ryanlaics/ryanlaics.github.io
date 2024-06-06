@@ -8,12 +8,10 @@ Hi! My name is Zhichen Lai. I am a final-year Ph.D. Candidate of the Department 
 
 I obtained my master's degree in Computer Science from [Sichuan University](https://en.scu.edu.cn/) (SCU), China, under the supervision of [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm) in 2021. Prior to that, I earned my bachelor's degree in Computer Science from [the University of Electronic Science and Technology of China](https://en.uestc.edu.cn/) (UESTC) in 2018.
 
-
 My research interests include:
 - **Lightweight AI for Sensory Data Analytics**
 - **Spatio-temporal Data Mining**
 - **Spatio-temporal Data Management**
-
 
 ## First-authored Publications
 1. **Lai, Z.**, Zhang, D., Li, H., Zhang, D., Lu, H., & Jensen, C. S. (2024). *ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions*. **KDD 2024 (CORE-A\*, CCF-A)**.
@@ -40,7 +38,6 @@ _For my co-authored publications, please refer to [my Google Scholar profile](ht
 - Zhejiang University, Hangzhou, China, Mar 2023.
 - Xidian University, Online, Feb 2023.
 
-
 ## Services
 
 ### Reviewer
@@ -54,7 +51,7 @@ _For my co-authored publications, please refer to [my Google Scholar profile](ht
 - SCU Outstanding Student,
 - SCU Outstanding Graduate,
 - Huawei Scholarship,
-- UESTC Excellent Bachelor Degree Dissertation, etc.
+- UESTC Excellent Dissertation, etc.
 
 
 
