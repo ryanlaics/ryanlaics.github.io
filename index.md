@@ -44,7 +44,7 @@ _For my co-authored publications, please refer to [my Google Scholar profile](ht
 - KDD, AAAI, CIKM, IEEE TNNLS, ESWA, IEEE BigData, ACM SIGSPATIAL, Journal of Supercomputing, etc.
 
 ### Program Committee Member
-- KDD 2024, AAAI 2024, DSAA 2022, HDIS 2022.
+- AAAI 2025, KDD 2024, AAAI 2024, DSAA 2022, HDIS 2022.
 
 ## Awards
 - Sichuan Provincial Outstanding Graduate,
@@ -55,4 +55,4 @@ _For my co-authored publications, please refer to [my Google Scholar profile](ht
 
 
 
-_Last Updated 2024-05-17_
+_Last Updated 2024-06-11_
