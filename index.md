@@ -14,13 +14,13 @@ My research interests include:
 - **Spatio-temporal Data Management**
 
 ## First-authored Publications
-1. **Lai, Z.**, Zhang, D., Li, H., Zhang, D., Lu, H., & Jensen, C. S. (2024). *ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions*. **KDD 2024 (CORE-A\*, CCF-A)**.
+1. **Lai, Z.**, Zhang, D., Li, H., Zhang, D., Lu, H., & Jensen, C. S. (2024). *ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions*. **KDD 2024 (CCF-A, CORE-A\*)**.
 
-2. **Lai, Z.**, Zhang, D., Li, H., Jensen, C. S., Lu, H., & Zhao, Y. (2024). *Lightweight Correlated Time Series Forecasting Enhanced with Model Distillation*. **IEEE Transactions on Knowledge and Data Engineering (** Minor Revision, **JCR Q1, CCF-A)**.
+2. **Lai, Z.**, Zhang, D., Li, H., Jensen, C. S., Lu, H., & Zhao, Y. (2024). *Lightweight Correlated Time Series Forecasting Enhanced with Model Distillation*. **IEEE Transactions on Knowledge and Data Engineering (** Minor, **CCF-A, JCR Q1)**.
 
-3. **Lai, Z.**, Li, H., Zhang, D., Zhao, Y., Qian, W., Jensen, C. S., & Zhao, Y. (2024). *E2USD: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series*. **WWW 2024 (CORE-A\*, CCF-A)**.
+3. **Lai, Z.**, Li, H., Zhang, D., Zhao, Y., Qian, W., Jensen, C. S., & Zhao, Y. (2024). *E2USD: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series*. **WWW 2024 (CCF-A, CORE-A\*)**.
 
-4. **Lai, Z.**, Zhang, D., Li, H., Jensen, C. S., Lu, H., & Zhao, Y. (2023). *LightCTS: A Lightweight Framework for Correlated Time Series Forecasting*. **SIGMOD 2023 (CORE-A\*, CCF-A)**.
+4. **Lai, Z.**, Zhang, D., Li, H., Jensen, C. S., Lu, H., & Zhao, Y. (2023). *LightCTS: A Lightweight Framework for Correlated Time Series Forecasting*. **SIGMOD 2023 (CCF-A, CORE-A\*)**.
 
 5. **Lai, Z.**, Cheng, X., Liu, X. (2022). *Multiscale Wavelet-driven Graph Convolutional Network for Blade Icing Detection of Wind Turbines*. **IEEE Sensors Journal (JCR Q1)**.
 
