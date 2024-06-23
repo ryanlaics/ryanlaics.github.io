@@ -14,9 +14,9 @@ My research interests include:
 - **Spatio-temporal Data Management**
 
 ## First-authored Publications
-1. **Lai, Z.**, Zhang, D., Li, H., Zhang, D., Lu, H., & Jensen, C. S. (2024). *ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions*. **KDD 2024 (CCF-A, CORE-A\*)**.
+1. **Lai, Z.**, Zhang, D., Li, H., Jensen, C. S., Lu, H., & Zhao, Y. (2024). *Lightweight Correlated Time Series Forecasting Enhanced with Model Distillation*. **IEEE Transactions on Knowledge and Data Engineering (CCF-A, JCR Q1)**.
 
-2. **Lai, Z.**, Zhang, D., Li, H., Jensen, C. S., Lu, H., & Zhao, Y. (2024). *Lightweight Correlated Time Series Forecasting Enhanced with Model Distillation*. **IEEE Transactions on Knowledge and Data Engineering (** Minor, **CCF-A, JCR Q1)**.
+2. **Lai, Z.**, Zhang, D., Li, H., Zhang, D., Lu, H., & Jensen, C. S. (2024). *ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions*. **KDD 2024 (CCF-A, CORE-A\*)**.
 
 3. **Lai, Z.**, Li, H., Zhang, D., Zhao, Y., Qian, W., Jensen, C. S., & Zhao, Y. (2024). *E2USD: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series*. **WWW 2024 (CCF-A, CORE-A\*)**.
 
