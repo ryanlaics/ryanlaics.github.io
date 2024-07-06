@@ -41,7 +41,7 @@ _For my co-authored publications, please refer to [my Google Scholar profile](ht
 ## Services
 
 ### Reviewer
-- IEEE TNNLS, IEEE TBD, ESWA, CIKM, SIGSPATIAL, IEEE BigData, Journal of Supercomputing, etc.
+- IEEE TNNLS, CIKM, ICDM, IEEE TBD, SIGSPATIAL, ESWA, IEEE BigData, Journal of Supercomputing, etc.
 
 ### Program Committee Member
 - AAAI 2025, KDD 2024, AAAI 2024, DSAA 2022, HDIS 2022.
