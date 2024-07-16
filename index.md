@@ -16,7 +16,7 @@ My research interests include:
 ## First-authored Publications
 1. **Lai, Z.**, Zhang, D., Li, H., Jensen, C. S., Lu, H., & Zhao, Y. (2024). *Lightweight Correlated Time Series Forecasting Enhanced with Model Distillation*. **IEEE Transactions on Knowledge and Data Engineering (CCF-A, JCR Q1)**.
 
-2. **Lai, Z.**, Zhang, D., Li, H., Zhang, D., Lu, H., & Jensen, C. S. (2024). *ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions*. **KDD 2024 (CCF-A, CORE-A\*)**.
+2. **Lai, Z.**, Zhang, D., Li, H., Zhang, D., Lu, H., & Jensen, C. S. (2024). *ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions*. **SIGKDD 2024 (CCF-A, CORE-A\*)**.
 
 3. **Lai, Z.**, Li, H., Zhang, D., Zhao, Y., Qian, W., Jensen, C. S., & Zhao, Y. (2024). *E2USD: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series*. **WWW 2024 (CCF-A, CORE-A\*)**.
 
@@ -28,7 +28,7 @@ My research interests include:
 
 7. **Lai, Z.**, Tang, C., & Lv, J. (2019). *Multi-view Image Generation by Cycle CVAE-GAN Networks*. **ICONIP 2019 (CORE-A)**.
 
-_For my co-authored publications, please refer to [my Google Scholar profile](https://scholar.google.com/citations?user=aHrrknoAAAAJ&hl=en)._
+_For the other publications, please refer to [my Google Scholar profile](https://scholar.google.com/citations?user=aHrrknoAAAAJ&hl=en)._
 
 ## Talks
 - Tianjin University of Technology & Technical University of Denmark, Online, May 2024.
@@ -44,7 +44,7 @@ _For my co-authored publications, please refer to [my Google Scholar profile](ht
 - IEEE TNNLS, CIKM, ICDM, IEEE TBD, IEEE SPL, SIGSPATIAL, ESWA, IEEE BigData, J Supercomput, etc.
 
 ### Program Committee Member
-- AAAI 2025, KDD 2024, AAAI 2024, DSAA 2022, HDIS 2022.
+- SIGKDD 2025, AAAI 2025, SIGKDD 2024, AAAI 2024, DSAA 2022, HDIS 2022.
 
 ## Awards
 - Sichuan Provincial Outstanding Graduate,
