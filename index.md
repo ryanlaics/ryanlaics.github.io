@@ -2,10 +2,11 @@
 layout: homepage
 ---
 
-Dr. Zhichen Lai is a Postdoctoral Researcher in [Prof. Hua Lu’s group](https://homes.cs.aau.dk/~luhua/) at the Department of Computer Science, [Aalborg University in Copenhagen](https://www.aau.dk/koebenhavn) (AAU-CPH) (with funding from [Roskilde University](https://ruc.dk/en) (RUC), Denmark). He received a Ph.D. degree in Computer Science from [Aalborg University](https://www.en.aau.dk/) (AAU), Denmark, in 2025, under the supervision of MAE and ACM/IEEE Fellow [Prof. Christian S. Jensen](https://csj.cs.aau.dk/), [Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/). In 2024, he was a Junior Visiting Research Fellow at the School of Computer Science and Engineering, [the University of New South Wales](https://www.unsw.edu.au/) (UNSW), Australia. He received his master's degree in Computer Science from [Sichuan University](https://en.scu.edu.cn/) (SCU), China, in 2021, supervised by [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm), and his bachelor's degree in Computer Science from [the University of Electronic Science and Technology of China](https://en.uestc.edu.cn/) (UESTC) in 2018.
+Dr. Zhichen Lai is a Postdoctoral Researcher in [Prof. Hua Lu’s group](https://homes.cs.aau.dk/~luhua/) at [Aalborg University in Copenhagen](https://www.aau.dk/koebenhavn), funded by [Roskilde University](https://ruc.dk/en). He earned his Ph.D. in Computer Science from [Aalborg University](https://www.en.aau.dk/) in 2025, supervised by MAE and ACM/IEEE Fellow [Prof. Christian S. Jensen](https://csj.cs.aau.dk/), [Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/).
 
+In 2024, he was a Junior Visiting Research Fellow at the School of Computer Science and Engineering, [the University of New South Wales](https://www.unsw.edu.au/). He obtained his M.S. in Computer Science from [Sichuan University](https://en.scu.edu.cn/) in 2021 under the supervision of [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm) and his B.S. in Computer Science from [the University of Electronic Science and Technology of China](https://en.uestc.edu.cn/) in 2018.
 
-My research interests include:
+His research interests include:
 - **Sensory Data Analytics**
 - **Spatio-temporal Data Management**
 - **AI in Orthodontics**
@@ -28,7 +29,7 @@ My research interests include:
 
 8. **Lai, Z.** et al. (2019). *Multi-view Image Generation by Cycle CVAE-GAN Networks*. **ICONIP 2019 (CORE-A)**.
 
-_For the other publications, please refer to [my Google Scholar profile](https://scholar.google.com/citations?user=aHrrknoAAAAJ&hl=en)._
+_For the other publications, please refer [here](https://scholar.google.com/citations?user=aHrrknoAAAAJ&hl=en)._
 
 ## Talk
 - Xiamen University, Xiamen, China, Oct 2024.
