@@ -4,10 +4,8 @@ layout: homepage
 
 ## About Me
 
-My name is Zhichen Lai. I am a final-year Ph.D. Candidate of the Department of Computer Science at [Aalborg University](https://www.en.aau.dk/) (AAU), Denmark, supervised by ACM/IEEE Fellow [Prof. Christian S. Jensen](https://csj.cs.aau.dk/), [Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/).
+My name is Zhichen Lai. I received the PhD degree in Computer Science from [Aalborg University](https://www.en.aau.dk/) (AAU), Denmark, in 2025, under the supervision of ACM/IEEE Fellow [Prof. Christian S. Jensen](https://csj.cs.aau.dk/), [Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/). In 2024, I was a Junior Visiting Research Fellow at the School of Computer Science and Engineering, [the University of New South Wales](https://www.unsw.edu.au/) (UNSW), Australia. I received my master's degree in Computer Science from [Sichuan University](https://en.scu.edu.cn/) (SCU), China, in 2021, supervised by [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm), and my bachelor's degree in Computer Science from [the University of Electronic Science and Technology of China](https://en.uestc.edu.cn/) (UESTC) in 2018.
 
-
-I was a Junior Visiting Research Fellow at the School of Computer Science and Engineering, [the University of New South Wales](https://www.unsw.edu.au/) (UNSW), Australia in 2024. I obtained my master's degree in Computer Science from [Sichuan University](https://en.scu.edu.cn/) (SCU), China, under the supervision of [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm) in 2021. Prior to that, I earned my bachelor's degree in Computer Science from [the University of Electronic Science and Technology of China](https://en.uestc.edu.cn/) (UESTC) in 2018.
 
 My research interests include:
 - **Sensory Data Analytics**
@@ -50,4 +48,4 @@ _For the other publications, please refer to [my Google Scholar profile](https:/
 - ICLR 2025, SIGKDD 2025/2024, AAAI 2025/2024,IEEE TNNLS, CIKM 2024/2023, ICDM, IEEE TBD, IEEE SPL, SIGSPATIAL, ESWA, IEEE BigData, DSAA 2022, HDIS 2022.
 
 
-_Last Updated 2024-10-23_
+_Last Updated 2025-03-14_
