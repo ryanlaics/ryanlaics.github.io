@@ -2,9 +2,9 @@
 layout: homepage
 ---
 
-## About Me
+## Background
 
-My name is Zhichen Lai (赖志宸). I received the PhD degree in Computer Science from [Aalborg University](https://www.en.aau.dk/) (AAU), Denmark, in 2025, under the supervision of ACM/IEEE Fellow [Prof. Christian S. Jensen](https://csj.cs.aau.dk/), [Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/). In 2024, I was a Junior Visiting Research Fellow at the School of Computer Science and Engineering, [the University of New South Wales](https://www.unsw.edu.au/) (UNSW), Australia. I received my master's degree in Computer Science from [Sichuan University](https://en.scu.edu.cn/) (SCU), China, in 2021, supervised by [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm), and my bachelor's degree in Computer Science from [the University of Electronic Science and Technology of China](https://en.uestc.edu.cn/) (UESTC) in 2018.
+Dr. Zhichen Lai (赖志宸) received a Ph.D. degree in Computer Science from [Aalborg University](https://www.en.aau.dk/) (AAU), Denmark, in 2025, under the supervision of MAE and ACM/IEEE Fellow [Prof. Christian S. Jensen](https://csj.cs.aau.dk/), [Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/). In 2024, he was a Junior Visiting Research Fellow at the School of Computer Science and Engineering, [the University of New South Wales](https://www.unsw.edu.au/) (UNSW), Australia. He received his master's degree in Computer Science from [Sichuan University](https://en.scu.edu.cn/) (SCU), China, in 2021, supervised by [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm), and his bachelor's degree in Computer Science from [the University of Electronic Science and Technology of China](https://en.uestc.edu.cn/) (UESTC) in 2018.
 
 
 My research interests include:
