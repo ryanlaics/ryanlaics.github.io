@@ -11,7 +11,7 @@ During his Ph.D., he was a Junior Visiting Research Fellow at the School of Comp
 His research interests include:
 - **Spatio-temporal Data Management**
 - **Sensory Data Analytics**
-- **Efficient AI:**
+- **Efficient AI**
 - **AI in Orthodontics**
 
 ## Recent Publications
