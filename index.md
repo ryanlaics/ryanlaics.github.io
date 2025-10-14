@@ -2,7 +2,7 @@
 layout: homepage
 ---
 
-Zhichen Lai is a Postdoctoral Researcher in [Prof. Hua Lu’s group](https://homes.cs.aau.dk/~luhua/) at [Aalborg University](https://www.aau.dk/), Copenhagen. He will join Fuzhou University at the end of 2025. 
+Zhichen Lai is a Postdoctoral Researcher in [Prof. Hua Lu’s group](https://homes.cs.aau.dk/~luhua/) at [Aalborg University](https://www.aau.dk/), Copenhagen. He will join [Fuzhou University](https://en.fzu.edu.cn/) at the end of 2025. 
 
 He received his Ph.D. in Computer Science from [Aalborg University](https://www.en.aau.dk/) in 2025, where he was advised by MAE and ACM/IEEE Fellow [Prof. Christian S. Jensen](https://csj.cs.aau.dk/), [Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/).
 
