@@ -36,7 +36,6 @@ _For more publications, please refer [here](https://scholar.google.com/citations
 
 ## Talk
 - Xiamen University, Xiamen, China, Oct 2024.
-- Xiamen University, Xiamen, China, Oct 2024.
 - The SIGKDD Conference, Barcelona, Spain, August 2024.
 - Tianjin University of Technology & Technical University of Denmark, Online, May 2024.
 - The Web Conference, Singapore, May 2024.
