@@ -16,7 +16,7 @@ His research interests include:
 
 ##### 📧: Corresponding Author
 
-1. **Lai, Z.**, Lu, H., Li, H., Li, J., & Jensen, C. S. (2026). *MovSemCL: Movement-Semantics Contrastive Learning for Trajectory Similarity*. **AAAI 2026 (Oral, CCF-A, CORE-A*)**.
+1. **Lai, Z.** et al. (2026). *MovSemCL: Movement-Semantics Contrastive Learning for Trajectory Similarity*. **AAAI 2026 (Oral, CCF-A, CORE-A*)**.
 
 2. **Lai, Z.** et al. (2024). *Lightweight Correlated Time Series Forecasting Enhanced with Model Distillation*. **IEEE Transactions on Knowledge and Data Engineering (CCF-A, JCR Q1)**.
 
