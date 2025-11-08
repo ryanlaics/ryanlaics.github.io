@@ -22,7 +22,7 @@ His research interests include:
 
 3. **Lai, Z.** et al. (2024). *ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions*. **SIGKDD 2024 (Oral, CCF-A)**.
 
-4. **Lai, Z.** et al. (2024). *E2USD: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series*. **WWW 2024 (Oral, CCF-A, CORE-A*)**.
+4. **Lai, Z.** et al. (2024). *E2USD: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series*. **WWW 2024 (Oral, CCF-A)**.
 
 5. **Lai, Z.** et al. (2023). *LightCTS: A Lightweight Framework for Correlated Time Series Forecasting*. **SIGMOD 2023 (Oral, CCF-A)**.
 
