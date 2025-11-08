@@ -13,24 +13,30 @@ His research interests include:
 - **AI in Orthodontics**
 
 ## Recent Publications
+
 ##### 📧: Corresponding Author
-1. **Lai, Z.** et al. (2024). *Lightweight Correlated Time Series Forecasting Enhanced with Model Distillation*. **IEEE Transactions on Knowledge and Data Engineering (CCF-A, JCR Q1)**.
 
-2. **Lai, Z.** et al. (2024). *ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions*. **SIGKDD 2024 (CCF-A, CORE-A\*)**.
+1. **Lai, Z.**, Lu, H., Li, H., Li, J., & Jensen, C. S. (2026). *MovSemCL: Movement-Semantics Contrastive Learning for Trajectory Similarity*. **AAAI 2026 (Oral, CCF-A, CORE-A*)**.
 
-3. **Lai, Z.** et al. (2024). *E2USD: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series*. **WWW 2024 (CCF-A, CORE-A\*)**.
+2. **Lai, Z.** et al. (2024). *Lightweight Correlated Time Series Forecasting Enhanced with Model Distillation*. **IEEE Transactions on Knowledge and Data Engineering (CCF-A, JCR Q1)**.
 
-4. **Lai, Z.** et al. (2023). *LightCTS: A Lightweight Framework for Correlated Time Series Forecasting*. **SIGMOD 2023 (CCF-A, CORE-A\*)**.
+3. **Lai, Z.** et al. (2024). *ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions*. **SIGKDD 2024 (Oral, CCF-A, CORE-A*)**.
 
-5. **Lai, Z.** et al. (2025). *FreqICE: Efficient Blade Icing Detection on Wind Turbines via Frequency Learning*. **IEEE Sensors Journal (JCR Q1)**.
+4. **Lai, Z.** et al. (2024). *E2USD: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series*. **WWW 2024 (Oral, CCF-A, CORE-A*)**.
 
-6. Jin, Y., **Lai, Z.📧** et al. (2025). *LightWind: A Lightweight Framework for Efficient Wind Power Forecasting*. **IEEE Sensors Journal (JCR Q1)**.
+5. **Lai, Z.** et al. (2023). *LightCTS: A Lightweight Framework for Correlated Time Series Forecasting*. **SIGMOD 2023 (Oral, CCF-A, CORE-A*)**.
 
-7. **Lai, Z.** et al. (2022). *Multiscale Wavelet-driven Graph Convolutional Network for Blade Icing Detection of Wind Turbines*. **IEEE Sensors Journal (JCR Q1)**.
+6. **Lai, Z.** et al. (2025). *FreqICE: Efficient Blade Icing Detection on Wind Turbines via Frequency Learning*. **IEEE Sensors Journal (JCR Q1)**.
 
-8. Wang, Z., **Lai, Z.📧** et al. (2025). *Multimodal Deep Learning for Midpalatal Suture Assessment in Maxillary Expansion*. **FDI World Dental Congress 2025** & **Annual Meeting of the Chinese Orthodontic Society 2025**.
+7. Jin, Y., **Lai, Z.📧** et al. (2025). *LightWind: A Lightweight Framework for Efficient Wind Power Forecasting*. **IEEE Sensors Journal (JCR Q1)**.
 
-_For more publications, please refer [here](https://scholar.google.com/citations?user=aHrrknoAAAAJ&hl=en)._
+8. **Lai, Z.** et al. (2022). *Multiscale Wavelet-driven Graph Convolutional Network for Blade Icing Detection of Wind Turbines*. **IEEE Sensors Journal (JCR Q1)**.
+
+9. Wang, Z., **Lai, Z.📧** et al. (2025). *Multimodal Deep Learning for Midpalatal Suture Assessment in Maxillary Expansion*. **FDI World Dental Congress 2025** & **Annual Meeting of the Chinese Orthodontic Society 2025**.
+
+*For more publications, please refer [here](https://scholar.google.com/citations?user=aHrrknoAAAAJ&hl=en).*
+
+---
 
 ## Talk
 - Xiamen University, Xiamen, China, Oct 2024.
