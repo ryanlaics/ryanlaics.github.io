@@ -10,11 +10,10 @@ His research interests include:
 - **Spatio-temporal Data Management**
 - **Sensory Data Analytics**
 - **Efficient AI**
-- **AI in Orthodontics**
 
-## Recent Publications
+## Representative First-Author Publications
 
-##### 📧: Corresponding Author
+#####
 
 1. **Lai, Z.** et al. (2026). *MovSemCL: Movement-Semantics Contrastive Learning for Trajectory Similarity*. **AAAI 2026 (Oral, CCF-A)**.
 
@@ -25,14 +24,6 @@ His research interests include:
 4. **Lai, Z.** et al. (2024). *E2USD: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series*. **WWW 2024 (Oral, CCF-A)**.
 
 5. **Lai, Z.** et al. (2023). *LightCTS: A Lightweight Framework for Correlated Time Series Forecasting*. **SIGMOD 2023 (Oral, CCF-A)**.
-
-6. **Lai, Z.** et al. (2025). *FreqICE: Efficient Blade Icing Detection on Wind Turbines via Frequency Learning*. **IEEE Sensors Journal (JCR Q1)**.
-
-7. Jin, Y., **Lai, Z.📧** et al. (2025). *LightWind: A Lightweight Framework for Efficient Wind Power Forecasting*. **IEEE Sensors Journal (JCR Q1)**.
-
-8. **Lai, Z.** et al. (2022). *Multiscale Wavelet-driven Graph Convolutional Network for Blade Icing Detection of Wind Turbines*. **IEEE Sensors Journal (JCR Q1)**.
-
-9. Wang, Z., **Lai, Z.📧** et al. (2025). *Multimodal Deep Learning for Midpalatal Suture Assessment in Maxillary Expansion*. **FDI World Dental Congress 2025** & **Annual Meeting of the Chinese Orthodontic Society 2025**.
 
 ---
 
