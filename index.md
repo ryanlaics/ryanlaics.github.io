@@ -15,15 +15,15 @@ His research interests include:
 
 #####
 
-1. **Lai, Z.** et al. (2026). *MovSemCL: Movement-Semantics Contrastive Learning for Trajectory Similarity*. **AAAI 2026 (Oral, CCF-A)**.
+1. **Lai, Z.** et al. *MovSemCL: Movement-Semantics Contrastive Learning for Trajectory Similarity*. **AAAI 2026 (Oral, CCF-A)**.
 
-2. **Lai, Z.** et al. (2024). *Lightweight Correlated Time Series Forecasting Enhanced with Model Distillation*. **IEEE Transactions on Knowledge and Data Engineering (CCF-A, CAS Q1, JCR Q1)**.
+2. **Lai, Z.** et al. *Lightweight Correlated Time Series Forecasting Enhanced with Model Distillation*. **IEEE Transactions on Knowledge and Data Engineering (CCF-A, CAS Q1, JCR Q1)**.
 
-3. **Lai, Z.** et al. (2024). *ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions*. **SIGKDD 2024 (Oral, CCF-A)**.
+3. **Lai, Z.** et al. *ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions*. **SIGKDD 2024 (Oral, CCF-A)**.
 
-4. **Lai, Z.** et al. (2024). *E2USD: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series*. **WWW 2024 (Oral, CCF-A)**.
+4. **Lai, Z.** et al. *E2USD: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series*. **WWW 2024 (Oral, CCF-A)**.
 
-5. **Lai, Z.** et al. (2023). *LightCTS: A Lightweight Framework for Correlated Time Series Forecasting*. **SIGMOD 2023 (Oral, CCF-A)**.
+5. **Lai, Z.** et al. *LightCTS: A Lightweight Framework for Correlated Time Series Forecasting*. **SIGMOD 2023 (Oral, CCF-A)**.
 
 ---
 
