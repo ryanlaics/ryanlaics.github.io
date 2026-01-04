@@ -2,9 +2,11 @@
 layout: homepage
 ---
 
-Zhichen Lai received his Ph.D. in Computer Science from [Aalborg University](https://www.en.aau.dk/) in March 2025, where he was advised by MAE and ACM/IEEE Fellow [Prof. Christian S. Jensen](https://csj.cs.aau.dk/), [Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/). He will join [Fuzhou University](https://en.fzu.edu.cn/) at the end of 2025. 
+**Zhichen Lai** is currently an Associate Professor at the [College of Computer Science and Big Data](https://en.fzu.edu.cn/), [Fuzhou University](https://en.fzu.edu.cn/). He was selected for the [China's Ministry-Level Overseas Talent Introduction Program] in 2025.
 
-During his Ph.D., he was a Junior Visiting Research Fellow at the School of Computer Science and Engineering, [the University of New South Wales](https://www.unsw.edu.au/) in 2024, working with [Prof. Lina Yao](https://www.linayao.com/) and [Prof. Dong Gong](https://donggong1.github.io/). Previously, he obtained his M.S. in Computer Science from [Sichuan University](https://en.scu.edu.cn/) in 2021, supervised by National Distinguished Young Scholar [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm), and his B.S. in Computer Science from [the University of Electronic Science and Technology of China](https://en.uestc.edu.cn/) in 2018.
+He received his Ph.D. in Computer Science from [Aalborg University](https://www.en.aau.dk/) in March 2025, supervised by MAE and ACM/IEEE Fellow [Prof. Christian S. Jensen](https://csj.cs.aau.dk/), [Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/). Following his graduation, he worked as a Postdoctoral Researcher with [Prof. Hua Lu](https://homes.cs.aau.dk/~luhua/).
+
+Previously, he was a Junior Visiting Research Fellow at [the University of New South Wales](https://www.unsw.edu.au/) in 2024. He obtained his M.S. in Computer Science from [Sichuan University](https://en.scu.edu.cn/) in 2021 under the supervision of [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm), following his B.S. from [UESTC](https://en.uestc.edu.cn/) in 2018.
 
 His research interests include:
 - **Spatio-temporal Data Management**
