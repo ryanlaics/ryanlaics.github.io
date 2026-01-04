@@ -8,7 +8,8 @@ He received his Ph.D. in Computer Science from [Aalborg University](https://www.
 
 Previously, he was a Junior Visiting Research Fellow at [the University of New South Wales](https://www.unsw.edu.au/) in 2024. He obtained his M.S. in Computer Science from [Sichuan University](https://en.scu.edu.cn/) in 2021 under the supervision of [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm), following his B.S. from [UESTC](https://en.uestc.edu.cn/) in 2018.
 
-**_News: Several openings for master students. Drop me an email if this interests you._**
+**_To Prospective Students (B.S. & M.S.of FZU): If you're interested in working with me, you're welcome to contact me via email._**
+
 
 His research interests include:
 - **Spatio-temporal Data Management**
