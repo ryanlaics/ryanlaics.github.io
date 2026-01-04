@@ -2,7 +2,7 @@
 layout: homepage
 ---
 
-**Zhichen Lai (赖志宸)** is currently an Associate Professor at the [College of Computer Science and Big Data](https://en.fzu.edu.cn/), [Fuzhou University](https://en.fzu.edu.cn/), where he is also a member of the [Fujian Key Laboratory of Network Computing and Intelligent Information Processing](https://ncip.fzu.edu.cn/). He was selected for the *China's Ministry-Level Overseas Talent Introduction Program* in 2025.
+**Zhichen Lai (赖志宸)** is currently an Associate Professor at the [College of Computer Science and Big Data](https://en.fzu.edu.cn/), [Fuzhou University](https://en.fzu.edu.cn/), where he is also a member of the [Fujian Provincial Key Laboratory of Network Computing and Intelligent Information Processing](https://ncip.fzu.edu.cn/). He was selected for the *China's Ministry-Level Overseas Talent Introduction Program* in 2025.
 
 He received his Ph.D. in Computer Science from [Aalborg University](https://www.en.aau.dk/) in March 2025, supervised by MAE and ACM/IEEE Fellow [Prof. Christian S. Jensen](https://csj.cs.aau.dk/), [Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/). Following his graduation, he worked as a Postdoctoral Researcher with [Prof. Hua Lu](https://homes.cs.aau.dk/~luhua/).
 
