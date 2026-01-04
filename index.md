@@ -15,8 +15,6 @@ His research interests include:
 
 ## Representative First-Author Publications
 
-#####
-
 1. **Lai, Z.** et al. *MovSemCL: Movement-Semantics Contrastive Learning for Trajectory Similarity*. **AAAI 2026 (Oral, CCF-A)**.
 
 2. **Lai, Z.** et al. *Lightweight Correlated Time Series Forecasting Enhanced with Model Distillation*. **IEEE Transactions on Knowledge and Data Engineering (CCF-A, CAS Q1, JCR Q1)**.
