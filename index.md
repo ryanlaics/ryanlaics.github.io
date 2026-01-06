@@ -10,9 +10,9 @@ His research interests include:
 - **Spatio-Temporal Edge Intelligence**
 - **Lightweight Deep Learning**
 - **IoT Data Mining**
-- **AI-Driven Digital Orthodontics**
-
-## Representative First-Author Publications
+- **AI-Driven Digital Orthodontics** *(with Prof. Linyu Xu's Group, Department of Orthodontics, FJMU)*
+  
+## Selected Recent Publications
 
 1. **Lai, Z.** et al. *MovSemCL: Movement-Semantics Contrastive Learning for Trajectory Similarity*. **AAAI 2026 (Oral, CCF-A)**.
 
