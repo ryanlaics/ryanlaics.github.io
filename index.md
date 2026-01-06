@@ -6,11 +6,11 @@ layout: homepage
 
 Previously, He was a Postdoctoral Researcher with [Prof. Hua Lu](https://homes.cs.aau.dk/~luhua/) and received his Ph.D. in Computer Science from [Aalborg University](https://www.en.aau.dk/), supervised by MAE and ACM/IEEE Fellow [Prof. Christian S. Jensen](https://csj.cs.aau.dk/), [Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/), and briefly served as a Junior Visiting Research Fellow at [UNSW](https://www.unsw.edu.au/). Earlier in his career, he completed his M.S. in Computer Science at [Sichuan University](https://en.scu.edu.cn/) under the guidance of [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm), after receiving his B.S. in Computer Science from [UESTC](https://en.uestc.edu.cn/).
 
-
 His research interests include:
-- **Spatio-temporal Data Management**
-- **Sensory Data Analytics**
-- **Efficient AI**
+- **Spatio-Temporal Edge Intelligence**
+- **Lightweight Deep Learning**
+- **IoT Data Mining**
+- **AI-Driven Digital Orthodontics**
 
 ## Representative First-Author Publications
 
@@ -30,14 +30,8 @@ His research interests include:
 
 ---
 
-## Talk
-- Xiamen University, Xiamen, China, Oct 2024.
-- The SIGKDD Conference, Barcelona, Spain, August 2024.
-- Tianjin University of Technology & Technical University of Denmark, Online, May 2024.
-- The Web Conference, Singapore, May 2024.
-- The SIGMOD Conference, Seattle, U.S., June 2023.
-- Zhejiang University, Hangzhou, China, Mar 2023.
-- Xidian University, Online, Feb 2023.
+**本人致力于时空大数据智能计算研究。长期寻找具备强自驱力、笃志学术研究并善于灵活变通的硕士研究生和本科实习生**
+我注重对学生的系统性科研训练，提供从选题到发表的亲自指导，致力于在科研探索中实现师生共进、教学相长。此外，本人保持与AAU以及浙大等海内外名师保持紧密课题合作，将为学生提供广阔的学术视野与深造平台。
 
 ## Service
 
