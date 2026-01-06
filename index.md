@@ -16,7 +16,7 @@ His research interests include:
 
 1. **Lai, Z.** et al. *MovSemCL: Movement-Semantics Contrastive Learning for Trajectory Similarity*. **AAAI 2026 (Oral, CCF-A)**.
 
-2. **Lai, Z.** et al. *Lightweight Correlated Time Series Forecasting Enhanced with Model Distillation*. **IEEE Transactions on Knowledge and Data Engineering (CCF-A, CAS Q1, JCR Q1)**.
+2. **Lai, Z.** et al. *Lightweight Correlated Time Series Forecasting Enhanced with Model Distillation*. **IEEE Transactions on Knowledge and Data Engineering 2024 (CCF-A, CAS Q1, JCR Q1)**.
 
 3. **Lai, Z.** et al. *ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions*. **SIGKDD 2024 (Oral, CCF-A)**.
 
@@ -35,4 +35,4 @@ His research interests include:
 
 ##  To Perspective Students from FZU
 
-#### 本人致力于时空大数据智能分析及其云边协同机制的研究。长期寻找自驱力强、笃志科研并善于灵活变通的研究生和计划海外深造或参加保研的本科生。本人注重对学生的系统性科研训练，致力于在科研探索中实现师生共进、教学相长。此外，本人与国内外顶尖学府保持紧密的课题合作（如AAU, DTU, 浙大等），可提供国际化的学术视野与深造机会。
+##### 本人致力于时空大数据智能分析及其云边协同机制的研究。长期寻找自驱力强、笃志科研并善于灵活变通的研究生和计划海外深造或参加保研的本科生。本人注重对学生的系统性科研训练，致力于在科研探索中实现师生共进、教学相长。此外，本人与国内外顶尖学府保持紧密的课题合作（如AAU, DTU, 浙大等），可提供国际化的学术视野与深造机会。
