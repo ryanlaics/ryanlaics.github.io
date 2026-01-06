@@ -30,10 +30,13 @@ His research interests include:
 
 ---
 
-**本人致力于时空大数据智能计算研究。长期寻找具备强自驱力、笃志学术研究并善于灵活变通的硕士研究生和本科实习生**
-我注重对学生的系统性科研训练，提供从选题到发表的亲自指导，致力于在科研探索中实现师生共进、教学相长。此外，本人保持与AAU以及浙大等海内外名师保持紧密课题合作，将为学生提供广阔的学术视野与深造平台。
-
 ## Service
 
 ### Reviewer/PC Member
 - ICLR 2026/2025, AAAI 2026/2025/2024, SIGKDD 2025/2024, IEEE TNNLS, CIKM 2024/2023, ICDM, IEEE TBD, IEEE SPL, SIGSPATIAL, ESWA, IEEE BigData, DSAA 2022, HDIS 2022.
+
+
+## To Perspective Students from Fuzhou University
+本人致力于时空大数据智能计算研究。长期寻找具备强自驱力、笃志学术研究并善于灵活变通的硕士研究生和本科实习生
+
+我注重对学生的系统性科研训练，提供从选题到发表的亲自指导，致力于在科研探索中实现师生共进、教学相长。此外，本人保持与AAU以及浙大等海内外名师保持紧密课题合作，将为学生提供广阔的学术视野与深造平台。
