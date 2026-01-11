@@ -6,7 +6,7 @@ layout: homepage
 
 Previously, he was a Postdoctoral Researcher with [Prof. Hua Lu](https://homes.cs.aau.dk/~luhua/) and received his Ph.D. in Computer Science from [Aalborg University](https://www.en.aau.dk/), under the supervision of MAE and ACM/IEEE Fellow [Prof. Christian S. Jensen](https://csj.cs.aau.dk/), [Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/). He also briefly served as a Junior Visiting Research Fellow at [UNSW](https://www.unsw.edu.au/). Earlier in his career, he completed his M.S. in Computer Science at [Sichuan University](https://en.scu.edu.cn/) under the guidance of [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm), after obtaining his B.S. in Computer Science from [UESTC](https://en.uestc.edu.cn/).
 
-His research interests include:
+**His research interests include:**
 - **Spatio-Temporal Edge Intelligence**
 - **Lightweight Deep Learning**
 - **IoT Data Mining**
