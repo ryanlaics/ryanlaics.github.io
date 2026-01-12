@@ -2,7 +2,7 @@
 layout: homepage
 ---
 
-**Zhichen Lai (赖志宸)** is an Associate Professor at the [College of Computer and Data Science](https://ccds.fzu.edu.cn/), [Fuzhou University](https://en.fzu.edu.cn/), China. He is also affiliated with the [Fujian Provincial Key Laboratory of Network Computing and Intelligent Information Processing](https://ncip.fzu.edu.cn/) and was selected for the *China's Ministry-Level Overseas Talent Introduction Program* in 2025.
+**Dr. Zhichen Lai (赖志宸)** is an Associate Professor at the [College of Computer and Data Science](https://ccds.fzu.edu.cn/), [Fuzhou University](https://en.fzu.edu.cn/), China. He is also affiliated with the [Fujian Provincial Key Laboratory of Network Computing and Intelligent Information Processing](https://ncip.fzu.edu.cn/) and was selected for the *China's Ministry-Level Overseas Talent Introduction Program* in 2025.
 
 Previously, he held a postdoctoral position with [Prof. Hua Lu](https://homes.cs.aau.dk/~luhua/). He received his Ph.D. in Computer Science from [Aalborg University](https://www.en.aau.dk/) in 2025, with his doctoral studies supervised by [Prof. Christian S. Jensen](https://csj.cs.aau.dk/) (ACM/IEEE Fellow, MAE), [Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/). In 2024, he served as a Junior Visiting Research Fellow at [UNSW Sydney](https://www.unsw.edu.au/). Prior to this, he obtained his M.S. in Computer Science from [Sichuan University](https://en.scu.edu.cn/) in 2021, under the guidance of [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm), following his B.S. in Computer Science from [UESTC](https://en.uestc.edu.cn/) in 2018.
 
