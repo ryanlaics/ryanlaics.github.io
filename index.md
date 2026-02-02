@@ -4,7 +4,7 @@ layout: homepage
 
 **Dr. Zhichen Lai** is an Associate Professor at the [College of Computer and Data Science](https://ccds.fzu.edu.cn/), [Fuzhou University](https://en.fzu.edu.cn/), China. He is also affiliated with the [Fujian Provincial Key Laboratory of Network Computing and Intelligent Information Processing](https://ncip.fzu.edu.cn/) and was selected for the *China's Ministry-Level Overseas Talent Introduction Program* in 2025.
 
-Previously, he held a postdoctoral position with [Prof. Hua Lu](https://homes.cs.aau.dk/~luhua/). He received his Ph.D. in Computer Science from [Aalborg University](https://www.en.aau.dk/) in 2025, with his doctoral studies supervised by [Prof. Christian S. Jensen](https://csj.cs.aau.dk/) (ACM/IEEE Fellow, MAE), [Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/). In 2024, he served as a Junior Visiting Research Fellow at [UNSW Sydney](https://www.unsw.edu.au/). Prior to this, he obtained his M.S. in Computer Science from [Sichuan University](https://en.scu.edu.cn/) in 2021, under the guidance of [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm), following his B.S. in Computer Science from [UESTC](https://en.uestc.edu.cn/) in 2018.
+Previously, he was a Postdoctoral Fellow working with [Prof. Hua Lu](https://homes.cs.aau.dk/~luhua/). He earned his Ph.D. in Computer Science from [Aalborg University](https://www.en.aau.dk/) in 2025, advised by [Prof. Christian S. Jensen](https://csj.cs.aau.dk/) (ACM/IEEE Fellow, MAE), [Prof. Dalin Zhang](https://dalinzhang.github.io/), and [Prof. Huan Li](https://longaspire.github.io/). During his doctoral studies, he served as a Junior Visiting Research Fellow at [UNSW Sydney](https://www.unsw.edu.au/). Earlier, he received his M.S. in Computer Science from [Sichuan University](https://en.scu.edu.cn/) in 2021 under the supervision of [Prof. Jiancheng Lv](https://cs.scu.edu.cn/info/1288/13627.htm), and his B.S. in Computer Science from [UESTC](https://en.uestc.edu.cn/) in 2018.
 
 **His research interests include:**
 - **Spatio-Temporal Edge Intelligence**
@@ -12,7 +12,7 @@ Previously, he held a postdoctoral position with [Prof. Hua Lu](https://homes.cs
 - **IoT Data Mining**
 - **AI-Driven Digital Orthodontics** *(with Prof. Linyu Xu's Group, Department of Orthodontics, FJMU)*
   
-## Selected Recent Publications
+## Selected First-author Publications
 
 1. **Lai, Z.** et al. *MovSemCL: Movement-Semantics Contrastive Learning for Trajectory Similarity*. **AAAI 2026 (Oral, CCF-A)**.
 
@@ -30,8 +30,4 @@ Previously, he held a postdoctoral position with [Prof. Hua Lu](https://homes.cs
 ## Service
 ### Reviewer/PC Member
 - **Conferences**: ICML 2026, ICLR 2026/2025, AAAI 2026/2025/2024, SIGKDD 2025/2024, CIKM 2024/2023, ICDM, SIGSPATIAL, IEEE BigData, DSAA 2022, HDIS 2022...
-- **Journals**: IEEE TIFS, IEEE TITS, IEEE TASE, IEEE TNNLS, IEEE TBD, ESWA, Ocean Engineering...
-
-
-### 致福州大学意向学生
-##### 本人致力于时空大数据智能分析及其云边协同机制的研究。长期寻找自驱力强、笃志科研并善于灵活变通的研究生和计划海外深造或参加保研的本科生。本人注重对学生的系统性科研训练，致力于在科研探索中实现师生共进、教学相长。此外，本人与国内外顶尖学府保持紧密的课题合作（如丹麦奥尔堡大学, 浙江大学等），可提供国际化的学术视野与深造机会。
+- **Journals**: IEEE TIFS/TITS/TASE/TNNLS/TBD/IOTJ/SenJ, ESWA, Ocean Engineering...
