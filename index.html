@@ -218,8 +218,71 @@
       </div>
  
     </section><!-- /Publications Section -->
+
+
+    <!-- Organizations Section -->
+    <section id="organizations" class="organizations section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Affiliated Organizations</h2>
+      </div>
  
-    
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="org-container">
+          <a href="https://www.fzu.edu.cn/" target="_blank" class="org-item">
+            <img src="assets/img/FZU.png" alt="Fuzhou University" title="Fuzhou University">
+          </a>
+          <a href="https://www.en.aau.dk/" target="_blank" class="org-item">
+            <img src="assets/img/AAU.png" alt="Aalborg University" title="Aalborg University">
+          </a>
+          <a href="https://www.unsw.edu.au/" target="_blank" class="org-item">
+            <img src="assets/img/UNSW.png" alt="UNSW Sydney" title="UNSW Sydney">
+          </a>
+          <a href="https://www.scu.edu.cn/" target="_blank" class="org-item">
+            <img src="assets/img/SCU.png" alt="Sichuan University" title="Sichuan University">
+          </a>
+          <a href="https://www.uestc.edu.cn/" target="_blank" class="org-item">
+            <img src="assets/img/UESTC.png" alt="UESTC" title="University of Electronic Science and Technology of China">
+          </a>
+        </div>
+      </div>
+ 
+      <style>
+        .org-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+          padding: 10px 0;
+        }
+        .org-container .org-item {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 12px 20px;
+          transition: transform 0.3s ease, opacity 0.3s ease;
+          opacity: 0.7;
+        }
+        .org-container .org-item:hover {
+          transform: scale(1.08);
+          opacity: 1;
+        }
+        .org-container .org-item img {
+          max-height: 70px;
+          max-width: 180px;
+          object-fit: contain;
+          filter: grayscale(20%);
+          transition: filter 0.3s ease;
+        }
+        .org-container .org-item:hover img {
+          filter: grayscale(0%);
+        }
+      </style>
+    </section>
+    <!-- /Organizations Section -->
+
+
+  
 <!-- Contact Section -->
 <section id="contact" class="contact section">
   <!-- Section Title -->
