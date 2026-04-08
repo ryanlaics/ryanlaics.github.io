@@ -181,6 +181,29 @@ h6 {
   color: var(--heading-color);
 }
 
+.header .profile-meta {
+  margin: 0 0 18px 0;
+  padding: 0 14px;
+  text-align: center;
+}
+
+.header .profile-meta p {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: color-mix(in srgb, var(--default-color), transparent 18%);
+}
+
+.header .profile-meta p:last-child {
+  margin-bottom: 0;
+}
+
+.header .profile-meta .profile-title,
+.header .profile-meta strong {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
 .header .social-links {
   margin: 0 0 20px 0;
 }
@@ -624,6 +647,17 @@ section,
 .about .content h2 {
   font-weight: 700;
   font-size: 24px;
+}
+
+.about .content p strong {
+  color: var(--heading-color);
+  font-weight: 700;
+}
+
+.about .content p a {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
 }
 
 .about .content ul {
