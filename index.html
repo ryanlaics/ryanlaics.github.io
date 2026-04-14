@@ -64,7 +64,7 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#skills"><i class="bi bi-images navicon"></i> Research Areas</a></li>
         <li><a href="#publications"><i class="bi bi-hdd-stack navicon"></i>Publications</a></li>
-        <li><a href="#programs"><i class="bi bi-clipboard-data navicon"></i>Programs</a></li>
+        <li><a href="#programs"><i class="bi bi-clipboard-data navicon"></i>Honors</a></li>
         <li><a href="#organizations"><i class="bi bi-file-earmark-text navicon"></i>Organizations</a></li>
         <li><a href="#recruitment"><i class="bi bi-envelope navicon"></i> Recruitment</a></li>
       </ul>
@@ -144,41 +144,38 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Research Areas</h2>
-        <p>My work focuses on data mining and machine learning for structured temporal and spatial data, with an emphasis on methods that remain useful in real-world settings.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="research-grid">
           <article class="research-card" data-aos="fade-up" data-aos-delay="100">
-            <span class="research-kicker">01</span>
-            <h3>Spatio-Temporal Data Mining</h3>
-            <p>Representation learning, similarity modeling, and prediction for trajectories, events, and structured temporal data.</p>
+            <div class="research-head">
+              <span class="research-kicker">01</span>
+              <h3>Spatio-Temporal Data Mining</h3>
+            </div>
+            <p>Representation learning, similarity modeling, retrieval, and prediction for trajectories, events, and other structured spatio-temporal data.</p>
           </article>
           <article class="research-card" data-aos="fade-up" data-aos-delay="150">
-            <span class="research-kicker">02</span>
-            <h3>Time Series and Sensory Data Analytics</h3>
-            <p>Forecasting, imputation, and robust modeling for correlated multivariate time series collected from real sensing systems.</p>
+            <div class="research-head">
+              <span class="research-kicker">02</span>
+              <h3>Geospatial Artificial Intelligence</h3>
+            </div>
+            <p>Data-driven methods for understanding geographic processes, human mobility, and place-based patterns across space and time.</p>
           </article>
           <article class="research-card" data-aos="fade-up" data-aos-delay="200">
-            <span class="research-kicker">03</span>
-            <h3>Efficient AI Systems</h3>
-            <p>Resource-aware learning and inference methods for models that need to be both effective and deployable.</p>
+            <div class="research-head">
+              <span class="research-kicker">03</span>
+              <h3>Efficient Deep Learning</h3>
+            </div>
+            <p>Resource-aware model design, training, and inference for deep learning systems that must be both effective and deployable.</p>
           </article>
           <article class="research-card" data-aos="fade-up" data-aos-delay="250">
-            <span class="research-kicker">04</span>
-            <h3>GeoAI</h3>
-            <p>Geospatial intelligence for understanding movement, places, and human activity through data-driven methods.</p>
-          </article>
-          <article class="research-card" data-aos="fade-up" data-aos-delay="300">
-            <span class="research-kicker">05</span>
-            <h3>AI for Dental Medicine</h3>
-            <p>Applied machine learning for clinical decision support and intelligent workflows in oral medicine and dentistry through interdisciplinary collaboration.</p>
-          </article>
-          <article class="research-card" data-aos="fade-up" data-aos-delay="350">
-            <span class="research-kicker">06</span>
-            <h3>AI for Environmental Science</h3>
-            <p>Learning-based tools for environmental observations and related scientific questions where data, space, and time interact.</p>
+            <div class="research-head">
+              <span class="research-kicker">04</span>
+              <h3>AI for Scientific and Healthcare Applications</h3>
+            </div>
+            <p>Machine learning for scientific and healthcare data, including interdisciplinary applications in dental medicine and environmental systems.</p>
           </article>
         </div>
 
@@ -203,19 +200,24 @@
           box-shadow: 0 4px 20px rgba(73, 155, 216, 0.08);
           transform: translateY(-2px);
         }
+        .research-head {
+          display: flex;
+          align-items: baseline;
+          gap: 10px;
+          margin-bottom: 10px;
+        }
         .research-kicker {
-          display: inline-block;
           font-size: 12px;
           font-weight: 700;
           color: #499BD8;
           letter-spacing: 0.08em;
-          margin-bottom: 10px;
+          flex-shrink: 0;
         }
         .research-card h3 {
           font-size: 18px;
           font-weight: 600;
           color: #2d2d2d;
-          margin: 0 0 10px 0;
+          margin: 0;
           line-height: 1.35;
         }
         .research-card p {
@@ -671,159 +673,73 @@
 <section id="programs" class="programs section">
  
   <div class="container section-title" data-aos="fade-up">
-    <h2>Programs</h2>
+    <h2>Honors</h2>
   </div>
  
   <div class="container" data-aos="fade-up" data-aos-delay="100">
  
     <!-- Program Card 1 -->
     <div class="prog-card" data-aos="fade-up" data-aos-delay="100">
-      <div class="prog-icon-col">
-        <i class="bi bi-award"></i>
-      </div>
       <div class="prog-body">
         <h4 class="prog-title">China's Ministry of Education Overseas Talent Program</h4>
-        <p class="prog-title-cn">中国教育部海外引才计划</p>
-        <p class="prog-meta"><i class="bi bi-calendar3"></i> 2026 – 2029</p>
-      </div>
-      <div class="prog-status">
-        <span class="prog-badge active">Active</span>
+        <p class="prog-meta">中国教育部海外引才计划 <span class="prog-divider">·</span> <i class="bi bi-calendar3"></i> 2026 – 2029</p>
       </div>
     </div>
  
     <!-- Program Card 2 -->
     <div class="prog-card" data-aos="fade-up" data-aos-delay="200">
-      <div class="prog-icon-col">
-        <i class="bi bi-mortarboard"></i>
-      </div>
       <div class="prog-body">
         <h4 class="prog-title">Qishan Scholar Program (Overseas Talent Introduction), Fuzhou University</h4>
-        <p class="prog-title-cn">福州大学旗山学者计划（海外项目）</p>
-        <p class="prog-meta"><i class="bi bi-calendar3"></i> 2029 – 2034</p>
-      </div>
-      <div class="prog-status">
-        <span class="prog-badge upcoming">Upcoming</span>
+        <p class="prog-meta">福州大学旗山学者计划（海外项目） <span class="prog-divider">·</span> <i class="bi bi-calendar3"></i> 2029 – 2034</p>
       </div>
     </div>
  
   </div>
  
   <style>
-    /* ── Program Card ── */
     .prog-card {
-      display: flex;
-      align-items: center;
-      gap: 16px;
       background: #fff;
       border: 1px solid rgba(0, 0, 0, 0.06);
       border-radius: 14px;
-      padding: 18px 22px;
+      padding: 18px 20px;
       margin-bottom: 14px;
-      transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-      position: relative;
-    }
-    .prog-card::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 3px;
-      background: transparent;
-      border-radius: 14px 0 0 14px;
-      transition: background 0.3s ease;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
     }
     .prog-card:hover {
-      border-color: rgba(73, 155, 216, 0.22);
-      box-shadow: 0 4px 20px rgba(73, 155, 216, 0.08);
-      transform: translateY(-2px);
-    }
-    .prog-card:hover::before {
-      background: #499BD8;
+      border-color: rgba(73, 155, 216, 0.14);
+      box-shadow: 0 2px 10px rgba(73, 155, 216, 0.06);
     }
  
-    /* ── Icon Column ── */
-    .prog-icon-col {
-      flex-shrink: 0;
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
-      background: rgba(73, 155, 216, 0.07);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background 0.3s ease;
-    }
-    .prog-icon-col i {
-      font-size: 22px;
-      color: #499BD8;
-      transition: color 0.3s ease;
-    }
-    .prog-card:hover .prog-icon-col {
-      background: rgba(73, 155, 216, 0.12);
-    }
- 
-    /* ── Body ── */
     .prog-body {
-      flex: 1;
       min-width: 0;
     }
     .prog-title {
       font-size: 15px;
       font-weight: 600;
       color: #1a1a1a;
-      margin: 0 0 2px 0;
-      line-height: 1.4;
-    }
-    .prog-title-cn {
-      font-size: 13px;
-      color: #888;
-      margin: 0 0 6px 0;
+      margin: 0 0 4px 0;
       line-height: 1.4;
     }
     .prog-meta {
-      font-size: 12.5px;
-      color: #999;
+      font-size: 13px;
+      color: #888;
       margin: 0;
       display: flex;
       align-items: center;
       gap: 5px;
+      line-height: 1.5;
+      flex-wrap: wrap;
     }
     .prog-meta i {
       font-size: 12px;
     }
- 
-    /* ── Status Badge ── */
-    .prog-status {
-      flex-shrink: 0;
-    }
-    .prog-badge {
-      display: inline-block;
-      font-size: 10.5px;
-      font-weight: 600;
-      padding: 4px 12px;
-      border-radius: 20px;
-      letter-spacing: 0.03em;
-    }
-    .prog-badge.active {
-      background: rgba(20, 146, 104, 0.08);
-      color: #0e7a54;
-    }
-    .prog-badge.upcoming {
-      background: rgba(73, 155, 216, 0.08);
-      color: #3a82b8;
+    .prog-divider {
+      color: #b5b5b5;
     }
  
-    /* ── Responsive ── */
     @media (max-width: 576px) {
       .prog-card {
-        flex-wrap: wrap;
-        padding: 14px 14px;
-      }
-      .prog-status {
-        width: 100%;
-        padding-left: 64px;
-        margin-top: -4px;
+        padding: 15px 16px;
       }
       .prog-title {
         font-size: 14px;
@@ -1210,8 +1126,7 @@
 
     <!-- 开场 -->
     <div class="recruit-welcome" data-aos="fade-up" data-aos-delay="120">
-      <p>I welcome inquiries from <strong>prospective master's students</strong> and <strong>undergraduate research interns</strong> at Fuzhou University, especially first- and second-year undergraduates. If your interests align with the group's research, please email me.</p>
-      <p><strong>The 2026 master's intake is now full.</strong> Students seeking <strong>recommended admission for the 2027 cohort</strong> are welcome to get in touch early.</p>
+      <p>I welcome inquiries from <strong>prospective master's students</strong> and <strong>first- or second-year undergraduate students interested in research</strong>.</p>
     </div>
 
     <!-- 双栏：你 & 我 -->
