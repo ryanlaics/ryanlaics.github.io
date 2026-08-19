@@ -13,11 +13,13 @@
    * Header toggle
    */
   const headerToggleBtn = document.querySelector('.header-toggle');
+  const headerToggleIcon = headerToggleBtn.querySelector('i');
 
   function headerToggle() {
-    document.querySelector('#header').classList.toggle('header-show');
-    headerToggleBtn.classList.toggle('bi-list');
-    headerToggleBtn.classList.toggle('bi-x');
+    const isOpen = document.querySelector('#header').classList.toggle('header-show');
+    headerToggleIcon.classList.toggle('bi-list', !isOpen);
+    headerToggleIcon.classList.toggle('bi-x', isOpen);
+    headerToggleBtn.setAttribute('aria-expanded', String(isOpen));
   }
   headerToggleBtn.addEventListener('click', headerToggle);
 
