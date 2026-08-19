@@ -24,7 +24,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,12 +35,15 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/sections.css" rel="stylesheet">
 </head>
 
 <body class="index-page">
 
   <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <button type="button" class="header-toggle d-xl-none" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navmenu">
+      <i class="bi bi-list" aria-hidden="true"></i>
+    </button>
 
     <div class="profile-img">
       <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
@@ -54,7 +57,7 @@
 
     <div class="profile-meta" aria-label="Profile details">
       <p class="profile-title">Associate Research Professor</p>
-      <p>College of Computer Science and Big Data, Fuzhou University</p>
+      <p>College of Computer and Data Science, Fuzhou University</p>
       <p>zhla ατ cs.aau.dk</p>
     </div>
 
@@ -65,9 +68,10 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#skills"><i class="bi bi-images navicon"></i> Research Areas</a></li>
         <li><a href="#publications"><i class="bi bi-hdd-stack navicon"></i>Publications</a></li>
-        <li><a href="#programs"><i class="bi bi-clipboard-data navicon"></i>Honors</a></li>
+        <!-- <li><a href="#programs"><i class="bi bi-clipboard-data navicon"></i>Honors</a></li> -->
         <li><a href="#organizations"><i class="bi bi-file-earmark-text navicon"></i>Organizations</a></li>
-        <li><a href="#recruitment"><i class="bi bi-envelope navicon"></i> Recruitment</a></li>
+        <!-- <li><a href="#recruitment"><i class="bi bi-envelope navicon"></i> Recruitment</a></li> -->
+        <li><a href="#contact"><i class="bi bi-envelope-at navicon"></i>Contact</a></li>
       </ul>
     </nav>
 
@@ -82,7 +86,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Zhichen Lai 赖志宸</h2>
-        <p>I'm a <span class="typed" data-typed-items="Researcher., Data Enthusiast., Collaborator., Lifelong Learner., Cross-Disciplinary Thinker.">Researcher.</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>I'm a <span class="typed" data-typed-items="Researcher., Data Enthusiast., Collaborator., Lifelong Learner., Cross-Disciplinary Thinker.">Researcher.</span></p>
       </div>
 
     </section><!-- /Hero Section -->
@@ -104,7 +108,7 @@
           <div class="col-lg-8 content">
             <p class="py-3">
               I am an <strong>Associate Research Professor</strong> in the
-              <strong>College of Computer Science and Big Data, Fuzhou University</strong>, China. I am also a member
+              <strong>College of Computer and Data Science, Fuzhou University</strong>, China. I am also a member
               of the <strong>Fujian Key Laboratory of Network Computing and Intelligent Information Processing</strong>,
               where I work closely with
               <a href="https://ccds.fzu.edu.cn/info/1207/8294.htm" target="_blank" rel="noopener noreferrer">Prof.
@@ -116,16 +120,19 @@
             <p class="py-1">
               I received my <strong>Ph.D. in Computer Science</strong> from
               <strong>Aalborg University (AAU)</strong>, Denmark, in early 2025, where I also served as a
-              <strong>Research Fellow</strong>. At AAU, I was advised by MAE and ACM/IEEE Fellow Professor
+              <strong>Research Fellow</strong>. At AAU, I was advised by Professor
               <a href="https://csj.cs.aau.dk/" target="_blank" rel="noopener noreferrer">Christian S. Jensen</a>,
+              a Member of Academia Europaea and an ACM and IEEE Fellow, together with Professors
               <a href="https://dalinzhang.github.io/" target="_blank" rel="noopener noreferrer">Dalin Zhang</a>,
-              <a href="https://mypage.zju.edu.cn/en/lihuan" target="_blank" rel="noopener noreferrer">Huan Li</a>,
-              and
+              <a href="https://mypage.zju.edu.cn/en/lihuan" target="_blank" rel="noopener noreferrer">Huan Li</a>, and
               <a href="https://homes.cs.aau.dk/~luhua" target="_blank" rel="noopener noreferrer">Hua Lu</a>.
             </p>
             <p class="py-1">
               I was also a <strong>Junior Visiting Research Fellow</strong> at the
-              <strong>University of New South Wales (UNSW)</strong> in 2024. I received my
+              <strong>University of New South Wales (UNSW)</strong> in 2024, under the supervision of
+              Professors <strong><a href="https://www.linayao.com/" target="_blank" rel="noopener noreferrer">Lina Yao</a></strong>
+              and <strong><a href="https://donggong1.github.io/" target="_blank" rel="noopener noreferrer">Dong Gong</a></strong>.
+              I received my
               <strong>M.S. in Computer Science</strong> from <strong>Sichuan University (SCU)</strong> in 2021 under
               the supervision of
               <a href="https://cs.scu.edu.cn/info/1303/13767.htm" target="_blank" rel="noopener noreferrer">Prof.
@@ -175,7 +182,7 @@
           <article class="research-card" data-aos="fade-up" data-aos-delay="250">
             <div class="research-head">
               <span class="research-kicker">04</span>
-              <h3>AI for Scientific and Healthcare Applications</h3>
+              <h3>AI for Science &amp; Health</h3>
             </div>
             <p>Machine learning for scientific and healthcare data, including interdisciplinary applications in dental medicine and environmental systems.</p>
           </article>
@@ -183,65 +190,6 @@
 
       </div>
 
-      <style>
-        .research-grid {
-          display: grid;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 20px;
-        }
-        .research-card {
-          height: 100%;
-          background: #fff;
-          border: 1px solid rgba(0, 0, 0, 0.06);
-          border-radius: 14px;
-          padding: 22px 24px;
-          transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-        }
-        .research-card:hover {
-          border-color: rgba(73, 155, 216, 0.22);
-          box-shadow: 0 4px 20px rgba(73, 155, 216, 0.08);
-          transform: translateY(-2px);
-        }
-        .research-head {
-          display: flex;
-          align-items: baseline;
-          gap: 10px;
-          margin-bottom: 10px;
-        }
-        .research-kicker {
-          font-size: 12px;
-          font-weight: 700;
-          color: #499BD8;
-          letter-spacing: 0.08em;
-          flex-shrink: 0;
-        }
-        .research-card h3 {
-          font-size: 18px;
-          font-weight: 600;
-          color: #2d2d2d;
-          margin: 0;
-          line-height: 1.35;
-        }
-        .research-card p {
-          margin: 0;
-          font-size: 14px;
-          line-height: 1.7;
-          color: #666;
-        }
-        @media (max-width: 768px) {
-          .research-grid {
-            grid-template-columns: 1fr;
-          }
-        }
-        @media (max-width: 576px) {
-          .research-card {
-            padding: 18px;
-          }
-          .research-card h3 {
-            font-size: 16px;
-          }
-        }
-      </style>
 
     </section><!-- /Skills Section -->
 
@@ -253,6 +201,28 @@
   </div>
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <!-- Publication Card 00 -->
+    <div class="pub-card" data-aos="fade-up" data-aos-delay="50">
+      <div class="pub-body">
+        <div class="pub-top-row">
+          <span class="pub-index">00</span>
+          <div class="pub-badges">
+            <span class="pub-venue">IEEE TKDE</span>
+            <span class="pub-tag ccfa">CCF-A</span>
+            <span class="pub-tag q1">CAS Q1</span>
+            <span class="pub-tag q1">JCR Q1</span>
+          </div>
+        </div>
+        <h4 class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/11626553/" target="_blank" rel="noopener noreferrer">Impute On-Demand: Adaptive Correlated Time Series Imputation for Changing Environments <i class="bi bi-box-arrow-up-right pub-link-icon"></i></a></h4>
+        <p class="pub-authors">
+          <span class="pub-me">Zhichen Lai</span>, Huan Li, Dalin Zhang, Dong Gong, Lina Yao, Christian S. Jensen
+        </p>
+      </div>
+      <div class="pub-year-col">
+        <span class="pub-year-num">2026</span>
+      </div>
+    </div>
 
     <!-- Publication Card 1 -->
     <div class="pub-card" data-aos="fade-up" data-aos-delay="100">
@@ -287,7 +257,7 @@
             <span class="pub-tag q1">JCR Q1</span>
           </div>
         </div>
-        <h4 class="pub-title"><a href="https://ieeexplore.ieee.org/document/10589286" target="_blank">Lightweight Correlated Time Series Forecasting Enhanced with Model Distillation <i class="bi bi-box-arrow-up-right pub-link-icon"></i></a></h4>
+        <h4 class="pub-title"><a href="https://ieeexplore.ieee.org/document/10589286" target="_blank" rel="noopener noreferrer">Lightweight Correlated Time Series Forecasting Enhanced with Model Distillation <i class="bi bi-box-arrow-up-right pub-link-icon"></i></a></h4>
         <p class="pub-authors">
           <span class="pub-me">Zhichen Lai</span>, Dalin Zhang, Huan Li, Christian S. Jensen, Hua Lu, Yan Zhao
         </p>
@@ -308,7 +278,7 @@
             <span class="pub-tag ccfa">CCF-A</span>
           </div>
         </div>
-        <h4 class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3637528.3671816" target="_blank">ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions <i class="bi bi-box-arrow-up-right pub-link-icon"></i></a></h4>
+        <h4 class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3637528.3671816" target="_blank" rel="noopener noreferrer">ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions <i class="bi bi-box-arrow-up-right pub-link-icon"></i></a></h4>
         <p class="pub-authors">
           <span class="pub-me">Zhichen Lai</span>, Dalin Zhang, Huan Li, Dongxiang Zhang, Hua Lu, Christian S. Jensen
         </p>
@@ -329,7 +299,7 @@
             <span class="pub-tag ccfa">CCF-A</span>
           </div>
         </div>
-        <h4 class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3589334.3645593" target="_blank">E2USD: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series <i class="bi bi-box-arrow-up-right pub-link-icon"></i></a></h4>
+        <h4 class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3589334.3645593" target="_blank" rel="noopener noreferrer">E2USD: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series <i class="bi bi-box-arrow-up-right pub-link-icon"></i></a></h4>
         <p class="pub-authors">
           <span class="pub-me">Zhichen Lai</span>, Huan Li, Dalin Zhang, Yan Zhao, Weizhu Qian, Christian S. Jensen
         </p>
@@ -350,7 +320,7 @@
             <span class="pub-tag ccfa">CCF-A</span>
           </div>
         </div>
-        <h4 class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3589270" target="_blank">LightCTS: A Lightweight Framework for Correlated Time Series Forecasting <i class="bi bi-box-arrow-up-right pub-link-icon"></i></a></h4>
+        <h4 class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3589270" target="_blank" rel="noopener noreferrer">LightCTS: A Lightweight Framework for Correlated Time Series Forecasting <i class="bi bi-box-arrow-up-right pub-link-icon"></i></a></h4>
         <p class="pub-authors">
           <span class="pub-me">Zhichen Lai</span>, Dalin Zhang, Huan Li, Christian S. Jensen, Hua Lu, Yan Zhao
         </p>
@@ -362,8 +332,8 @@
 
     <!-- Google Scholar Link -->
     <div class="pub-scholar" data-aos="fade-up" data-aos-delay="350">
-      <a href="https://scholar.google.com/citations?user=aHrrknoAAAAJ" target="_blank" class="pub-scholar-btn">
-        <svg class="pub-scholar-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+      <a href="https://scholar.google.com/citations?user=aHrrknoAAAAJ" target="_blank" rel="noopener noreferrer" class="pub-scholar-btn">
+        <svg class="pub-scholar-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false">
           <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
         </svg>
         View Full Publication List on Google Scholar
@@ -373,305 +343,12 @@
 
   </div>
 
-  <style>
-/* ── DIG Motto ── */
-.dig-motto {
-  margin-top: 20px;
-  padding: 14px 18px;
-  border-left: 3px solid #499BD8;
-  background: rgba(73, 155, 216, 0.04);
-  border-radius: 0 10px 10px 0;
-}
-.dig-motto-text {
-  font-size: 15px;
-  font-weight: 700;
-  color: #2d2d2d;
-  font-family: 'Georgia', 'Times New Roman', serif;
-  font-style: italic;
-  letter-spacing: 0.02em;
-  margin: 0 0 2px 0;
-  line-height: 1.3;
-}
-.dig-motto-attr {
-  font-size: 11px;
-  font-weight: 600;
-  color: #999;
-  margin: 0;
-  letter-spacing: 0.03em;
-}
-    
-    /* ── Section Subtitle ── */
-    .pub-subtitle {
-      text-align: center;
-      color: #888;
-      font-size: 15px;
-      margin-top: 6px;
-      letter-spacing: 0.01em;
-    }
-
-    /* ── Publication Card ── */
-    .pub-card {
-      display: flex;
-      align-items: stretch;
-      gap: 0;
-      background: #fff;
-      border: 1px solid rgba(0, 0, 0, 0.06);
-      border-radius: 14px;
-      margin-bottom: 16px;
-      transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-      overflow: hidden;
-      position: relative;
-    }
-    .pub-card::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 3px;
-      background: transparent;
-      border-radius: 14px 0 0 14px;
-      transition: background 0.3s ease;
-    }
-    .pub-card:hover {
-      border-color: rgba(73, 155, 216, 0.22);
-      box-shadow: 0 4px 20px rgba(73, 155, 216, 0.08);
-      transform: translateY(-2px);
-    }
-    .pub-card:hover::before {
-      background: #499BD8;
-    }
-
-    /* ── Top Row: Index + Badges on one line ── */
-    .pub-top-row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
-    }
-
-    /* ── Index Number (inline with badges) ── */
-    .pub-index {
-      flex-shrink: 0;
-      font-size: 13px;
-      font-weight: 700;
-      color: #c0c0c0;
-      font-family: 'Georgia', 'Times New Roman', serif;
-      font-style: italic;
-      transition: color 0.3s ease;
-      line-height: 1;
-    }
-    .pub-card:hover .pub-index {
-      color: rgba(73, 155, 216, 0.5);
-    }
-
-    /* ── Body ── */
-    .pub-body {
-      flex: 1;
-      min-width: 0;
-      padding: 18px 22px;
-    }
-
-    /* ── Badges ── */
-    .pub-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-    .pub-venue {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 700;
-      padding: 3px 10px;
-      border-radius: 6px;
-      background: #499BD8;
-      color: #fff;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-    }
-    .pub-tag {
-      display: inline-block;
-      font-size: 10px;
-      font-weight: 600;
-      padding: 3px 8px;
-      border-radius: 6px;
-      letter-spacing: 0.02em;
-    }
-    .pub-tag.oral {
-      background: rgba(234, 170, 0, 0.1);
-      color: #b38600;
-    }
-    .pub-tag.ccfa {
-      background: rgba(200, 40, 40, 0.08);
-      color: #b22;
-    }
-    .pub-tag.q1 {
-      background: rgba(45, 100, 200, 0.08);
-      color: #2d5ab0;
-    }
-
-    /* ── Title ── */
-    .pub-title {
-      font-size: 16px;
-      font-weight: 600;
-      color: #1a1a1a;
-      line-height: 1.45;
-      margin: 0 0 8px 0;
-    }
-    .pub-title a {
-      color: inherit;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    .pub-title a:hover {
-      color: #3a82b8;
-    }
-    .pub-link-icon {
-      font-size: 11px;
-      opacity: 0;
-      margin-left: 4px;
-      transition: opacity 0.3s ease, transform 0.3s ease;
-      display: inline-block;
-      transform: translateY(-1px);
-    }
-    .pub-card:hover .pub-link-icon {
-      opacity: 0.45;
-    }
-    .pub-title a:hover .pub-link-icon {
-      opacity: 1;
-      transform: translateY(-2px);
-    }
-    .pub-card:hover .pub-title a {
-      color: #3a82b8;
-    }
-
-    /* ── Authors ── */
-    .pub-authors {
-      font-size: 13.5px;
-      color: #777;
-      line-height: 1.5;
-      margin: 0;
-    }
-    .pub-me {
-      font-weight: 600;
-      color: #333;
-      position: relative;
-    }
-    .pub-me::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -1px;
-      height: 2px;
-      background: rgba(73, 155, 216, 0.3);
-      border-radius: 1px;
-    }
-
-    /* ── Year Column ── */
-    .pub-year-col {
-      flex-shrink: 0;
-      width: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-left: 1px solid rgba(0, 0, 0, 0.04);
-      background: rgba(0, 0, 0, 0.008);
-    }
-    .pub-year-num {
-      font-size: 13px;
-      font-weight: 700;
-      color: #bbb;
-      letter-spacing: 0.04em;
-      writing-mode: vertical-lr;
-      text-orientation: mixed;
-      transform: rotate(180deg);
-      font-family: 'Georgia', 'Times New Roman', serif;
-      transition: color 0.3s ease;
-    }
-    .pub-card:hover .pub-year-num {
-      color: rgba(73, 155, 216, 0.55);
-    }
-
-    /* ── Google Scholar CTA ── */
-    .pub-scholar {
-      text-align: center;
-      margin-top: 28px;
-    }
-    .pub-scholar-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 14px 32px;
-      border-radius: 50px;
-      background: #fff;
-      border: 1.5px solid rgba(73, 155, 216, 0.25);
-      color: #499BD8;
-      font-size: 14px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      letter-spacing: 0.01em;
-    }
-    .pub-scholar-btn:hover {
-      background: #499BD8;
-      border-color: #499BD8;
-      color: #fff;
-      box-shadow: 0 4px 16px rgba(73, 155, 216, 0.22);
-      transform: translateY(-2px);
-    }
-    .pub-scholar-icon {
-      flex-shrink: 0;
-    }
-    .pub-scholar-arrow {
-      font-size: 16px;
-      transition: transform 0.3s ease;
-    }
-    .pub-scholar-btn:hover .pub-scholar-arrow {
-      transform: translateX(4px);
-    }
-
-    /* ── Responsive ── */
-    @media (max-width: 768px) {
-      .pub-card {
-        flex-wrap: wrap;
-      }
-      .pub-year-col {
-        width: 100%;
-        border-left: none;
-        border-top: 1px solid rgba(0, 0, 0, 0.04);
-        padding: 8px 16px;
-        justify-content: flex-start;
-      }
-      .pub-year-num {
-        writing-mode: horizontal-tb;
-        transform: none;
-      }
-      .pub-title {
-        font-size: 15px;
-      }
-    }
-    @media (max-width: 576px) {
-      .pub-body {
-        padding: 14px 14px;
-      }
-      .pub-title {
-        font-size: 14px;
-      }
-      .pub-authors {
-        font-size: 12.5px;
-      }
-      .pub-top-row {
-        flex-wrap: wrap;
-      }
-    }
-  </style>
 
 </section>
 <!-- /Publications Section -->
 
 
-    <!-- Programs Section -->
+    <!-- Honors Section temporarily disabled
 <section id="programs" class="programs section">
  
   <div class="container section-title" data-aos="fade-up">
@@ -680,7 +357,6 @@
  
   <div class="container" data-aos="fade-up" data-aos-delay="100">
  
-    <!-- Program Card 1 -->
     <div class="prog-card" data-aos="fade-up" data-aos-delay="100">
       <div class="prog-body">
         <h4 class="prog-title">China's Ministry of Education Overseas Talent Program</h4>
@@ -688,7 +364,6 @@
       </div>
     </div>
  
-    <!-- Program Card 2 -->
     <div class="prog-card" data-aos="fade-up" data-aos-delay="200">
       <div class="prog-body">
         <h4 class="prog-title">Qishan Scholar Program (Overseas Talent Introduction), Fuzhou University</h4>
@@ -698,74 +373,14 @@
  
   </div>
  
-  <style>
-    .prog-card {
-      background: #fff;
-      border: 1px solid rgba(0, 0, 0, 0.06);
-      border-radius: 14px;
-      padding: 18px 20px;
-      margin-bottom: 14px;
-      transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    }
-    .prog-card:hover {
-      border-color: rgba(73, 155, 216, 0.14);
-      box-shadow: 0 2px 10px rgba(73, 155, 216, 0.06);
-    }
- 
-    .prog-body {
-      min-width: 0;
-    }
-    .prog-title {
-      font-size: 15px;
-      font-weight: 600;
-      color: #1a1a1a;
-      margin: 0 0 4px 0;
-      line-height: 1.4;
-    }
-    .prog-meta {
-      font-size: 13px;
-      color: #888;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      line-height: 1.5;
-      flex-wrap: wrap;
-    }
-    .prog-meta i {
-      font-size: 12px;
-    }
-    .prog-divider {
-      color: #b5b5b5;
-    }
- 
-    @media (max-width: 576px) {
-      .prog-card {
-        padding: 15px 16px;
-      }
-      .prog-title {
-        font-size: 14px;
-      }
-    }
-  </style>
  
 </section>
-<!-- /Programs/Projects Section -->
+End disabled Honors Section -->
  
 
 
     
     <!-- Organizations Section -->
-    <!-- ============================================================
-     Organizations Timeline Section
-     Replace your existing <section id="organizations"> ... </section>
-     with the code below.
-     ============================================================ -->
-<!-- ============================================================
-     Organizations Timeline Section — Two-Column Layout
-     Replace your existing <section id="organizations"> ... </section>
-     ============================================================ -->
-
 <section id="organizations" class="organizations section light-background">
   <div class="container section-title" data-aos="fade-up">
     <h2>Organizations</h2>
@@ -906,218 +521,9 @@
     </div>
   </div>
 
-  <style>
-    /* ── Two-Column Grid ── */
-    .tl-columns {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-    }
-    .tl-col {
-      min-width: 0;
-    }
-
-    /* ── Timeline Layout ── */
-    .timeline-wrap {
-      position: relative;
-      padding: 0 4px;
-    }
-    .timeline-wrap::before {
-      content: '';
-      position: absolute;
-      left: 15px;
-      top: 32px;
-      bottom: 32px;
-      width: 2px;
-      background: linear-gradient(
-        to bottom,
-        transparent,
-        rgba(var(--bs-primary-rgb, 45, 54, 64), 0.12) 8%,
-        rgba(var(--bs-primary-rgb, 45, 54, 64), 0.12) 92%,
-        transparent
-      );
-      border-radius: 1px;
-    }
-
-    /* ── Timeline Item ── */
-    .tl-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      margin-bottom: 18px;
-      position: relative;
-    }
-    .tl-item:last-child {
-      margin-bottom: 0;
-    }
-
-    /* ── Dot Column ── */
-    .tl-dot-col {
-      flex-shrink: 0;
-      width: 12px;
-      display: flex;
-      justify-content: center;
-      padding-top: 24px;
-      z-index: 2;
-    }
-    .tl-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: #fff;
-      border: 2.5px solid #b0b0b0;
-      transition: all 0.35s ease;
-    }
-    .tl-item:hover .tl-dot {
-      border-color: #149268;
-      background: #149268;
-      box-shadow: 0 0 0 5px rgba(20, 146, 104, 0.1);
-    }
-    .tl-item.current .tl-dot {
-      border-color: #149268;
-      background: #149268;
-      box-shadow: 0 0 0 5px rgba(20, 146, 104, 0.12);
-    }
-
-    /* ── Card ── */
-    .tl-card {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      background: #fff;
-      border: 1px solid rgba(0, 0, 0, 0.06);
-      border-radius: 12px;
-      padding: 14px 16px;
-      transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-    }
-    .tl-card:hover {
-      border-color: rgba(0, 0, 0, 0.12);
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-      transform: translateX(3px);
-    }
-    .tl-item.current .tl-card {
-      border-color: rgba(20, 146, 104, 0.25);
-    }
-    .tl-item.current .tl-card:hover {
-      border-color: rgba(20, 146, 104, 0.4);
-      box-shadow: 0 2px 16px rgba(20, 146, 104, 0.08);
-    }
-
-    /* ── Logo ── */
-    .tl-logo {
-      flex-shrink: 0;
-      width: 48px;
-      height: 48px;
-      border-radius: 10px;
-      background: #f7f7f5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 6px;
-      overflow: hidden;
-      transition: background 0.3s ease;
-    }
-    .tl-logo:hover {
-      background: #efefec;
-    }
-    .tl-logo img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-      filter: grayscale(15%);
-      transition: filter 0.3s ease;
-    }
-    .tl-card:hover .tl-logo img {
-      filter: grayscale(0%);
-    }
-
-    /* ── Text ── */
-    .tl-info {
-      flex: 1;
-      min-width: 0;
-    }
-    .tl-school {
-      font-size: 14px;
-      font-weight: 600;
-      color: #2d2d2d;
-      line-height: 1.35;
-      margin-bottom: 2px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-    .tl-school a {
-      color: inherit;
-      text-decoration: none;
-      transition: color 0.25s ease;
-    }
-    .tl-school a:hover {
-      color: #149268;
-    }
-    .tl-role {
-      font-size: 12px;
-      color: #777;
-      line-height: 1.4;
-    }
-    .tl-meta {
-      flex-shrink: 0;
-      text-align: right;
-    }
-    .tl-year {
-      font-size: 12px;
-      font-weight: 600;
-      color: #999;
-      letter-spacing: 0.01em;
-      white-space: nowrap;
-    }
-    .tl-badge {
-      display: inline-block;
-      margin-top: 4px;
-      font-size: 10px;
-      font-weight: 600;
-      padding: 2px 8px;
-      border-radius: 20px;
-      background: rgba(20, 146, 104, 0.08);
-      color: #0e7a54;
-      letter-spacing: 0.02em;
-    }
-
-    /* ── Responsive: stack on mobile ── */
-    @media (max-width: 768px) {
-      .tl-columns {
-        grid-template-columns: 1fr;
-        gap: 0;
-      }
-      .tl-col:first-child .tl-item:last-child {
-        margin-bottom: 18px;
-      }
-      .tl-school {
-        white-space: normal;
-      }
-    }
-    @media (max-width: 576px) {
-      .tl-card {
-        flex-wrap: wrap;
-        gap: 10px;
-        padding: 12px 14px;
-      }
-      .tl-logo {
-        width: 40px;
-        height: 40px;
-        padding: 5px;
-      }
-      .tl-meta {
-        width: 100%;
-        text-align: left;
-        padding-left: 54px;
-        margin-top: -4px;
-      }
-    }
-  </style>
 </section>
     <!-- /Organizations Section -->
-<!-- Recruitment Section -->
+<!-- Prospective Students section temporarily disabled
 <section id="recruitment" class="recruitment section light-background">
 
   <div class="container section-title" data-aos="fade-up">
@@ -1126,16 +532,13 @@
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <!-- 开场 -->
     <div class="recruit-welcome" data-aos="fade-up" data-aos-delay="120">
       <p>I welcome inquiries from <strong>prospective master's students</strong> and <strong>first- or second-year undergraduate students interested in research</strong>.</p>
       <p>❗️ <strong>Master's capacity for 2026 is currently full.</strong></p>
     </div>
 
-    <!-- 双栏：你 & 我 -->
     <div class="recruit-duo" data-aos="fade-up" data-aos-delay="200">
 
-      <!-- 左栏：对你的期待 -->
       <div class="recruit-col">
         <div class="recruit-col-label">What I Value</div>
         <ul class="recruit-list">
@@ -1159,7 +562,6 @@
         <div class="recruit-aside">You do not need to be strong in every dimension. <strong>Commitment, consistency, and growth</strong> matter more than a polished CV.</div>
       </div>
 
-      <!-- 右栏：我能提供的 -->
       <div class="recruit-col">
         <div class="recruit-col-label">What You Can Expect</div>
         <ul class="recruit-list">
@@ -1188,121 +590,9 @@
 
   </div>
 
-  <style>
-    /* ── Welcome ── */
-    .recruit-welcome {
-      text-align: center;
-      margin-bottom: 24px;
-    }
-    .recruit-welcome p {
-      font-size: 14px;
-      color: #555;
-      line-height: 1.7;
-      margin: 0;
-    }
-    .recruit-welcome strong {
-      color: #3a82b8;
-    }
-
-    /* ── Duo Layout ── */
-    .recruit-duo {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-
-    .recruit-col {
-      background: #fff;
-      border: 1px solid rgba(0, 0, 0, 0.06);
-      border-radius: 12px;
-      padding: 20px 22px;
-      transition: box-shadow 0.3s ease;
-    }
-    .recruit-col:hover {
-      box-shadow: 0 4px 18px rgba(73, 155, 216, 0.08);
-    }
-
-    .recruit-col-label {
-      display: inline-block;
-      font-size: 13px;
-      font-weight: 700;
-      color: #499BD8;
-      padding: 3px 12px;
-      background: rgba(73, 155, 216, 0.07);
-      border-radius: 20px;
-      margin-bottom: 14px;
-      letter-spacing: 0.5px;
-    }
-
-    /* ── List ── */
-    .recruit-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .recruit-list li {
-      font-size: 13px;
-      color: #555;
-      line-height: 1.6;
-      padding: 7px 0;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.03);
-    }
-    .recruit-list li:last-child {
-      border-bottom: none;
-    }
-    .recruit-keyword {
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 700;
-      color: #3a82b8;
-      background: rgba(73, 155, 216, 0.06);
-      padding: 1px 8px;
-      border-radius: 4px;
-      margin-right: 6px;
-      vertical-align: baseline;
-    }
-
-    /* ── Aside Note ── */
-    .recruit-aside {
-      margin-top: 12px;
-      padding: 8px 12px;
-      background: rgba(73, 155, 216, 0.04);
-      border-radius: 6px;
-      font-size: 12px;
-      color: #666;
-      line-height: 1.5;
-    }
-    .recruit-aside strong {
-      color: #3a82b8;
-    }
-
-    /* ── Footer ── */
-    .recruit-footer {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .recruit-footer p {
-      font-size: 13px;
-      color: #888;
-      font-style: italic;
-      margin: 0;
-    }
-
-    /* ── Responsive ── */
-    @media (max-width: 768px) {
-      .recruit-duo {
-        grid-template-columns: 1fr;
-      }
-    }
-    @media (max-width: 576px) {
-      .recruit-col {
-        padding: 16px;
-      }
-    }
-  </style>
 
 </section>
-<!-- /Recruitment Section -->
+End disabled Prospective Students section -->
 
   
 <!-- Contact Section -->
@@ -1323,97 +613,13 @@
         <div class="contact-summary">
           <div class="contact-summary-item">
             <h4>Office</h4>
-            <p>Room 302, Building No. 2, College of Computer Science and Big Data, Fuzhou University, Minhou, Fuzhou, Fujian, China</p>
+            <p>Room 302, Building No. 2, College of Computer and Data Science, Fuzhou University, Minhou, Fuzhou, Fujian, China</p>
           </div>
         </div>
       </div>
     </article>
   </div>
 
-  <style>
-    .contact-compact-shell {
-      padding: 16px 18px;
-      border-radius: 16px;
-      border: 1px solid rgba(73, 155, 216, 0.18);
-      background: linear-gradient(160deg, rgba(73, 155, 216, 0.08), rgba(73, 155, 216, 0.02));
-    }
-    .contact-compact-head {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 14px;
-      margin-bottom: 10px;
-    }
-    .contact-kicker {
-      margin: 0 0 6px 0;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #499BD8;
-    }
-    .contact-compact-head h3 {
-      margin: 0;
-      font-size: 22px;
-      line-height: 1.2;
-      color: #2d2d2d;
-    }
-    .contact-compact-head h3 span {
-      color: #9aa8b5;
-    }
-    .contact-primary-note {
-      margin: 6px 0 0 0;
-      font-size: 12px;
-      line-height: 1.45;
-      color: #7a7a7a;
-    }
-    .contact-summary {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 8px;
-      min-width: min(320px, 100%);
-      padding-left: 16px;
-      border-left: 1px solid rgba(0, 0, 0, 0.06);
-    }
-    .contact-summary-item h4 {
-      margin: 0 0 6px 0;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #499BD8;
-    }
-    .contact-summary-item p {
-      margin: 0;
-      color: #666;
-      line-height: 1.45;
-      font-size: 13px;
-    }
-    @media (max-width: 991px) {
-      .contact-compact-head {
-        flex-direction: column;
-      }
-      .contact-summary {
-        min-width: 0;
-        width: 100%;
-        padding-left: 0;
-        padding-top: 10px;
-        border-left: 0;
-        border-top: 1px solid rgba(0, 0, 0, 0.06);
-      }
-    }
-    @media (max-width: 576px) {
-      .contact-compact-shell {
-        padding: 14px 16px;
-      }
-      .contact-compact-head {
-        margin-bottom: 10px;
-      }
-      .contact-compact-head h3 {
-        font-size: 19px;
-      }
-    }
-  </style>
 </section><!-- /Contact Section -->
   </main>
 
@@ -1432,7 +638,7 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Back to top"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
