@@ -40,6 +40,9 @@ section,
 
 .header .profile-img img {
   width: 104px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
   margin: 8px auto 14px;
   border-width: 3px;
 }
@@ -127,6 +130,11 @@ a:focus-visible {
 .about .content {
   max-width: 960px;
   margin-inline: auto;
+}
+
+.publications > .container,
+.organizations > .container {
+  max-width: 984px;
 }
 
 .about .content p {
