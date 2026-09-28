@@ -27,7 +27,7 @@
   /**
    * Hide mobile nav on same-page/hash links
    */
-  document.querySelectorAll('#navmenu a').forEach(navmenu => {
+  document.querySelectorAll('#navmenu a, .profile-links a[href^="#"]').forEach(navmenu => {
     navmenu.addEventListener('click', () => {
       if (document.querySelector('.header-show')) {
         headerToggle();

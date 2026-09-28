@@ -421,8 +421,39 @@
 
 /* Keep the portrait beside the biography on medium-width screens. */
 @media (min-width: 641px) and (max-width: 991px) {
-  .about-layout { grid-template-columns: 160px minmax(0, 1fr); gap: 26px; }
+  .about-layout { grid-template-columns: 190px minmax(0, 1fr); gap: 26px; }
   .about-profile { display: block; padding-bottom: 0; border-bottom: 0; }
   .about-profile-details { padding-top: 14px; }
   .about-profile-details h3 span { display: block; }
 }
+
+/* One affiliation block in the sidebar; a separate photo accompanies About. */
+.header .profile-img img { width: 96px; margin: 4px auto 12px; }
+.header .profile-meta { padding: 0 4px 14px; margin-bottom: 10px; }
+.header .profile-meta .profile-title { font-size: 12px; line-height: 1.5; margin-bottom: 4px; }
+.header .profile-meta .profile-university { color: #fff; font-weight: 600; font-size: 13px; margin-bottom: 4px; }
+.header .profile-meta .profile-department,
+.header .profile-meta .profile-lab { font-size: 11px; line-height: 1.55; color: #bec9d3; }
+.header .profile-meta .profile-lab { margin-top: 7px; margin-bottom: 8px; }
+.header .profile-meta .profile-email { font-size: 11px; color: #bec9d3; margin-bottom: 8px; }
+.header .profile-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 17px; }
+.header .profile-links a { color: #b6d7ed; font-size: 11px; font-weight: 500; text-underline-offset: 3px; }
+.header .profile-links a:hover { color: #fff; text-decoration: underline; }
+.header .profile-links i { font-size: 9px; }
+.header .profile-links a:focus-visible { outline-color: #9ac6e1; }
+.about-profile { display: block; margin: 0; padding: 0; border: 0; }
+.about-profile .about-portrait { width: 100%; height: auto; }
+@media (max-width: 640px) {
+  .about-profile { width: min(100%, 220px); margin-inline: auto; }
+}
+
+/* Larger portrait and a clearer separation of sidebar affiliations. */
+@media (min-width: 992px) {
+  .about-layout { grid-template-columns: 250px minmax(0, 1fr); gap: 32px; }
+}
+.header .profile-affiliations { margin: 11px 0 10px; }
+.header .profile-meta .profile-title { color: #e9f0f5; font-weight: 500; }
+.header .profile-meta .profile-university { font-size: 14px; font-weight: 600; }
+.header .profile-meta .profile-department { margin: 0 0 6px; }
+.header .profile-meta .profile-lab { margin: 0; font-size: 10.5px; line-height: 1.6; color: #b3bfca; }
+.header .profile-meta .profile-email { margin-bottom: 10px; }
