@@ -24,65 +24,76 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&amp;family=Poppins:wght@400;500;600;700&amp;family=Raleway:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/sections.css" rel="stylesheet">
+  <link href="assets/css/compact-lists.css" rel="stylesheet">
+
 </head>
 
 <body class="index-page">
 
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <button type="button" class="header-toggle d-xl-none" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navmenu">
+      <i class="bi bi-list" aria-hidden="true"></i>
+    </button>
 
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+      <img src="assets/img/my-profile-img.webp" alt="Portrait of Zhichen Lai" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Zhichen Lai 赖志宸</h1>
+      <h1 class="sitename">Zhichen Lai <span lang="zh-CN">赖志宸</span></h1>
     </a>
 
-    <div class="profile-meta" aria-label="Profile details">
+    <div class="profile-meta" role="group" aria-label="Profile details">
       <p class="profile-title">Associate Research Professor</p>
-      <p>College of Computer Science and Big Data, Fuzhou University</p>
+      <p>College of Computer and Data Science, Fuzhou University</p>
       <p>zhla ατ cs.aau.dk</p>
     </div>
 
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#skills"><i class="bi bi-images navicon"></i> Research Areas</a></li>
-        <li><a href="#publications"><i class="bi bi-hdd-stack navicon"></i>Publications</a></li>
-        <li><a href="#programs"><i class="bi bi-clipboard-data navicon"></i>Honors</a></li>
-        <li><a href="#organizations"><i class="bi bi-file-earmark-text navicon"></i>Organizations</a></li>
-        <li><a href="#recruitment"><i class="bi bi-envelope navicon"></i> Recruitment</a></li>
+        <li><a href="#hero" class="active" aria-current="page"><i class="bi bi-house navicon" aria-hidden="true"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon" aria-hidden="true"></i> About</a></li>
+        <li><a href="#publications"><i class="bi bi-journal-text navicon" aria-hidden="true"></i>Publications</a></li>
+        <li><a href="#projects"><i class="bi bi-award navicon" aria-hidden="true"></i>Projects &amp; Awards</a></li>
+        <!-- <li><a href="#programs"><i class="bi bi-clipboard-data navicon"></i>Honors</a></li> -->
+        <li><a href="#organizations"><i class="bi bi-briefcase navicon" aria-hidden="true"></i>Experience</a></li>
+        <li><a href="#recruitment"><i class="bi bi-mortarboard navicon" aria-hidden="true"></i> Recruitment</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope-at navicon" aria-hidden="true"></i>Contact</a></li>
       </ul>
     </nav>
 
   </header>
 
-  <main class="main">
+  <main id="main-content" class="main" tabindex="-1">
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+      <img src="assets/img/hero-bg.webp" alt="" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Zhichen Lai 赖志宸</h2>
-        <p>I'm a <span class="typed" data-typed-items="Researcher., Data Enthusiast., Collaborator., Lifelong Learner., Cross-Disciplinary Thinker.">Researcher.</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <h2>Zhichen Lai <span lang="zh-CN">赖志宸</span></h2>
+        <p class="hero-research"><span class="research-prefix">Research in</span>
+          <span class="typed-stage">
+            <span class="typed-measure" aria-hidden="true"><span>Spatio-Temporal Data Mining</span><span>GeoAI</span><span>Efficient AI Systems</span><span>AI for Science and Health</span></span>
+            <span class="typed-live"><span class="typed" data-typed-items="Spatio-Temporal Data Mining, GeoAI, Efficient AI Systems, AI for Science and Health">Spatio-Temporal Data Mining</span></span>
+          </span>
+        </p>
       </div>
 
     </section><!-- /Hero Section -->
@@ -97,40 +108,48 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="Portrait of Zhichen Lai">
-          </div>
-          <div class="col-lg-8 content">
-            <p class="py-3">
-              I am an <strong>Associate Research Professor</strong> in the
-              <strong>College of Computer Science and Big Data, Fuzhou University</strong>, China. I am also a member
-              of the <strong>Fujian Key Laboratory of Network Computing and Intelligent Information Processing</strong>,
-              where I work closely with
-              <a href="https://ccds.fzu.edu.cn/info/1207/8294.htm" target="_blank" rel="noopener noreferrer">Prof.
-                Xing Chen</a> under his mentorship. I was selected for
-              <strong>China's Ministry of Education Overseas Talent Program (教育部海外引才计划)</strong> in 2025. I currently
-              lead the <strong>Data Intelligence and Interdisciplinary Information Group
-              (DIG@FZU)</strong>.
+        <div class="about-layout">
+          <aside class="about-profile" aria-label="Profile">
+            <img class="about-portrait" src="assets/img/my-profile-img.webp" alt="Portrait of Zhichen Lai" loading="lazy">
+            <div class="about-profile-details">
+              <h3>Zhichen Lai <span lang="zh-CN">赖志宸</span></h3>
+              <p class="about-profile-role">Associate Research Professor</p>
+              <p class="about-profile-university">Fuzhou University</p>
+              <p class="about-profile-department">College of Computer and Data Science</p>
+              <p class="about-profile-department about-profile-lab">Fujian Key Laboratory of Network Computing and Intelligent Information Processing</p>
+              <a href="https://scholar.google.com/citations?user=aHrrknoAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+              <a href="#contact">Contact <i class="bi bi-arrow-down" aria-hidden="true"></i></a>
+            </div>
+          </aside>
+          <div class="content">
+            <p class="mb-3">
+              Born in Fuzhou, <span class="country-name">China <span class="country-flag" aria-hidden="true">🇨🇳</span></span>, I’m now back in my hometown after studying in <span class="country-name">Denmark <span class="country-flag" aria-hidden="true">🇩🇰</span></span>.
+              I'm now an <strong>Associate Research Professor</strong> at
+              Fuzhou University's College of Computer and Data Science.
+              I lead the <strong>Data Intelligence and Interdisciplinary Information Group (DIG@FZU)</strong>.
+              I'm also a member of the Fujian Key Laboratory of Network Computing and Intelligent Information Processing,
+              mentored by
+              Professor <a href="https://ccds.fzu.edu.cn/info/1207/8294.htm" target="_blank" rel="noopener noreferrer">Xing Chen</a>.
             </p>
-            <p class="py-1">
-              I received my <strong>Ph.D. in Computer Science</strong> from
-              <strong>Aalborg University (AAU)</strong>, Denmark, in early 2025, where I also served as a
-              <strong>Research Fellow</strong>. At AAU, I was advised by MAE and ACM/IEEE Fellow Professor
-              <a href="https://csj.cs.aau.dk/" target="_blank" rel="noopener noreferrer">Christian S. Jensen</a>,
-              <a href="https://dalinzhang.github.io/" target="_blank" rel="noopener noreferrer">Dalin Zhang</a>,
-              <a href="https://mypage.zju.edu.cn/en/lihuan" target="_blank" rel="noopener noreferrer">Huan Li</a>,
-              and
-              <a href="https://homes.cs.aau.dk/~luhua" target="_blank" rel="noopener noreferrer">Hua Lu</a>.
+            <p class="mb-3">
+              I study <strong>time series and spatio-temporal data</strong>. I develop efficient methods for learning
+              from incomplete, interconnected, and changing data. My broader interests include
+              <strong>GeoAI</strong> and <strong>AI for science and health</strong>.
             </p>
-            <p class="py-1">
-              I was also a <strong>Junior Visiting Research Fellow</strong> at the
-              <strong>University of New South Wales (UNSW)</strong> in 2024. I received my
-              <strong>M.S. in Computer Science</strong> from <strong>Sichuan University (SCU)</strong> in 2021 under
-              the supervision of
-              <a href="https://cs.scu.edu.cn/info/1303/13767.htm" target="_blank" rel="noopener noreferrer">Prof.
-                Jiancheng Lv</a>, and my <strong>B.S. in Computer Science</strong> from the
-              <strong>University of Electronic Science and Technology of China (UESTC)</strong> in 2018.
+            <p class="mb-3">
+              I earned my B.S. in Computer Science from the University of Electronic Science and Technology of China
+              in 2018, then my M.S. in Computer Science from Sichuan University in 2021, advised by
+              Professor <a href="https://cs.scu.edu.cn/info/1303/13767.htm" target="_blank" rel="noopener noreferrer">Jiancheng Lv</a>.
+              I moved to Denmark for my Ph.D. in Computer Science at Aalborg University, completed in early 2025
+              under Professors <a href="https://csj.cs.aau.dk/" target="_blank" rel="noopener noreferrer">Christian S. Jensen</a>
+              (Member of Academia Europaea, ACM Fellow, and IEEE Fellow),
+              <a href="https://dalinzhang.github.io/" target="_blank" rel="noopener noreferrer">Dalin Zhang</a>, and
+              <a href="https://mypage.zju.edu.cn/en/lihuan" target="_blank" rel="noopener noreferrer">Huan Li</a>.
+              I also served as a Research Fellow with
+              Professor <a href="https://homes.cs.aau.dk/~luhua" target="_blank" rel="noopener noreferrer">Hua Lu</a>
+              and, in 2024, a Junior Visiting Research Fellow at the University of New South Wales with
+              Professors <a href="https://www.linayao.com/" target="_blank" rel="noopener noreferrer">Lina Yao</a>
+              and <a href="https://donggong1.github.io/" target="_blank" rel="noopener noreferrer">Dong Gong</a>.
             </p>
           </div>
         </div>
@@ -140,121 +159,37 @@
     </section><!-- /About Section -->
 
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Research Areas</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="research-grid">
-          <article class="research-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="research-head">
-              <span class="research-kicker">01</span>
-              <h3>Spatio-Temporal Data Mining</h3>
-            </div>
-            <p>Representation learning, similarity modeling, retrieval, and prediction for trajectories, events, and other structured spatio-temporal data.</p>
-          </article>
-          <article class="research-card" data-aos="fade-up" data-aos-delay="150">
-            <div class="research-head">
-              <span class="research-kicker">02</span>
-              <h3>Geospatial Artificial Intelligence</h3>
-            </div>
-            <p>Data-driven methods for understanding geographic processes, human mobility, and place-based patterns across space and time.</p>
-          </article>
-          <article class="research-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="research-head">
-              <span class="research-kicker">03</span>
-              <h3>Efficient Deep Learning</h3>
-            </div>
-            <p>Resource-aware model design, training, and inference for deep learning systems that must be both effective and deployable.</p>
-          </article>
-          <article class="research-card" data-aos="fade-up" data-aos-delay="250">
-            <div class="research-head">
-              <span class="research-kicker">04</span>
-              <h3>AI for Scientific and Healthcare Applications</h3>
-            </div>
-            <p>Machine learning for scientific and healthcare data, including interdisciplinary applications in dental medicine and environmental systems.</p>
-          </article>
-        </div>
-
-      </div>
-
-      <style>
-        .research-grid {
-          display: grid;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 20px;
-        }
-        .research-card {
-          height: 100%;
-          background: #fff;
-          border: 1px solid rgba(0, 0, 0, 0.06);
-          border-radius: 14px;
-          padding: 22px 24px;
-          transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-        }
-        .research-card:hover {
-          border-color: rgba(73, 155, 216, 0.22);
-          box-shadow: 0 4px 20px rgba(73, 155, 216, 0.08);
-          transform: translateY(-2px);
-        }
-        .research-head {
-          display: flex;
-          align-items: baseline;
-          gap: 10px;
-          margin-bottom: 10px;
-        }
-        .research-kicker {
-          font-size: 12px;
-          font-weight: 700;
-          color: #499BD8;
-          letter-spacing: 0.08em;
-          flex-shrink: 0;
-        }
-        .research-card h3 {
-          font-size: 18px;
-          font-weight: 600;
-          color: #2d2d2d;
-          margin: 0;
-          line-height: 1.35;
-        }
-        .research-card p {
-          margin: 0;
-          font-size: 14px;
-          line-height: 1.7;
-          color: #666;
-        }
-        @media (max-width: 768px) {
-          .research-grid {
-            grid-template-columns: 1fr;
-          }
-        }
-        @media (max-width: 576px) {
-          .research-card {
-            padding: 18px;
-          }
-          .research-card h3 {
-            font-size: 16px;
-          }
-        }
-      </style>
-
-    </section><!-- /Skills Section -->
-
   <!-- Publications Section -->
-<section id="publications" class="publications section">
+<section id="publications" class="publications section light-background">
 
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Representative Publications</h2>
+  <div class="section-title" data-aos="fade-up">
+    <div class="container">
+      <h2>Representative Publications</h2>
+    </div>
   </div>
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <!-- Publication Card 1 -->
+    <!-- Publication Card 00 -->
+    <div class="pub-card" data-aos="fade-up" data-aos-delay="50">
+      <div class="pub-body">
+        <div class="pub-top-row">
+          <span class="pub-index">00</span>
+          <div class="pub-badges">
+            <span class="pub-venue">IEEE TKDE 2026</span>
+            <span class="pub-tag ccfa">CCF-A</span>
+            <span class="pub-tag q1">CAS Q1</span>
+            <span class="pub-tag q1">JCR Q1</span>
+          </div>
+        </div>
+        <h3 class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/11626553/" target="_blank" rel="noopener noreferrer">Impute On-Demand: Adaptive Correlated Time Series Imputation for Changing Environments <i class="bi bi-box-arrow-up-right pub-link-icon" aria-hidden="true"></i></a></h3>
+        <p class="pub-authors">
+          <span class="pub-me">Zhichen Lai</span>, Huan Li, Dalin Zhang, Dong Gong, Lina Yao, Christian S. Jensen
+        </p>
+      </div>
+    </div>
+
+    <!-- Publication Card 01 -->
     <div class="pub-card" data-aos="fade-up" data-aos-delay="100">
       <div class="pub-body">
         <div class="pub-top-row">
@@ -265,39 +200,33 @@
             <span class="pub-tag ccfa">CCF-A</span>
           </div>
         </div>
-        <h4 class="pub-title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/38526" target="_blank" rel="noopener noreferrer">MovSemCL: Movement-Semantics Contrastive Learning for Trajectory Similarity <i class="bi bi-box-arrow-up-right pub-link-icon"></i></a></h4>
+        <h3 class="pub-title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/38526" target="_blank" rel="noopener noreferrer">MovSemCL: Movement-Semantics Contrastive Learning for Trajectory Similarity <i class="bi bi-box-arrow-up-right pub-link-icon" aria-hidden="true"></i></a></h3>
         <p class="pub-authors">
           <span class="pub-me">Zhichen Lai</span>, Hua Lu, Huan Li, Jialiang Li, Christian S. Jensen
         </p>
       </div>
-      <div class="pub-year-col">
-        <span class="pub-year-num">2026</span>
-      </div>
     </div>
 
-    <!-- Publication Card 2 -->
+    <!-- Publication Card 02 -->
     <div class="pub-card" data-aos="fade-up" data-aos-delay="150">
       <div class="pub-body">
         <div class="pub-top-row">
           <span class="pub-index">02</span>
           <div class="pub-badges">
-            <span class="pub-venue">IEEE TKDE</span>
+            <span class="pub-venue">IEEE TKDE 2025</span>
             <span class="pub-tag ccfa">CCF-A</span>
             <span class="pub-tag q1">CAS Q1</span>
             <span class="pub-tag q1">JCR Q1</span>
           </div>
         </div>
-        <h4 class="pub-title"><a href="https://ieeexplore.ieee.org/document/10589286" target="_blank">Lightweight Correlated Time Series Forecasting Enhanced with Model Distillation <i class="bi bi-box-arrow-up-right pub-link-icon"></i></a></h4>
+        <h3 class="pub-title"><a href="https://ieeexplore.ieee.org/document/10589286" target="_blank" rel="noopener noreferrer">Lightweight Correlated Time Series Forecasting Enhanced with Model Distillation <i class="bi bi-box-arrow-up-right pub-link-icon" aria-hidden="true"></i></a></h3>
         <p class="pub-authors">
           <span class="pub-me">Zhichen Lai</span>, Dalin Zhang, Huan Li, Christian S. Jensen, Hua Lu, Yan Zhao
         </p>
       </div>
-      <div class="pub-year-col">
-        <span class="pub-year-num">2025</span>
-      </div>
     </div>
 
-    <!-- Publication Card 3 -->
+    <!-- Publication Card 03 -->
     <div class="pub-card" data-aos="fade-up" data-aos-delay="200">
       <div class="pub-body">
         <div class="pub-top-row">
@@ -308,17 +237,14 @@
             <span class="pub-tag ccfa">CCF-A</span>
           </div>
         </div>
-        <h4 class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3637528.3671816" target="_blank">ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions <i class="bi bi-box-arrow-up-right pub-link-icon"></i></a></h4>
+        <h3 class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3637528.3671816" target="_blank" rel="noopener noreferrer">ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions <i class="bi bi-box-arrow-up-right pub-link-icon" aria-hidden="true"></i></a></h3>
         <p class="pub-authors">
           <span class="pub-me">Zhichen Lai</span>, Dalin Zhang, Huan Li, Dongxiang Zhang, Hua Lu, Christian S. Jensen
         </p>
       </div>
-      <div class="pub-year-col">
-        <span class="pub-year-num">2024</span>
-      </div>
     </div>
 
-    <!-- Publication Card 4 -->
+    <!-- Publication Card 04 -->
     <div class="pub-card" data-aos="fade-up" data-aos-delay="250">
       <div class="pub-body">
         <div class="pub-top-row">
@@ -329,17 +255,14 @@
             <span class="pub-tag ccfa">CCF-A</span>
           </div>
         </div>
-        <h4 class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3589334.3645593" target="_blank">E2USD: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series <i class="bi bi-box-arrow-up-right pub-link-icon"></i></a></h4>
+        <h3 class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3589334.3645593" target="_blank" rel="noopener noreferrer">E2USD: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series <i class="bi bi-box-arrow-up-right pub-link-icon" aria-hidden="true"></i></a></h3>
         <p class="pub-authors">
           <span class="pub-me">Zhichen Lai</span>, Huan Li, Dalin Zhang, Yan Zhao, Weizhu Qian, Christian S. Jensen
         </p>
       </div>
-      <div class="pub-year-col">
-        <span class="pub-year-num">2024</span>
-      </div>
     </div>
 
-    <!-- Publication Card 5 -->
+    <!-- Publication Card 05 -->
     <div class="pub-card" data-aos="fade-up" data-aos-delay="300">
       <div class="pub-body">
         <div class="pub-top-row">
@@ -350,328 +273,137 @@
             <span class="pub-tag ccfa">CCF-A</span>
           </div>
         </div>
-        <h4 class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3589270" target="_blank">LightCTS: A Lightweight Framework for Correlated Time Series Forecasting <i class="bi bi-box-arrow-up-right pub-link-icon"></i></a></h4>
+        <h3 class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3589270" target="_blank" rel="noopener noreferrer">LightCTS: A Lightweight Framework for Correlated Time Series Forecasting <i class="bi bi-box-arrow-up-right pub-link-icon" aria-hidden="true"></i></a></h3>
         <p class="pub-authors">
           <span class="pub-me">Zhichen Lai</span>, Dalin Zhang, Huan Li, Christian S. Jensen, Hua Lu, Yan Zhao
         </p>
-      </div>
-      <div class="pub-year-col">
-        <span class="pub-year-num">2023</span>
       </div>
     </div>
 
     <!-- Google Scholar Link -->
     <div class="pub-scholar" data-aos="fade-up" data-aos-delay="350">
-      <a href="https://scholar.google.com/citations?user=aHrrknoAAAAJ" target="_blank" class="pub-scholar-btn">
-        <svg class="pub-scholar-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+      <a href="https://scholar.google.com/citations?user=aHrrknoAAAAJ" target="_blank" rel="noopener noreferrer" class="pub-scholar-btn">
+        <svg class="pub-scholar-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false">
           <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
         </svg>
         View Full Publication List on Google Scholar
-        <i class="bi bi-arrow-right pub-scholar-arrow"></i>
+        <i class="bi bi-arrow-right pub-scholar-arrow" aria-hidden="true"></i>
       </a>
     </div>
 
   </div>
 
-  <style>
-/* ── DIG Motto ── */
-.dig-motto {
-  margin-top: 20px;
-  padding: 14px 18px;
-  border-left: 3px solid #499BD8;
-  background: rgba(73, 155, 216, 0.04);
-  border-radius: 0 10px 10px 0;
-}
-.dig-motto-text {
-  font-size: 15px;
-  font-weight: 700;
-  color: #2d2d2d;
-  font-family: 'Georgia', 'Times New Roman', serif;
-  font-style: italic;
-  letter-spacing: 0.02em;
-  margin: 0 0 2px 0;
-  line-height: 1.3;
-}
-.dig-motto-attr {
-  font-size: 11px;
-  font-weight: 600;
-  color: #999;
-  margin: 0;
-  letter-spacing: 0.03em;
-}
-    
-    /* ── Section Subtitle ── */
-    .pub-subtitle {
-      text-align: center;
-      color: #888;
-      font-size: 15px;
-      margin-top: 6px;
-      letter-spacing: 0.01em;
-    }
-
-    /* ── Publication Card ── */
-    .pub-card {
-      display: flex;
-      align-items: stretch;
-      gap: 0;
-      background: #fff;
-      border: 1px solid rgba(0, 0, 0, 0.06);
-      border-radius: 14px;
-      margin-bottom: 16px;
-      transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-      overflow: hidden;
-      position: relative;
-    }
-    .pub-card::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 3px;
-      background: transparent;
-      border-radius: 14px 0 0 14px;
-      transition: background 0.3s ease;
-    }
-    .pub-card:hover {
-      border-color: rgba(73, 155, 216, 0.22);
-      box-shadow: 0 4px 20px rgba(73, 155, 216, 0.08);
-      transform: translateY(-2px);
-    }
-    .pub-card:hover::before {
-      background: #499BD8;
-    }
-
-    /* ── Top Row: Index + Badges on one line ── */
-    .pub-top-row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
-    }
-
-    /* ── Index Number (inline with badges) ── */
-    .pub-index {
-      flex-shrink: 0;
-      font-size: 13px;
-      font-weight: 700;
-      color: #c0c0c0;
-      font-family: 'Georgia', 'Times New Roman', serif;
-      font-style: italic;
-      transition: color 0.3s ease;
-      line-height: 1;
-    }
-    .pub-card:hover .pub-index {
-      color: rgba(73, 155, 216, 0.5);
-    }
-
-    /* ── Body ── */
-    .pub-body {
-      flex: 1;
-      min-width: 0;
-      padding: 18px 22px;
-    }
-
-    /* ── Badges ── */
-    .pub-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-    .pub-venue {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 700;
-      padding: 3px 10px;
-      border-radius: 6px;
-      background: #499BD8;
-      color: #fff;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-    }
-    .pub-tag {
-      display: inline-block;
-      font-size: 10px;
-      font-weight: 600;
-      padding: 3px 8px;
-      border-radius: 6px;
-      letter-spacing: 0.02em;
-    }
-    .pub-tag.oral {
-      background: rgba(234, 170, 0, 0.1);
-      color: #b38600;
-    }
-    .pub-tag.ccfa {
-      background: rgba(200, 40, 40, 0.08);
-      color: #b22;
-    }
-    .pub-tag.q1 {
-      background: rgba(45, 100, 200, 0.08);
-      color: #2d5ab0;
-    }
-
-    /* ── Title ── */
-    .pub-title {
-      font-size: 16px;
-      font-weight: 600;
-      color: #1a1a1a;
-      line-height: 1.45;
-      margin: 0 0 8px 0;
-    }
-    .pub-title a {
-      color: inherit;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    .pub-title a:hover {
-      color: #3a82b8;
-    }
-    .pub-link-icon {
-      font-size: 11px;
-      opacity: 0;
-      margin-left: 4px;
-      transition: opacity 0.3s ease, transform 0.3s ease;
-      display: inline-block;
-      transform: translateY(-1px);
-    }
-    .pub-card:hover .pub-link-icon {
-      opacity: 0.45;
-    }
-    .pub-title a:hover .pub-link-icon {
-      opacity: 1;
-      transform: translateY(-2px);
-    }
-    .pub-card:hover .pub-title a {
-      color: #3a82b8;
-    }
-
-    /* ── Authors ── */
-    .pub-authors {
-      font-size: 13.5px;
-      color: #777;
-      line-height: 1.5;
-      margin: 0;
-    }
-    .pub-me {
-      font-weight: 600;
-      color: #333;
-      position: relative;
-    }
-    .pub-me::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -1px;
-      height: 2px;
-      background: rgba(73, 155, 216, 0.3);
-      border-radius: 1px;
-    }
-
-    /* ── Year Column ── */
-    .pub-year-col {
-      flex-shrink: 0;
-      width: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-left: 1px solid rgba(0, 0, 0, 0.04);
-      background: rgba(0, 0, 0, 0.008);
-    }
-    .pub-year-num {
-      font-size: 13px;
-      font-weight: 700;
-      color: #bbb;
-      letter-spacing: 0.04em;
-      writing-mode: vertical-lr;
-      text-orientation: mixed;
-      transform: rotate(180deg);
-      font-family: 'Georgia', 'Times New Roman', serif;
-      transition: color 0.3s ease;
-    }
-    .pub-card:hover .pub-year-num {
-      color: rgba(73, 155, 216, 0.55);
-    }
-
-    /* ── Google Scholar CTA ── */
-    .pub-scholar {
-      text-align: center;
-      margin-top: 28px;
-    }
-    .pub-scholar-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 14px 32px;
-      border-radius: 50px;
-      background: #fff;
-      border: 1.5px solid rgba(73, 155, 216, 0.25);
-      color: #499BD8;
-      font-size: 14px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      letter-spacing: 0.01em;
-    }
-    .pub-scholar-btn:hover {
-      background: #499BD8;
-      border-color: #499BD8;
-      color: #fff;
-      box-shadow: 0 4px 16px rgba(73, 155, 216, 0.22);
-      transform: translateY(-2px);
-    }
-    .pub-scholar-icon {
-      flex-shrink: 0;
-    }
-    .pub-scholar-arrow {
-      font-size: 16px;
-      transition: transform 0.3s ease;
-    }
-    .pub-scholar-btn:hover .pub-scholar-arrow {
-      transform: translateX(4px);
-    }
-
-    /* ── Responsive ── */
-    @media (max-width: 768px) {
-      .pub-card {
-        flex-wrap: wrap;
-      }
-      .pub-year-col {
-        width: 100%;
-        border-left: none;
-        border-top: 1px solid rgba(0, 0, 0, 0.04);
-        padding: 8px 16px;
-        justify-content: flex-start;
-      }
-      .pub-year-num {
-        writing-mode: horizontal-tb;
-        transform: none;
-      }
-      .pub-title {
-        font-size: 15px;
-      }
-    }
-    @media (max-width: 576px) {
-      .pub-body {
-        padding: 14px 14px;
-      }
-      .pub-title {
-        font-size: 14px;
-      }
-      .pub-authors {
-        font-size: 12.5px;
-      }
-      .pub-top-row {
-        flex-wrap: wrap;
-      }
-    }
-  </style>
 
 </section>
 <!-- /Publications Section -->
 
 
-    <!-- Programs Section -->
+<!-- Projects & Awards Section -->
+<section id="projects" class="publications section">
+
+  <div class="section-title" data-aos="fade-up">
+    <div class="container">
+      <h2>Projects &amp; Awards</h2>
+    </div>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="pub-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="pub-body">
+        <div class="pub-top-row">
+          <span class="pub-index">00</span>
+          <div class="pub-badges">
+            <span class="pub-venue">MOE</span>
+            <span class="pub-tag oral">Talent Program</span>
+          </div>
+        </div>
+        <h3 class="pub-title">Ministry of Education's National Overseas Talent Recruitment Program</h3>
+        <p class="pub-authors" lang="zh-CN">
+          教育部国家海外引才专项
+          <span class="prog-divider">·</span> 主持
+        </p>
+      </div>
+      <div class="pub-year-col">
+        <span class="pub-year-num">2026–2029</span>
+      </div>
+    </div>
+
+    <div class="pub-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="pub-body">
+        <div class="pub-top-row">
+          <span class="pub-index">01</span>
+          <div class="pub-badges">
+            <span class="pub-venue">NSFC</span>
+            <span class="pub-tag q1">Category C</span>
+          </div>
+        </div>
+        <h3 class="pub-title">National Natural Science Foundation of China — Young Scientists Fund (Category C)</h3>
+        <p class="pub-authors" lang="zh-CN">
+          国家自然科学基金青年科学基金项目（C 类）
+          <span class="prog-divider">·</span> 主持
+        </p>
+      </div>
+      <div class="pub-year-col">
+        <span class="pub-year-num">2027–2029</span>
+      </div>
+    </div>
+
+    <div class="pub-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="pub-body">
+        <div class="pub-top-row">
+          <span class="pub-index">02</span>
+          <div class="pub-badges">
+            <span class="pub-venue">Fujian</span>
+            <span class="pub-tag q1">Category C</span>
+          </div>
+        </div>
+        <h3 class="pub-title">Fujian Provincial High-Level Talent Program (Category C)</h3>
+        <p class="pub-authors" lang="zh-CN">福建省高层次人才（C 类） <span class="prog-divider">·</span> 入选</p>
+      </div>
+      <div class="pub-year-col">
+        <span class="pub-year-num">2026</span>
+      </div>
+    </div>
+
+    <div class="pub-card" data-aos="fade-up" data-aos-delay="400">
+      <div class="pub-body">
+        <div class="pub-top-row">
+          <span class="pub-index">03</span>
+          <div class="pub-badges">
+            <span class="pub-venue">FZU</span>
+            <span class="pub-tag oral">Overseas Talent</span>
+          </div>
+        </div>
+        <h3 class="pub-title">Qishan Scholar Program (Overseas Talent Introduction), Fuzhou University</h3>
+        <p class="pub-authors" lang="zh-CN">福州大学旗山学者计划（海外项目） <span class="prog-divider">·</span> 入选</p>
+      </div>
+      <div class="pub-year-col">
+        <span class="pub-year-num">2029–2034</span>
+      </div>
+    </div>
+    <div class="pub-card" data-aos="fade-up">
+      <div class="pub-body">
+        <div class="pub-top-row">
+          <span class="pub-index">04</span>
+          <div class="pub-badges">
+            <span class="pub-venue">ZJU</span>
+            <span class="pub-tag">Open Research Grant</span>
+          </div>
+        </div>
+        <h3 class="pub-title">Open Research Grant, State Key Laboratory of Blockchain and Data Security, Zhejiang University</h3>
+        <p class="pub-authors" lang="zh-CN">浙江大学区块链与数据安全全国重点实验室开放课题 <span class="prog-divider">·</span> 主持</p>
+      </div>
+    </div>
+
+
+  </div>
+
+</section>
+<!-- /Projects & Awards Section -->
+
+
+    <!-- Honors Section temporarily disabled
 <section id="programs" class="programs section">
  
   <div class="container section-title" data-aos="fade-up">
@@ -680,15 +412,13 @@
  
   <div class="container" data-aos="fade-up" data-aos-delay="100">
  
-    <!-- Program Card 1 -->
     <div class="prog-card" data-aos="fade-up" data-aos-delay="100">
       <div class="prog-body">
-        <h4 class="prog-title">China's Ministry of Education Overseas Talent Program</h4>
-        <p class="prog-meta">中国教育部海外引才计划 <span class="prog-divider">·</span> <i class="bi bi-calendar3"></i> 2026 – 2029</p>
+        <h4 class="prog-title">Ministry of Education's National Overseas Talent Recruitment Program</h4>
+        <p class="prog-meta">教育部国家海外引才专项 <span class="prog-divider">·</span> <i class="bi bi-calendar3"></i> 2026 – 2029</p>
       </div>
     </div>
  
-    <!-- Program Card 2 -->
     <div class="prog-card" data-aos="fade-up" data-aos-delay="200">
       <div class="prog-body">
         <h4 class="prog-title">Qishan Scholar Program (Overseas Talent Introduction), Fuzhou University</h4>
@@ -698,758 +428,214 @@
  
   </div>
  
-  <style>
-    .prog-card {
-      background: #fff;
-      border: 1px solid rgba(0, 0, 0, 0.06);
-      border-radius: 14px;
-      padding: 18px 20px;
-      margin-bottom: 14px;
-      transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    }
-    .prog-card:hover {
-      border-color: rgba(73, 155, 216, 0.14);
-      box-shadow: 0 2px 10px rgba(73, 155, 216, 0.06);
-    }
- 
-    .prog-body {
-      min-width: 0;
-    }
-    .prog-title {
-      font-size: 15px;
-      font-weight: 600;
-      color: #1a1a1a;
-      margin: 0 0 4px 0;
-      line-height: 1.4;
-    }
-    .prog-meta {
-      font-size: 13px;
-      color: #888;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      line-height: 1.5;
-      flex-wrap: wrap;
-    }
-    .prog-meta i {
-      font-size: 12px;
-    }
-    .prog-divider {
-      color: #b5b5b5;
-    }
- 
-    @media (max-width: 576px) {
-      .prog-card {
-        padding: 15px 16px;
-      }
-      .prog-title {
-        font-size: 14px;
-      }
-    }
-  </style>
  
 </section>
-<!-- /Programs/Projects Section -->
+End disabled Honors Section -->
  
 
 
     
     <!-- Organizations Section -->
-    <!-- ============================================================
-     Organizations Timeline Section
-     Replace your existing <section id="organizations"> ... </section>
-     with the code below.
-     ============================================================ -->
-<!-- ============================================================
-     Organizations Timeline Section — Two-Column Layout
-     Replace your existing <section id="organizations"> ... </section>
-     ============================================================ -->
-
 <section id="organizations" class="organizations section light-background">
   <div class="container section-title" data-aos="fade-up">
-    <h2>Organizations</h2>
+    <h2>Experience</h2>
   </div>
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="tl-columns">
-
-      <!-- ─── Left Column ─── -->
-      <div class="tl-col">
-        <div class="timeline-wrap">
-
-          <!-- FZU -->
-          <div class="tl-item current" data-aos="fade-up" data-aos-delay="100">
+  <div class="container" data-aos="fade-up">
+    <div class="experience-list">
+<div class="tl-item current" data-aos="fade-up" data-aos-delay="100">
             <div class="tl-dot-col"><div class="tl-dot"></div></div>
             <div class="tl-card">
-              <a href="https://www.fzu.edu.cn/" target="_blank" rel="noopener noreferrer" class="tl-logo">
-                <img src="assets/img/fzu.png" alt="Fuzhou University">
-              </a>
+              <span class="tl-logo" aria-hidden="true">
+                <img src="assets/img/fzu.png" alt="">
+              </span>
               <div class="tl-info">
                 <div class="tl-school">
                   <a href="https://www.fzu.edu.cn/" target="_blank" rel="noopener noreferrer">Fuzhou University</a>
                 </div>
                 <div class="tl-role">Associate Research Professor</div>
+                <div class="tl-advisor">Mentored by Professor <a href="https://ccds.fzu.edu.cn/info/1207/8294.htm" target="_blank" rel="noopener noreferrer">Xing Chen</a></div>
               </div>
               <div class="tl-meta">
-                <div class="tl-year">2025 –</div>
+                <div class="tl-year">2025–Present</div>
                 <span class="tl-badge">Current</span>
               </div>
             </div>
           </div>
 
-          <!-- AAU -->
-          <div class="tl-item" data-aos="fade-up" data-aos-delay="200">
+<div class="tl-item" data-aos="fade-up" data-aos-delay="200">
             <div class="tl-dot-col"><div class="tl-dot"></div></div>
             <div class="tl-card">
-              <a href="https://www.en.aau.dk/" target="_blank" rel="noopener noreferrer" class="tl-logo">
-                <img src="assets/img/AAU.png" alt="Aalborg University">
-              </a>
+              <span class="tl-logo" aria-hidden="true">
+                <img src="assets/img/AAU.png" alt="">
+              </span>
               <div class="tl-info">
                 <div class="tl-school">
                   <a href="https://www.en.aau.dk/" target="_blank" rel="noopener noreferrer">Aalborg University</a>
                 </div>
-                <div class="tl-role">Ph.D. in Computer Science & Research Fellow</div>
+                <div class="tl-role">Ph.D. in Computer Science · Research Fellow</div>
+                <div class="tl-advisor">Advised by Professors <a href="https://csj.cs.aau.dk/" target="_blank" rel="noopener noreferrer">Christian S. Jensen</a>, <a href="https://dalinzhang.github.io/" target="_blank" rel="noopener noreferrer">Dalin Zhang</a>, and <a href="https://mypage.zju.edu.cn/en/lihuan" target="_blank" rel="noopener noreferrer">Huan Li</a></div>
               </div>
               <div class="tl-meta">
-                <div class="tl-year">2021 – 2025</div>
+                <div class="tl-year">2021–2025</div>
               </div>
             </div>
           </div>
 
-          <!-- UNSW -->
-          <div class="tl-item" data-aos="fade-up" data-aos-delay="300">
+<div class="tl-item" data-aos="fade-up" data-aos-delay="300">
             <div class="tl-dot-col"><div class="tl-dot"></div></div>
             <div class="tl-card">
-              <a href="https://www.unsw.edu.au/" target="_blank" rel="noopener noreferrer" class="tl-logo">
-                <img src="assets/img/UNSW.png" alt="UNSW Sydney">
-              </a>
+              <span class="tl-logo" aria-hidden="true">
+                <img src="assets/img/UNSW.png" alt="">
+              </span>
               <div class="tl-info">
                 <div class="tl-school">
                   <a href="https://www.unsw.edu.au/" target="_blank" rel="noopener noreferrer">University of New South Wales</a>
                 </div>
                 <div class="tl-role">Junior Visiting Research Fellow</div>
+                <div class="tl-advisor">Advised by Professors <a href="https://www.linayao.com/" target="_blank" rel="noopener noreferrer">Lina Yao</a> and <a href="https://donggong1.github.io/" target="_blank" rel="noopener noreferrer">Dong Gong</a></div>
               </div>
               <div class="tl-meta">
-                <div class="tl-year">2024 – 2024</div>
+                <div class="tl-year">2024</div>
               </div>
             </div>
           </div>
 
-        </div>
-      </div>
+<div class="tl-item" data-aos="fade-up">
+            <div class="tl-card">
+              <span class="tl-logo" aria-hidden="true">
+                <img src="assets/img/NTNU.png" alt="">
+              </span>
+              <div class="tl-info">
+                <div class="tl-school">
+                  <a href="https://www.ntnu.edu/" target="_blank" rel="noopener noreferrer">Norwegian University of Science and Technology</a>
+                </div>
+                <div class="tl-role">Visiting Ph.D. Student</div>
+                <div class="tl-advisor">Advised by Professor <a href="https://cs.tjut.edu.cn/info/1211/2197.htm" target="_blank" rel="noopener noreferrer">Xu Cheng</a></div>
+              </div>
+              <div class="tl-meta">
+                <div class="tl-year">2021–2022</div>
+              </div>
+            </div>
+          </div>
 
-      <!-- ─── Right Column ─── -->
-      <div class="tl-col">
-        <div class="timeline-wrap">
-
-          <!-- SCU -->
-          <div class="tl-item" data-aos="fade-up" data-aos-delay="150">
+<div class="tl-item" data-aos="fade-up" data-aos-delay="150">
             <div class="tl-dot-col"><div class="tl-dot"></div></div>
             <div class="tl-card">
-              <a href="https://www.scu.edu.cn/" target="_blank" rel="noopener noreferrer" class="tl-logo">
-                <img src="assets/img/SCU.png" alt="Sichuan University">
-              </a>
+              <span class="tl-logo" aria-hidden="true">
+                <img src="assets/img/SCU.png" alt="">
+              </span>
               <div class="tl-info">
                 <div class="tl-school">
                   <a href="https://www.scu.edu.cn/" target="_blank" rel="noopener noreferrer">Sichuan University</a>
                 </div>
                 <div class="tl-role">M.S. in Computer Science</div>
+                <div class="tl-advisor">Advised by Professor <a href="https://cs.scu.edu.cn/info/1303/13767.htm" target="_blank" rel="noopener noreferrer">Jiancheng Lv</a></div>
               </div>
               <div class="tl-meta">
-                <div class="tl-year">2018 – 2021</div>
+                <div class="tl-year">2018–2021</div>
               </div>
             </div>
           </div>
 
-          <!-- UESTC -->
-          <div class="tl-item" data-aos="fade-up" data-aos-delay="250">
+<div class="tl-item" data-aos="fade-up" data-aos-delay="250">
             <div class="tl-dot-col"><div class="tl-dot"></div></div>
             <div class="tl-card">
-              <a href="https://www.uestc.edu.cn/" target="_blank" rel="noopener noreferrer" class="tl-logo">
-                <img src="assets/img/UESTC.png" alt="University of Electronic Science and Technology of China">
-              </a>
+              <span class="tl-logo" aria-hidden="true">
+                <img src="assets/img/UESTC.png" alt="">
+              </span>
               <div class="tl-info">
                 <div class="tl-school">
                   <a href="https://www.uestc.edu.cn/" target="_blank" rel="noopener noreferrer">University of Electronic Science and Technology of China</a>
                 </div>
                 <div class="tl-role">B.S. in Computer Science</div>
+                <div class="tl-advisor">Advised by Professor <a href="https://cfm.uestc.edu.cn/~shaojie/" target="_blank" rel="noopener noreferrer">Jie Shao</a></div>
               </div>
               <div class="tl-meta">
-                <div class="tl-year">2014 – 2018</div>
+                <div class="tl-year">2014–2018</div>
               </div>
             </div>
           </div>
 
-          <!-- FZYZ -->
-          <div class="tl-item" data-aos="fade-up" data-aos-delay="350">
+<div class="tl-item" data-aos="fade-up" data-aos-delay="350">
             <div class="tl-dot-col"><div class="tl-dot"></div></div>
             <div class="tl-card">
-              <a href="https://www.fzyz.net/" target="_blank" rel="noopener noreferrer" class="tl-logo">
-                <img src="assets/img/FZYZ.png" alt="Fuzhou No.1 High School">
-              </a>
+              <span class="tl-logo" aria-hidden="true">
+                <img src="assets/img/FZYZ.png" alt="">
+              </span>
               <div class="tl-info">
                 <div class="tl-school">
-                  <a href="https://www.fzyz.net/" target="_blank" rel="noopener noreferrer">Fuzhou No.1 High School</a>
+                  <a href="https://www.fzyz.net/" target="_blank" rel="noopener noreferrer">Fuzhou No. 1 High School</a>
                 </div>
                 <div class="tl-role">High School · Science Track</div>
               </div>
               <div class="tl-meta">
-                <div class="tl-year">2011 – 2014</div>
+                <div class="tl-year">2011–2014</div>
               </div>
             </div>
           </div>
-
-        </div>
-      </div>
-
     </div>
   </div>
-
-  <style>
-    /* ── Two-Column Grid ── */
-    .tl-columns {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-    }
-    .tl-col {
-      min-width: 0;
-    }
-
-    /* ── Timeline Layout ── */
-    .timeline-wrap {
-      position: relative;
-      padding: 0 4px;
-    }
-    .timeline-wrap::before {
-      content: '';
-      position: absolute;
-      left: 15px;
-      top: 32px;
-      bottom: 32px;
-      width: 2px;
-      background: linear-gradient(
-        to bottom,
-        transparent,
-        rgba(var(--bs-primary-rgb, 45, 54, 64), 0.12) 8%,
-        rgba(var(--bs-primary-rgb, 45, 54, 64), 0.12) 92%,
-        transparent
-      );
-      border-radius: 1px;
-    }
-
-    /* ── Timeline Item ── */
-    .tl-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      margin-bottom: 18px;
-      position: relative;
-    }
-    .tl-item:last-child {
-      margin-bottom: 0;
-    }
-
-    /* ── Dot Column ── */
-    .tl-dot-col {
-      flex-shrink: 0;
-      width: 12px;
-      display: flex;
-      justify-content: center;
-      padding-top: 24px;
-      z-index: 2;
-    }
-    .tl-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: #fff;
-      border: 2.5px solid #b0b0b0;
-      transition: all 0.35s ease;
-    }
-    .tl-item:hover .tl-dot {
-      border-color: #149268;
-      background: #149268;
-      box-shadow: 0 0 0 5px rgba(20, 146, 104, 0.1);
-    }
-    .tl-item.current .tl-dot {
-      border-color: #149268;
-      background: #149268;
-      box-shadow: 0 0 0 5px rgba(20, 146, 104, 0.12);
-    }
-
-    /* ── Card ── */
-    .tl-card {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      background: #fff;
-      border: 1px solid rgba(0, 0, 0, 0.06);
-      border-radius: 12px;
-      padding: 14px 16px;
-      transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-    }
-    .tl-card:hover {
-      border-color: rgba(0, 0, 0, 0.12);
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-      transform: translateX(3px);
-    }
-    .tl-item.current .tl-card {
-      border-color: rgba(20, 146, 104, 0.25);
-    }
-    .tl-item.current .tl-card:hover {
-      border-color: rgba(20, 146, 104, 0.4);
-      box-shadow: 0 2px 16px rgba(20, 146, 104, 0.08);
-    }
-
-    /* ── Logo ── */
-    .tl-logo {
-      flex-shrink: 0;
-      width: 48px;
-      height: 48px;
-      border-radius: 10px;
-      background: #f7f7f5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 6px;
-      overflow: hidden;
-      transition: background 0.3s ease;
-    }
-    .tl-logo:hover {
-      background: #efefec;
-    }
-    .tl-logo img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-      filter: grayscale(15%);
-      transition: filter 0.3s ease;
-    }
-    .tl-card:hover .tl-logo img {
-      filter: grayscale(0%);
-    }
-
-    /* ── Text ── */
-    .tl-info {
-      flex: 1;
-      min-width: 0;
-    }
-    .tl-school {
-      font-size: 14px;
-      font-weight: 600;
-      color: #2d2d2d;
-      line-height: 1.35;
-      margin-bottom: 2px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-    .tl-school a {
-      color: inherit;
-      text-decoration: none;
-      transition: color 0.25s ease;
-    }
-    .tl-school a:hover {
-      color: #149268;
-    }
-    .tl-role {
-      font-size: 12px;
-      color: #777;
-      line-height: 1.4;
-    }
-    .tl-meta {
-      flex-shrink: 0;
-      text-align: right;
-    }
-    .tl-year {
-      font-size: 12px;
-      font-weight: 600;
-      color: #999;
-      letter-spacing: 0.01em;
-      white-space: nowrap;
-    }
-    .tl-badge {
-      display: inline-block;
-      margin-top: 4px;
-      font-size: 10px;
-      font-weight: 600;
-      padding: 2px 8px;
-      border-radius: 20px;
-      background: rgba(20, 146, 104, 0.08);
-      color: #0e7a54;
-      letter-spacing: 0.02em;
-    }
-
-    /* ── Responsive: stack on mobile ── */
-    @media (max-width: 768px) {
-      .tl-columns {
-        grid-template-columns: 1fr;
-        gap: 0;
-      }
-      .tl-col:first-child .tl-item:last-child {
-        margin-bottom: 18px;
-      }
-      .tl-school {
-        white-space: normal;
-      }
-    }
-    @media (max-width: 576px) {
-      .tl-card {
-        flex-wrap: wrap;
-        gap: 10px;
-        padding: 12px 14px;
-      }
-      .tl-logo {
-        width: 40px;
-        height: 40px;
-        padding: 5px;
-      }
-      .tl-meta {
-        width: 100%;
-        text-align: left;
-        padding-left: 54px;
-        margin-top: -4px;
-      }
-    }
-  </style>
 </section>
     <!-- /Organizations Section -->
-<!-- Recruitment Section -->
+<!-- Prospective Students -->
 <section id="recruitment" class="recruitment section light-background">
-
   <div class="container section-title" data-aos="fade-up">
     <h2>Prospective Students</h2>
   </div>
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <!-- 开场 -->
-    <div class="recruit-welcome" data-aos="fade-up" data-aos-delay="120">
-      <p>I welcome inquiries from <strong>prospective master's students</strong> and <strong>first- or second-year undergraduate students interested in research</strong>.</p>
-      <p>❗️ <strong>Master's capacity for 2026 is currently full.</strong></p>
+  <div class="container" data-aos="fade-up">
+    <div class="recruit-opening"><strong>2027 Master's Admissions · 4 positions remaining</strong><a href="#contact">Contact me <i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
+    <p class="recruit-intro">I welcome prospective master's students and first- or second-year undergraduates interested in research.</p>
+    <div class="recruit-duo">
+      <div class="recruit-col">
+        <h3 class="recruit-col-label">What I Value</h3>
+        <p class="recruit-summary">Curiosity, initiative, solid programming skills, and open communication. An interest in a Ph.D. is welcome; commitment and growth matter more than a polished CV.</p>
+      </div>
+      <div class="recruit-col">
+        <h3 class="recruit-col-label">What You Can Expect</h3>
+        <p class="recruit-summary">Jointly developed projects, close guidance on experiments and writing, and a supportive environment to grow into an independent researcher.</p>
+      </div>
     </div>
-
-    <!-- 双栏：你 & 我 -->
-    <div class="recruit-duo" data-aos="fade-up" data-aos-delay="200">
-
-      <!-- 左栏：对你的期待 -->
-      <div class="recruit-col">
-        <div class="recruit-col-label">What I Value</div>
-        <ul class="recruit-list">
-          <li>
-            <span class="recruit-keyword">Initiative</span>
-            Curiosity, self-motivation, and the habit of working through problems independently.
-          </li>
-          <li>
-            <span class="recruit-keyword">Programming</span>
-            A solid coding background; experience with machine learning or deep learning is a plus.
-          </li>
-          <li>
-            <span class="recruit-keyword">Communication</span>
-            Clear communication in both Chinese and English, and a willingness to discuss ideas openly.
-          </li>
-          <li>
-            <span class="recruit-keyword">Ambition</span>
-            An interest in careful, high-quality work; students considering a Ph.D. are especially welcome.
-          </li>
-        </ul>
-        <div class="recruit-aside">You do not need to be strong in every dimension. <strong>Commitment, consistency, and growth</strong> matter more than a polished CV.</div>
-      </div>
-
-      <!-- 右栏：我能提供的 -->
-      <div class="recruit-col">
-        <div class="recruit-col-label">What You Can Expect</div>
-        <ul class="recruit-list">
-          <li>
-            <span class="recruit-keyword">Focus</span>
-            Projects are developed jointly within the group's broader agenda, with room for new ideas and initiative.
-          </li>
-          <li>
-            <span class="recruit-keyword">Mentorship</span>
-            Close guidance on coding, experiments, reading, and academic writing, with the goal of helping you become independent quickly.
-          </li>
-          <li>
-            <span class="recruit-keyword">Support</span>
-            Research can be difficult at times. I encourage early communication and steady problem-solving rather than silent struggle.
-          </li>
-          <li>
-            <span class="recruit-keyword">Environment</span>
-            The group provides solid resources and a supportive environment, and I am happy to advise students considering graduate study or a longer research path.
-          </li>
-        </ul>
-        <div class="recruit-aside">The goal is simple: that your time in the group is demanding, productive, and ultimately <strong>worth it</strong>.</div>
-      </div>
-
-
   </div>
-
-  </div>
-
-  <style>
-    /* ── Welcome ── */
-    .recruit-welcome {
-      text-align: center;
-      margin-bottom: 24px;
-    }
-    .recruit-welcome p {
-      font-size: 14px;
-      color: #555;
-      line-height: 1.7;
-      margin: 0;
-    }
-    .recruit-welcome strong {
-      color: #3a82b8;
-    }
-
-    /* ── Duo Layout ── */
-    .recruit-duo {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-
-    .recruit-col {
-      background: #fff;
-      border: 1px solid rgba(0, 0, 0, 0.06);
-      border-radius: 12px;
-      padding: 20px 22px;
-      transition: box-shadow 0.3s ease;
-    }
-    .recruit-col:hover {
-      box-shadow: 0 4px 18px rgba(73, 155, 216, 0.08);
-    }
-
-    .recruit-col-label {
-      display: inline-block;
-      font-size: 13px;
-      font-weight: 700;
-      color: #499BD8;
-      padding: 3px 12px;
-      background: rgba(73, 155, 216, 0.07);
-      border-radius: 20px;
-      margin-bottom: 14px;
-      letter-spacing: 0.5px;
-    }
-
-    /* ── List ── */
-    .recruit-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .recruit-list li {
-      font-size: 13px;
-      color: #555;
-      line-height: 1.6;
-      padding: 7px 0;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.03);
-    }
-    .recruit-list li:last-child {
-      border-bottom: none;
-    }
-    .recruit-keyword {
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 700;
-      color: #3a82b8;
-      background: rgba(73, 155, 216, 0.06);
-      padding: 1px 8px;
-      border-radius: 4px;
-      margin-right: 6px;
-      vertical-align: baseline;
-    }
-
-    /* ── Aside Note ── */
-    .recruit-aside {
-      margin-top: 12px;
-      padding: 8px 12px;
-      background: rgba(73, 155, 216, 0.04);
-      border-radius: 6px;
-      font-size: 12px;
-      color: #666;
-      line-height: 1.5;
-    }
-    .recruit-aside strong {
-      color: #3a82b8;
-    }
-
-    /* ── Footer ── */
-    .recruit-footer {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .recruit-footer p {
-      font-size: 13px;
-      color: #888;
-      font-style: italic;
-      margin: 0;
-    }
-
-    /* ── Responsive ── */
-    @media (max-width: 768px) {
-      .recruit-duo {
-        grid-template-columns: 1fr;
-      }
-    }
-    @media (max-width: 576px) {
-      .recruit-col {
-        padding: 16px;
-      }
-    }
-  </style>
-
 </section>
-<!-- /Recruitment Section -->
+<!-- /Prospective Students -->
 
   
 <!-- Contact Section -->
 <section id="contact" class="contact section">
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Contact</h2>
-  </div><!-- End Section Title -->
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <article class="contact-compact-shell" data-aos="fade-up" data-aos-delay="150">
-      <div class="contact-compact-head">
-        <div>
-          <p class="contact-kicker">Email</p>
-          <h3>zhla ατ cs.aau.dk</h3>
-          <p class="contact-primary-note">Please replace “ατ” with “@” when writing.</p>
+  <div class="container">
+    <article class="contact-compact-shell">
+      <h2 class="contact-inline-title">Contact</h2>
+      <div class="contact-email">
+        <p class="contact-kicker">Email</p>
+        <div class="contact-email-list">
+          <p><span>zhla ατ cs.aau.dk</span> <span class="email-preferred">Preferred</span> <button class="email-copy" type="button" data-copy-email="zhla@cs.aau.dk" aria-label="Copy zhla@cs.aau.dk" title="Copy email address"><i class="bi bi-copy" aria-hidden="true"></i></button></p>
+          <p><span>lzc ατ fzu.edu.cn</span> <button class="email-copy" type="button" data-copy-email="lzc@fzu.edu.cn" aria-label="Copy lzc@fzu.edu.cn" title="Copy email address"><i class="bi bi-copy" aria-hidden="true"></i></button></p>
         </div>
-
-        <div class="contact-summary">
-          <div class="contact-summary-item">
-            <h4>Office</h4>
-            <p>Room 302, Building No. 2, College of Computer Science and Big Data, Fuzhou University, Minhou, Fuzhou, Fujian, China</p>
-          </div>
+        <p class="contact-primary-note" id="email-copy-status" role="status" aria-live="polite">Replace “ατ” with “@” in both addresses.</p>
+      </div>
+      <div class="contact-summary">
+        <div class="contact-summary-item">
+          <h3 class="contact-kicker">Office &amp; Lab</h3>
+          <p>Room 101, Building No. 3, College of Computer and Data Science, Fuzhou University, Minhou, Fuzhou, Fujian, China</p>
         </div>
+        <footer class="contact-copyright">© 2026 <strong>Zhichen Lai</strong>. All rights reserved.</footer>
       </div>
     </article>
   </div>
 
-  <style>
-    .contact-compact-shell {
-      padding: 16px 18px;
-      border-radius: 16px;
-      border: 1px solid rgba(73, 155, 216, 0.18);
-      background: linear-gradient(160deg, rgba(73, 155, 216, 0.08), rgba(73, 155, 216, 0.02));
-    }
-    .contact-compact-head {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 14px;
-      margin-bottom: 10px;
-    }
-    .contact-kicker {
-      margin: 0 0 6px 0;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #499BD8;
-    }
-    .contact-compact-head h3 {
-      margin: 0;
-      font-size: 22px;
-      line-height: 1.2;
-      color: #2d2d2d;
-    }
-    .contact-compact-head h3 span {
-      color: #9aa8b5;
-    }
-    .contact-primary-note {
-      margin: 6px 0 0 0;
-      font-size: 12px;
-      line-height: 1.45;
-      color: #7a7a7a;
-    }
-    .contact-summary {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 8px;
-      min-width: min(320px, 100%);
-      padding-left: 16px;
-      border-left: 1px solid rgba(0, 0, 0, 0.06);
-    }
-    .contact-summary-item h4 {
-      margin: 0 0 6px 0;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #499BD8;
-    }
-    .contact-summary-item p {
-      margin: 0;
-      color: #666;
-      line-height: 1.45;
-      font-size: 13px;
-    }
-    @media (max-width: 991px) {
-      .contact-compact-head {
-        flex-direction: column;
-      }
-      .contact-summary {
-        min-width: 0;
-        width: 100%;
-        padding-left: 0;
-        padding-top: 10px;
-        border-left: 0;
-        border-top: 1px solid rgba(0, 0, 0, 0.06);
-      }
-    }
-    @media (max-width: 576px) {
-      .contact-compact-shell {
-        padding: 14px 16px;
-      }
-      .contact-compact-head {
-        margin-bottom: 10px;
-      }
-      .contact-compact-head h3 {
-        font-size: 19px;
-      }
-    }
-  </style>
 </section><!-- /Contact Section -->
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-<p>
-  © 2026
-  <strong class="px-1 sitename">Zhichen Lai</strong>
-  All rights reserved.
-</p> 
-      </div>
-    </div>
-
-  </footer>
-
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Back to top"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=20260928-contact"></script>
 
 </body>
 
