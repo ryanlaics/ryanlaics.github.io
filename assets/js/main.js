@@ -27,7 +27,7 @@
   /**
    * Hide mobile nav on same-page/hash links
    */
-  document.querySelectorAll('#navmenu a, .profile-links a[href^="#"]').forEach(navmenu => {
+  document.querySelectorAll('#navmenu a').forEach(navmenu => {
     navmenu.addEventListener('click', () => {
       if (document.querySelector('.header-show')) {
         headerToggle();
@@ -74,21 +74,21 @@
   }
   window.addEventListener('load', aosInit);
 
-  /**
-   * Init typed.js
-   */
+  // Keep a readable static fallback for visitors who prefer reduced motion.
   const selectTyped = document.querySelector('.typed');
+  if (selectTyped && reducedMotion.matches) {
+    selectTyped.textContent = selectTyped.dataset.typedItems.split(',').map(item => item.trim()).join(' · ');
+  }
   if (selectTyped && !reducedMotion.matches) {
-    let typed_strings = selectTyped.getAttribute('data-typed-items');
-    typed_strings = typed_strings.split(',').map(item => item.trim());
     new Typed('.typed', {
-      strings: typed_strings,
+      strings: selectTyped.dataset.typedItems.split(',').map(item => item.trim()),
       loop: true,
       typeSpeed: 55,
       backSpeed: 25,
       backDelay: 2400
     });
   }
+
 
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
