@@ -28,8 +28,19 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
+  <script>
+    (() => {
+      let mode = 'system';
+      try { mode = localStorage.getItem('homepage-theme') || mode; } catch {}
+      if (!['system', 'light', 'dark'].includes(mode)) mode = 'system';
+      document.documentElement.dataset.themeMode = mode;
+      document.documentElement.dataset.theme = mode === 'system'
+        ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : mode;
+    })();
+  </script>
+
   <!-- Main CSS File -->
-  <link href="assets/css/site.css?v=b45614c451" rel="stylesheet">
+  <link href="assets/css/site.css?v=da70387c95" rel="stylesheet">
 
 </head>
 
@@ -37,13 +48,13 @@
 
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <header id="header" class="header dark-background d-flex flex-column">
+  <header id="header" class="header d-flex flex-column">
     <button type="button" class="header-toggle d-xl-none" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navmenu">
       <i class="bi bi-list" aria-hidden="true"></i>
     </button>
 
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.webp" alt="Portrait of Zhichen Lai" class="img-fluid rounded-circle">
+      <img src="assets/img/my-profile-img.webp" alt="Portrait of Zhichen Lai" class="img-fluid rounded-circle" width="480" height="480" decoding="async">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
@@ -61,17 +72,21 @@
     </div>
 
 
-    <nav id="navmenu" class="navmenu">
+    <nav id="navmenu" class="navmenu" aria-label="Main navigation">
+      <div class="sidebar-tools">
+        <button class="theme-toggle" type="button" aria-label="Appearance: system. Switch to light." title="Appearance: system"><i class="bi bi-circle-half" aria-hidden="true"></i><span>Auto</span></button>
+      </div>
+      <p class="directory-label" aria-hidden="true">Catalog <span>~/zhichen</span></p>
       <ul>
-        <li><a href="#hero" class="active" aria-current="page"><i class="bi bi-house navicon" aria-hidden="true"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon" aria-hidden="true"></i> About</a></li>
-        <li><a href="#publications"><i class="bi bi-journal-text navicon" aria-hidden="true"></i>Publications</a></li>
-        <li><a href="https://scholar.google.com/citations?user=aHrrknoAAAAJ" target="_blank" rel="noopener noreferrer"><i class="bi bi-mortarboard navicon" aria-hidden="true"></i>Google Scholar<i class="bi bi-arrow-up-right nav-external" aria-hidden="true"></i></a></li>
-        <li><a href="#projects"><i class="bi bi-award navicon" aria-hidden="true"></i>Projects &amp; Awards</a></li>
-        <li><a href="#organizations"><i class="bi bi-briefcase navicon" aria-hidden="true"></i>Experience</a></li>
-        <li><a href="#recruitment"><i class="bi bi-mortarboard navicon" aria-hidden="true"></i> Recruitment</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope-at navicon" aria-hidden="true"></i>Contact</a></li>
+        <li><a href="#hero" class="active" aria-current="page"><span class="nav-index" aria-hidden="true">00</span><span class="nav-path" aria-hidden="true">/</span><span class="nav-label">Home</span></a></li>
+        <li><a href="#about"><span class="nav-index" aria-hidden="true">01</span><span class="nav-path" aria-hidden="true">/</span><span class="nav-label">About</span></a></li>
+        <li><a href="#publications"><span class="nav-index" aria-hidden="true">02</span><i class="bi bi-table nav-table-icon" aria-hidden="true"></i><span class="nav-label">Publications</span><span class="nav-count" aria-label="6 records">6</span></a></li>
+        <li><a href="#projects"><span class="nav-index" aria-hidden="true">03</span><i class="bi bi-table nav-table-icon" aria-hidden="true"></i><span class="nav-label">Projects &amp; Awards</span><span class="nav-count" aria-label="5 records">5</span></a></li>
+        <li><a href="#organizations"><span class="nav-index" aria-hidden="true">04</span><i class="bi bi-table nav-table-icon" aria-hidden="true"></i><span class="nav-label">Experience</span><span class="nav-count" aria-label="7 records">7</span></a></li>
+        <li><a href="#recruitment"><span class="nav-index" aria-hidden="true">05</span><span class="nav-path" aria-hidden="true">/</span><span class="nav-label">Recruitment</span></a></li>
+        <li><a href="#contact"><span class="nav-index" aria-hidden="true">06</span><span class="nav-path" aria-hidden="true">/</span><span class="nav-label">Contact</span></a></li>
       </ul>
+      <div class="nav-resources"><a href="https://scholar.google.com/citations?user=aHrrknoAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar<i class="bi bi-arrow-up-right nav-external" aria-hidden="true"></i></a></div>
     </nav>
 
   </header>
@@ -81,16 +96,20 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.webp" alt="" data-aos="fade-in" class="">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Zhichen Lai <span lang="zh-CN">赖志宸</span></h2>
-        <p class="hero-research"><span class="research-prefix">Research in</span>
+        <div class="research-terminal">
+          <div class="terminal-bar" aria-hidden="true"><span class="terminal-dots"><i></i><i></i><i></i></span><span>zhichen@fzu: <span class="terminal-path">~/research</span></span></div>
+          <div class="terminal-identity">
+            <p class="hero-kicker">Research / Data Intelligence</p>
+            <h2>Zhichen Lai <span lang="zh-CN">赖志宸</span></h2>
+          </div>
+          <p class="hero-research"><span class="research-prefix" aria-hidden="true">research:</span>
           <span class="typed-stage" role="img" aria-label="Time Series, Spatio-Temporal Data Mining, GeoAI, and AI for Science and Health">
             <span class="typed-measure" aria-hidden="true"><span>Time Series</span><span>Spatio-Temporal Data Mining</span><span>GeoAI</span><span>AI for Science and Health</span></span>
             <span class="typed-live" aria-hidden="true"><span class="typed" data-typed-items="Time Series, Spatio-Temporal Data Mining, GeoAI, AI for Science and Health">Time Series</span></span>
           </span>
-        </p>
+          </p>
+        </div>
       </div>
 
     </section><!-- /Hero Section -->
@@ -100,7 +119,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
+        <h2><span class="section-index" aria-hidden="true">01 /</span><span class="section-label">about<span class="file-extension" aria-hidden="true">.md</span></span><span class="section-description">Biography</span></h2>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -110,20 +129,38 @@
             <img class="about-portrait" src="assets/img/about-photo.webp" alt="Photo of Zhichen Lai" width="1235" height="1274" loading="lazy">
           </figure>
           <div class="content">
-            <p class="mb-3">
-              Born in Fuzhou, <span class="country-name">China <span class="country-flag" aria-hidden="true">🇨🇳</span></span>, I returned home at the end of 2025 after several years of study and research in <span class="country-name">Denmark <span class="country-flag" aria-hidden="true">🇩🇰</span></span>.
-              I’m now an <strong>Associate Research Professor</strong> at <a href="https://www.fzu.edu.cn/" target="_blank" rel="noopener noreferrer"><strong>Fuzhou University</strong></a>’s College of Computer and Data Science <span class="country-flag" aria-hidden="true">🇨🇳</span>, where I lead the <strong>Data Intelligence and Interdisciplinary Information Group</strong>.
-              I’m also a member of the Fujian Key Laboratory of Network Computing and Intelligent Information Processing, with Professor <a href="https://ccds.fzu.edu.cn/info/1207/8294.htm" target="_blank" rel="noopener noreferrer"><strong>Xing Chen</strong></a> as my mentor.
-            </p>
-            <p class="mb-3">
-              I work on <strong>time series and spatio-temporal data</strong>, developing efficient methods for learning from incomplete, interconnected, and evolving data.
-              I’m also interested in <strong>GeoAI</strong> and <strong>AI for science and health</strong>.
-            </p>
-            <p class="mb-3">
-              I earned my B.S. from <a href="https://en.uestc.edu.cn/" target="_blank" rel="noopener noreferrer"><strong>UESTC</strong></a> <span class="country-flag" aria-hidden="true">🇨🇳</span> in 2018 and my M.S. from <a href="https://en.scu.edu.cn/" target="_blank" rel="noopener noreferrer"><strong>Sichuan University</strong></a> <span class="country-flag" aria-hidden="true">🇨🇳</span> in 2021, advised by Professor <a href="https://cs.scu.edu.cn/info/1303/13767.htm" target="_blank" rel="noopener noreferrer"><strong>Jiancheng Lv</strong></a>.
-              I then moved to Denmark for my Ph.D. at <a href="https://www.aau.dk/" target="_blank" rel="noopener noreferrer"><strong>Aalborg University</strong></a> <span class="country-flag" aria-hidden="true">🇩🇰</span>, which I completed in early 2025 under the supervision of Professors <a href="https://csj.cs.aau.dk/" target="_blank" rel="noopener noreferrer"><strong>Christian S. Jensen</strong></a> (Member of Academia Europaea; ACM/IEEE Fellow), <a href="https://dalinzhang.github.io/" target="_blank" rel="noopener noreferrer"><strong>Dalin Zhang</strong></a>, and <a href="https://mypage.zju.edu.cn/en/lihuan" target="_blank" rel="noopener noreferrer"><strong>Huan Li</strong></a>, while also working with Professor <a href="https://homes.cs.aau.dk/~luhua" target="_blank" rel="noopener noreferrer"><strong>Hua Lu</strong></a>.
-              During my Ph.D., I also spent time at <a href="https://www.ntnu.edu/" target="_blank" rel="noopener noreferrer"><strong>NTNU</strong></a> <span class="country-flag" aria-hidden="true">🇳🇴</span> with Professor <a href="https://cs.tjut.edu.cn/info/1211/2197.htm" target="_blank" rel="noopener noreferrer"><strong>Xu Cheng</strong></a>, and at <a href="https://www.unsw.edu.au/" target="_blank" rel="noopener noreferrer"><strong>UNSW Sydney</strong></a> <span class="country-flag" aria-hidden="true">🇦🇺</span> with Professors <a href="https://www.linayao.com/" target="_blank" rel="noopener noreferrer"><strong>Lina Yao</strong></a> and <a href="https://donggong1.github.io/" target="_blank" rel="noopener noreferrer"><strong>Dong Gong</strong></a>.
-            </p>
+            <div class="bio-block">
+              <h3 class="bio-label"><span aria-hidden="true"># </span>profile</h3>
+              <p>
+              Born in Fuzhou, China, I returned home at the end of 2025 after several years of study and research in Denmark.
+              I’m now an <strong>Associate Research Professor</strong> at <a class="about-school-link" href="https://www.fzu.edu.cn/" target="_blank" rel="noopener noreferrer"><strong>Fuzhou University</strong></a>’s College of Computer and Data Science, where I lead the <strong>Data Intelligence and Interdisciplinary Information Group</strong>.
+              I’m also a member of the Fujian Key Laboratory of Network Computing and Intelligent Information Processing, mentored by Professor <a href="https://ccds.fzu.edu.cn/info/1207/8294.htm" target="_blank" rel="noopener noreferrer"><strong>Xing Chen</strong></a>.
+            
+              </p>
+            </div>
+            <div class="bio-block">
+              <h3 class="bio-label"><span aria-hidden="true"># </span>research</h3>
+              <p>
+              I work on <strong class="bio-keyword">time series and spatio-temporal data</strong>, developing efficient methods for learning from incomplete, interconnected, and evolving data.
+              I’m also interested in <strong class="bio-keyword">GeoAI</strong> and <strong class="bio-keyword">AI for science and health</strong>.
+            
+              </p>
+            </div>
+            <div class="bio-block">
+              <h3 class="bio-label"><span aria-hidden="true"># </span>education</h3>
+              <p>
+              I earned my B.S. from <a class="about-school-link" href="https://en.uestc.edu.cn/" target="_blank" rel="noopener noreferrer"><strong>UESTC</strong></a> in 2018 and my M.S. from <a class="about-school-link" href="https://en.scu.edu.cn/" target="_blank" rel="noopener noreferrer"><strong>Sichuan University</strong></a> in 2021, advised by Professor <a href="https://cs.scu.edu.cn/info/1303/13767.htm" target="_blank" rel="noopener noreferrer"><strong>Jiancheng Lv</strong></a>.
+              I then moved to Denmark for my Ph.D. at <a class="about-school-link" href="https://www.aau.dk/" target="_blank" rel="noopener noreferrer"><strong>Aalborg University</strong></a>, which I completed in early 2025 under the supervision of Professors <a href="https://csj.cs.aau.dk/" target="_blank" rel="noopener noreferrer"><strong>Christian S. Jensen</strong></a> (Member of Academia Europaea; ACM/IEEE Fellow), <a href="https://dalinzhang.github.io/" target="_blank" rel="noopener noreferrer"><strong>Dalin Zhang</strong></a>, and <a href="https://mypage.zju.edu.cn/en/lihuan" target="_blank" rel="noopener noreferrer"><strong>Huan Li</strong></a>. I also worked as a Research Fellow with Professor <a href="https://homes.cs.aau.dk/~luhua" target="_blank" rel="noopener noreferrer"><strong>Hua Lu</strong></a>.
+            
+              </p>
+            </div>
+            <div class="bio-block">
+              <h3 class="bio-label"><span aria-hidden="true"># </span>visits</h3>
+              <p>
+              During my Ph.D., I also spent time at <a class="about-school-link" href="https://www.ntnu.edu/" target="_blank" rel="noopener noreferrer"><strong>NTNU</strong></a> with Professor <a href="https://cs.tjut.edu.cn/info/1211/2197.htm" target="_blank" rel="noopener noreferrer"><strong>Xu Cheng</strong></a>, and at <a class="about-school-link" href="https://www.unsw.edu.au/" target="_blank" rel="noopener noreferrer"><strong>UNSW Sydney</strong></a> with Professors <a href="https://www.linayao.com/" target="_blank" rel="noopener noreferrer"><strong>Lina Yao</strong></a> and <a href="https://donggong1.github.io/" target="_blank" rel="noopener noreferrer"><strong>Dong Gong</strong></a>.
+            
+              </p>
+            </div>
           </div>
         </div>
 
@@ -137,25 +174,27 @@
 
   <div class="section-title">
     <div class="container">
-      <h2>Representative Publications</h2>
+      <h2><span class="section-index" aria-hidden="true">02 /</span><span class="section-label">publications</span><span class="record-count">6 records</span><span class="section-description">Representative Publications</span></h2>
     </div>
   </div>
 
   <div class="container">
 
+    <div class="record-table-header" aria-hidden="true"><span>ID</span><span>Publication</span><span>Venue</span></div>
+    <div class="record-table" role="list" aria-label="Representative publications">
     <!-- Publication Card 00 -->
-    <div class="pub-card">
+    <div class="pub-card" role="listitem">
       <div class="pub-body">
         <div class="pub-top-row">
           <span class="pub-index">00</span>
           <div class="pub-badges">
             <span class="pub-venue">IEEE TKDE 2026</span>
-            <span class="pub-tag ccfa">CCF-A</span>
+            <div class="pub-classifications"><span class="pub-tag ccfa">CCF-A</span>
             <span class="pub-tag q1">CAS Q1</span>
-            <span class="pub-tag q1">JCR Q1</span>
+            <span class="pub-tag q1">JCR Q1</span></div>
           </div>
         </div>
-        <h3 class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/11626553/" target="_blank" rel="noopener noreferrer">Impute On-Demand: Adaptive Correlated Time Series Imputation for Changing Environments <i class="bi bi-box-arrow-up-right pub-link-icon" aria-hidden="true"></i></a></h3>
+        <h3 class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/11626553/" target="_blank" rel="noopener noreferrer"><span class="paper-token">Impute On-Demand</span>: Adaptive Correlated Time Series Imputation for Changing Environments <i class="bi bi-box-arrow-up-right pub-link-icon" aria-hidden="true"></i></a></h3>
         <p class="pub-authors">
           <span class="pub-me">Zhichen Lai</span>, Huan Li, Dalin Zhang, Dong Gong, Lina Yao, Christian S. Jensen
         </p>
@@ -163,17 +202,17 @@
     </div>
 
     <!-- Publication Card 01 -->
-    <div class="pub-card">
+    <div class="pub-card" role="listitem">
       <div class="pub-body">
         <div class="pub-top-row">
           <span class="pub-index">01</span>
           <div class="pub-badges">
             <span class="pub-venue">AAAI 2026</span>
-            <span class="pub-tag oral">Oral (Top 1.2%)</span>
-            <span class="pub-tag ccfa">CCF-A</span>
+            <div class="pub-classifications"><span class="pub-tag oral">Oral (Top 1.2%)</span>
+            <span class="pub-tag ccfa">CCF-A</span></div>
           </div>
         </div>
-        <h3 class="pub-title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/38526" target="_blank" rel="noopener noreferrer">MovSemCL: Movement-Semantics Contrastive Learning for Trajectory Similarity <i class="bi bi-box-arrow-up-right pub-link-icon" aria-hidden="true"></i></a></h3>
+        <h3 class="pub-title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/38526" target="_blank" rel="noopener noreferrer"><span class="paper-token">MovSemCL</span>: Movement-Semantics Contrastive Learning for Trajectory Similarity <i class="bi bi-box-arrow-up-right pub-link-icon" aria-hidden="true"></i></a></h3>
         <p class="pub-authors">
           <span class="pub-me">Zhichen Lai</span>, Hua Lu, Huan Li, Jialiang Li, Christian S. Jensen
         </p>
@@ -181,15 +220,15 @@
     </div>
 
     <!-- Publication Card 02 -->
-    <div class="pub-card">
+    <div class="pub-card" role="listitem">
       <div class="pub-body">
         <div class="pub-top-row">
           <span class="pub-index">02</span>
           <div class="pub-badges">
             <span class="pub-venue">IEEE TKDE 2025</span>
-            <span class="pub-tag ccfa">CCF-A</span>
+            <div class="pub-classifications"><span class="pub-tag ccfa">CCF-A</span>
             <span class="pub-tag q1">CAS Q1</span>
-            <span class="pub-tag q1">JCR Q1</span>
+            <span class="pub-tag q1">JCR Q1</span></div>
           </div>
         </div>
         <h3 class="pub-title"><a href="https://ieeexplore.ieee.org/document/10589286" target="_blank" rel="noopener noreferrer">Lightweight Correlated Time Series Forecasting Enhanced with Model Distillation <i class="bi bi-box-arrow-up-right pub-link-icon" aria-hidden="true"></i></a></h3>
@@ -200,17 +239,17 @@
     </div>
 
     <!-- Publication Card 03 -->
-    <div class="pub-card">
+    <div class="pub-card" role="listitem">
       <div class="pub-body">
         <div class="pub-top-row">
           <span class="pub-index">03</span>
           <div class="pub-badges">
             <span class="pub-venue">SIGKDD 2024</span>
-            <span class="pub-tag oral">Oral</span>
-            <span class="pub-tag ccfa">CCF-A</span>
+            <div class="pub-classifications"><span class="pub-tag oral">Oral</span>
+            <span class="pub-tag ccfa">CCF-A</span></div>
           </div>
         </div>
-        <h3 class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3637528.3671816" target="_blank" rel="noopener noreferrer">ReCTSi: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions <i class="bi bi-box-arrow-up-right pub-link-icon" aria-hidden="true"></i></a></h3>
+        <h3 class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3637528.3671816" target="_blank" rel="noopener noreferrer"><span class="paper-token">ReCTSi</span>: Resource-efficient Correlated Time Series Imputation via Decoupled Pattern Learning and Completeness-aware Attentions <i class="bi bi-box-arrow-up-right pub-link-icon" aria-hidden="true"></i></a></h3>
         <p class="pub-authors">
           <span class="pub-me">Zhichen Lai</span>, Dalin Zhang, Huan Li, Dongxiang Zhang, Hua Lu, Christian S. Jensen
         </p>
@@ -218,17 +257,17 @@
     </div>
 
     <!-- Publication Card 04 -->
-    <div class="pub-card">
+    <div class="pub-card" role="listitem">
       <div class="pub-body">
         <div class="pub-top-row">
           <span class="pub-index">04</span>
           <div class="pub-badges">
             <span class="pub-venue">WWW 2024</span>
-            <span class="pub-tag oral">Oral (Top 9.4%)</span>
-            <span class="pub-tag ccfa">CCF-A</span>
+            <div class="pub-classifications"><span class="pub-tag oral">Oral (Top 9.4%)</span>
+            <span class="pub-tag ccfa">CCF-A</span></div>
           </div>
         </div>
-        <h3 class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3589334.3645593" target="_blank" rel="noopener noreferrer">E2USD: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series <i class="bi bi-box-arrow-up-right pub-link-icon" aria-hidden="true"></i></a></h3>
+        <h3 class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3589334.3645593" target="_blank" rel="noopener noreferrer"><span class="paper-token">E2USD</span>: Efficient-yet-effective Unsupervised State Detection for Multivariate Time Series <i class="bi bi-box-arrow-up-right pub-link-icon" aria-hidden="true"></i></a></h3>
         <p class="pub-authors">
           <span class="pub-me">Zhichen Lai</span>, Huan Li, Dalin Zhang, Yan Zhao, Weizhu Qian, Christian S. Jensen
         </p>
@@ -236,21 +275,23 @@
     </div>
 
     <!-- Publication Card 05 -->
-    <div class="pub-card">
+    <div class="pub-card" role="listitem">
       <div class="pub-body">
         <div class="pub-top-row">
           <span class="pub-index">05</span>
           <div class="pub-badges">
             <span class="pub-venue">SIGMOD 2023</span>
-            <span class="pub-tag oral">Oral</span>
-            <span class="pub-tag ccfa">CCF-A</span>
+            <div class="pub-classifications"><span class="pub-tag oral">Oral</span>
+            <span class="pub-tag ccfa">CCF-A</span></div>
           </div>
         </div>
-        <h3 class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3589270" target="_blank" rel="noopener noreferrer">LightCTS: A Lightweight Framework for Correlated Time Series Forecasting <i class="bi bi-box-arrow-up-right pub-link-icon" aria-hidden="true"></i></a></h3>
+        <h3 class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3589270" target="_blank" rel="noopener noreferrer"><span class="paper-token">LightCTS</span>: A Lightweight Framework for Correlated Time Series Forecasting <i class="bi bi-box-arrow-up-right pub-link-icon" aria-hidden="true"></i></a></h3>
         <p class="pub-authors">
           <span class="pub-me">Zhichen Lai</span>, Dalin Zhang, Huan Li, Christian S. Jensen, Hua Lu, Yan Zhao
         </p>
       </div>
+    </div>
+
     </div>
 
     <!-- Google Scholar Link -->
@@ -276,13 +317,15 @@
 
   <div class="section-title">
     <div class="container">
-      <h2>Projects &amp; Awards</h2>
+      <h2><span class="section-index" aria-hidden="true">03 /</span><span class="section-label">projects</span><span class="record-count">5 records</span><span class="section-description">Projects &amp; Awards</span></h2>
     </div>
   </div>
 
   <div class="container">
 
-    <div class="pub-card">
+    <div class="record-table-header" aria-hidden="true"><span>ID</span><span>Project</span><span>Period</span></div>
+    <div class="record-table" role="list" aria-label="Projects and awards">
+    <div class="pub-card" role="listitem">
       <div class="pub-body">
         <div class="pub-top-row">
           <span class="pub-index">00</span>
@@ -294,7 +337,7 @@
         <h3 class="pub-title">Ministry of Education's National Overseas Talent Recruitment Program</h3>
         <p class="pub-authors" lang="zh-CN">
           教育部国家海外引才专项
-          <span class="prog-divider">·</span> 主持
+          <span class="prog-divider">·</span> <span class="project-role">主持</span>
         </p>
       </div>
       <div class="pub-year-col">
@@ -302,7 +345,7 @@
       </div>
     </div>
 
-    <div class="pub-card">
+    <div class="pub-card" role="listitem">
       <div class="pub-body">
         <div class="pub-top-row">
           <span class="pub-index">01</span>
@@ -314,7 +357,7 @@
         <h3 class="pub-title">National Natural Science Foundation of China — Young Scientists Fund (Category C)</h3>
         <p class="pub-authors" lang="zh-CN">
           国家自然科学基金青年科学基金项目（C 类）
-          <span class="prog-divider">·</span> 主持
+          <span class="prog-divider">·</span> <span class="project-role">主持</span>
         </p>
       </div>
       <div class="pub-year-col">
@@ -322,7 +365,7 @@
       </div>
     </div>
 
-    <div class="pub-card">
+    <div class="pub-card" role="listitem">
       <div class="pub-body">
         <div class="pub-top-row">
           <span class="pub-index">02</span>
@@ -332,14 +375,14 @@
           </div>
         </div>
         <h3 class="pub-title">Fujian Provincial High-Level Talent Program (Category C)</h3>
-        <p class="pub-authors" lang="zh-CN">福建省高层次人才（C 类） <span class="prog-divider">·</span> 入选</p>
+        <p class="pub-authors" lang="zh-CN">福建省高层次人才（C 类） <span class="prog-divider">·</span> <span class="project-role">入选</span></p>
       </div>
       <div class="pub-year-col">
         <span class="pub-year-num">2026</span>
       </div>
     </div>
 
-    <div class="pub-card">
+    <div class="pub-card" role="listitem">
       <div class="pub-body">
         <div class="pub-top-row">
           <span class="pub-index">03</span>
@@ -349,13 +392,13 @@
           </div>
         </div>
         <h3 class="pub-title">Qishan Scholar Program (Overseas Talent Introduction), Fuzhou University</h3>
-        <p class="pub-authors" lang="zh-CN">福州大学旗山学者计划（海外项目） <span class="prog-divider">·</span> 入选</p>
+        <p class="pub-authors" lang="zh-CN">福州大学旗山学者计划（海外项目） <span class="prog-divider">·</span> <span class="project-role">入选</span></p>
       </div>
       <div class="pub-year-col">
         <span class="pub-year-num">2029–2034</span>
       </div>
     </div>
-    <div class="pub-card">
+    <div class="pub-card" role="listitem">
       <div class="pub-body">
         <div class="pub-top-row">
           <span class="pub-index">04</span>
@@ -365,11 +408,12 @@
           </div>
         </div>
         <h3 class="pub-title">Open Research Grant, State Key Laboratory of Blockchain and Data Security, Zhejiang University</h3>
-        <p class="pub-authors" lang="zh-CN">浙江大学区块链与数据安全全国重点实验室开放课题 <span class="prog-divider">·</span> 主持</p>
+        <p class="pub-authors" lang="zh-CN">浙江大学区块链与数据安全全国重点实验室开放课题 <span class="prog-divider">·</span> <span class="project-role">主持</span></p>
       </div>
     </div>
 
 
+    </div>
   </div>
 
 </section>
@@ -384,7 +428,7 @@
     <!-- Organizations Section -->
 <section id="organizations" class="organizations section light-background">
   <div class="container section-title">
-    <h2>Experience</h2>
+    <h2><span class="section-index" aria-hidden="true">04 /</span><span class="section-label">experience</span><span class="record-count">7 records</span><span class="section-description">Experience</span></h2>
   </div>
   <div class="container">
     <div class="experience-list">
@@ -392,7 +436,7 @@
             <div class="tl-dot-col"><div class="tl-dot"></div></div>
             <div class="tl-card">
               <span class="tl-logo" aria-hidden="true">
-                <img src="assets/img/fzu.png" alt="">
+                <img src="assets/img/fzu.png" alt="" width="316" height="314" loading="lazy" decoding="async">
               </span>
               <div class="tl-info">
                 <div class="tl-school">
@@ -412,7 +456,7 @@
             <div class="tl-dot-col"><div class="tl-dot"></div></div>
             <div class="tl-card">
               <span class="tl-logo" aria-hidden="true">
-                <img src="assets/img/AAU.png" alt="">
+                <img src="assets/img/AAU.png" alt="" width="560" height="560" loading="lazy" decoding="async">
               </span>
               <div class="tl-info">
                 <div class="tl-school">
@@ -432,14 +476,14 @@
             <div class="tl-dot-col"><div class="tl-dot"></div></div>
             <div class="tl-card">
               <span class="tl-logo" aria-hidden="true">
-                <img src="assets/img/UNSW.png" alt="">
+                <img src="assets/img/UNSW.png" alt="" width="489" height="510" loading="lazy" decoding="async">
               </span>
               <div class="tl-info">
                 <div class="tl-school">
                   <a href="https://www.unsw.edu.au/" target="_blank" rel="noopener noreferrer">University of New South Wales</a>
                 </div>
                 <div class="tl-role">Junior Visiting Research Fellow</div>
-                <div class="tl-advisor">Advised by Professors <a href="https://www.linayao.com/" target="_blank" rel="noopener noreferrer">Lina Yao</a> and <a href="https://donggong1.github.io/" target="_blank" rel="noopener noreferrer">Dong Gong</a></div>
+                <div class="tl-advisor">Working with Professors <a href="https://www.linayao.com/" target="_blank" rel="noopener noreferrer">Lina Yao</a> and <a href="https://donggong1.github.io/" target="_blank" rel="noopener noreferrer">Dong Gong</a></div>
               </div>
               <div class="tl-meta">
                 <div class="tl-year">2024</div>
@@ -450,7 +494,7 @@
 <div class="tl-item">
             <div class="tl-card">
               <span class="tl-logo" aria-hidden="true">
-                <img src="assets/img/NTNU.png" alt="">
+                <img src="assets/img/NTNU.png" alt="" width="742" height="995" loading="lazy" decoding="async">
               </span>
               <div class="tl-info">
                 <div class="tl-school">
@@ -469,7 +513,7 @@
             <div class="tl-dot-col"><div class="tl-dot"></div></div>
             <div class="tl-card">
               <span class="tl-logo" aria-hidden="true">
-                <img src="assets/img/SCU.png" alt="">
+                <img src="assets/img/SCU.png" alt="" width="300" height="300" loading="lazy" decoding="async">
               </span>
               <div class="tl-info">
                 <div class="tl-school">
@@ -488,7 +532,7 @@
             <div class="tl-dot-col"><div class="tl-dot"></div></div>
             <div class="tl-card">
               <span class="tl-logo" aria-hidden="true">
-                <img src="assets/img/UESTC.png" alt="">
+                <img src="assets/img/UESTC.png" alt="" width="322" height="309" loading="lazy" decoding="async">
               </span>
               <div class="tl-info">
                 <div class="tl-school">
@@ -507,7 +551,7 @@
             <div class="tl-dot-col"><div class="tl-dot"></div></div>
             <div class="tl-card">
               <span class="tl-logo" aria-hidden="true">
-                <img src="assets/img/FZYZ.png" alt="">
+                <img src="assets/img/FZYZ.png" alt="" width="500" height="500" loading="lazy" decoding="async">
               </span>
               <div class="tl-info">
                 <div class="tl-school">
@@ -527,21 +571,13 @@
 <!-- Prospective Students -->
 <section id="recruitment" class="recruitment section light-background">
   <div class="container section-title" data-aos="fade-up">
-    <h2>Prospective Students</h2>
+    <h2><span class="section-index" aria-hidden="true">05 /</span><span class="section-label">recruitment<span class="file-extension" aria-hidden="true">.md</span></span><span class="section-description">Prospective Students</span></h2>
   </div>
   <div class="container" data-aos="fade-up">
     <div class="recruit-opening"><strong>2027 Master's Admissions · 4 positions remaining</strong><a href="#contact">Contact me <i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
     <p class="recruit-intro">I welcome prospective master's students and first- or second-year undergraduates interested in research.</p>
-    <div class="recruit-duo">
-      <div class="recruit-col">
-        <h3 class="recruit-col-label">What I Value</h3>
-        <p class="recruit-summary">Curiosity, initiative, solid programming skills, and open communication. An interest in a Ph.D. is welcome; commitment and growth matter more than a polished CV.</p>
-      </div>
-      <div class="recruit-col">
-        <h3 class="recruit-col-label">What You Can Expect</h3>
-        <p class="recruit-summary">Jointly developed projects, close guidance on experiments and writing, and a supportive environment to grow into an independent researcher.</p>
-      </div>
-    </div>
+    <p class="recruit-summary">Bring curiosity and solid programming skills; expect close guidance and a supportive research environment.</p>
+    <p class="recruit-apply">To get in touch, email me your CV and research interests.</p>
   </div>
 </section>
 <!-- /Prospective Students -->
@@ -551,7 +587,7 @@
 <section id="contact" class="contact section">
   <div class="container">
     <article class="contact-compact-shell">
-      <h2 class="contact-inline-title">Contact</h2>
+      <h2 class="contact-inline-title"><span class="section-index" aria-hidden="true">06 /</span><span class="section-label">contact<span class="file-extension" aria-hidden="true">.md</span></span></h2>
       <div class="contact-email">
         <p class="contact-kicker">Email</p>
         <div class="contact-email-list">
@@ -576,13 +612,22 @@
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Back to top"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
 
+  <dialog id="quick-nav" class="quick-nav" aria-labelledby="quick-nav-title">
+    <div class="quick-nav-heading"><h2 id="quick-nav-title">Go to section</h2><button class="quick-nav-close" type="button" aria-label="Close quick navigation"><i class="bi bi-x-lg" aria-hidden="true"></i></button></div>
+    <label class="visually-hidden" for="quick-nav-search">Search sections</label>
+    <input id="quick-nav-search" type="search" placeholder="Find a section…" autocomplete="off" spellcheck="false" aria-controls="quick-nav-results">
+    <ul id="quick-nav-results" class="quick-nav-results"></ul>
+    <p class="quick-nav-empty" hidden role="status">No matching sections.</p>
+    <p class="quick-nav-hint"><span><kbd>↑</kbd> <kbd>↓</kbd> Navigate</span><span><kbd>↵</kbd> Open</span><span><kbd>Esc</kbd> Close</span></p>
+  </dialog>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
 
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js?v=1f36f7c953"></script>
+  <script src="assets/js/main.js?v=587b74b79f"></script>
 
 </body>
 

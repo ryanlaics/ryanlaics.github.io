@@ -10,10 +10,16 @@ Run `python3 -m http.server 8765 --bind 127.0.0.1` in this folder, then open htt
 
 - `index.html`: biography, publications, projects, experience, recruitment and contact.
 - `assets/css/site.css`: custom styles.
-- `assets/js/main.js`: navigation, typing animation and email copy.
+- `assets/js/main.js`: navigation, typing animation, appearance switching, keyboard navigation and email copy.
 - `assets/img/`: portraits, university logos and sharing image.
 - `assets/vendor/`: required Bootstrap CSS, icons, AOS and Typed.js.
 - `CNAME`: custom domain configuration.
 - `Readme.txt`: original template attribution and license link; retain it.
 
 No build step is required. After editing CSS or JavaScript, update its `?v=` version in `index.html` to avoid stale caches. Deploy the contents of this folder with `index.html` at the site root.
+
+## Appearance and navigation
+
+The appearance control cycles through Auto, Light and Dark. Use Command+K (Mac) or Ctrl+K to jump to a section. All six publications are shown directly; no search or filtering is enabled.
+
+The JPG portrait is retained for social sharing metadata. Vendor source maps are referenced by the bundled assets and are retained for debugging.
