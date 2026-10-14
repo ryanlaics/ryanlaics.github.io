@@ -40,7 +40,7 @@
   </script>
 
   <!-- Main CSS File -->
-  <link href="assets/css/site.css?v=da70387c95" rel="stylesheet">
+  <link href="assets/css/site.css?v=bdaa628d0f" rel="stylesheet">
 
 </head>
 
@@ -73,18 +73,22 @@
 
 
     <nav id="navmenu" class="navmenu" aria-label="Main navigation">
-      <div class="sidebar-tools">
-        <button class="theme-toggle" type="button" aria-label="Appearance: system. Switch to light." title="Appearance: system"><i class="bi bi-circle-half" aria-hidden="true"></i><span>Auto</span></button>
+      <div class="catalog-heading">
+        <p class="directory-label" aria-hidden="true">Catalog <span class="catalog-path">~/zhichen/research</span></p>
+        <div class="sidebar-tools">
+          <button class="theme-toggle" type="button" aria-label="Appearance: system. Switch to light." title="Appearance: system"><i class="bi bi-circle-half" aria-hidden="true"></i><span>Auto</span></button>
+        </div>
       </div>
-      <p class="directory-label" aria-hidden="true">Catalog <span>~/zhichen</span></p>
       <ul>
-        <li><a href="#hero" class="active" aria-current="page"><span class="nav-index" aria-hidden="true">00</span><span class="nav-path" aria-hidden="true">/</span><span class="nav-label">Home</span></a></li>
-        <li><a href="#about"><span class="nav-index" aria-hidden="true">01</span><span class="nav-path" aria-hidden="true">/</span><span class="nav-label">About</span></a></li>
-        <li><a href="#publications"><span class="nav-index" aria-hidden="true">02</span><i class="bi bi-table nav-table-icon" aria-hidden="true"></i><span class="nav-label">Publications</span><span class="nav-count" aria-label="6 records">6</span></a></li>
-        <li><a href="#projects"><span class="nav-index" aria-hidden="true">03</span><i class="bi bi-table nav-table-icon" aria-hidden="true"></i><span class="nav-label">Projects &amp; Awards</span><span class="nav-count" aria-label="5 records">5</span></a></li>
-        <li><a href="#organizations"><span class="nav-index" aria-hidden="true">04</span><i class="bi bi-table nav-table-icon" aria-hidden="true"></i><span class="nav-label">Experience</span><span class="nav-count" aria-label="7 records">7</span></a></li>
-        <li><a href="#recruitment"><span class="nav-index" aria-hidden="true">05</span><span class="nav-path" aria-hidden="true">/</span><span class="nav-label">Recruitment</span></a></li>
-        <li><a href="#contact"><span class="nav-index" aria-hidden="true">06</span><span class="nav-path" aria-hidden="true">/</span><span class="nav-label">Contact</span></a></li>
+        <li><a href="#hero" class="active" aria-current="page" data-section-kind="document"><span class="nav-index" aria-hidden="true">00</span><i class="bi bi-house nav-item-icon" aria-hidden="true"></i><span class="nav-label">Home</span></a></li>
+        <li><a href="#about" data-section-kind="document"><span class="nav-index" aria-hidden="true">01</span><i class="bi bi-file-earmark-text nav-item-icon" aria-hidden="true"></i><span class="nav-label">About</span></a></li>
+        <li class="catalog-group" aria-hidden="true">Records</li>
+        <li><a href="#publications" data-section-kind="table"><span class="nav-index" aria-hidden="true">02</span><i class="bi bi-table nav-item-icon" aria-hidden="true"></i><span class="nav-label">Publications</span><span class="nav-count" aria-label="6 records">6</span></a></li>
+        <li><a href="#projects" data-section-kind="table"><span class="nav-index" aria-hidden="true">03</span><i class="bi bi-table nav-item-icon" aria-hidden="true"></i><span class="nav-label">Projects &amp; Awards</span><span class="nav-count" aria-label="5 records">5</span></a></li>
+        <li><a href="#organizations" data-section-kind="table"><span class="nav-index" aria-hidden="true">04</span><i class="bi bi-table nav-item-icon" aria-hidden="true"></i><span class="nav-label">Experience</span><span class="nav-count" aria-label="7 records">7</span></a></li>
+        <li class="catalog-group" aria-hidden="true">Information</li>
+        <li><a href="#recruitment" data-section-kind="document"><span class="nav-index" aria-hidden="true">05</span><i class="bi bi-file-earmark-text nav-item-icon" aria-hidden="true"></i><span class="nav-label">Recruitment</span></a></li>
+        <li><a href="#contact" data-section-kind="document"><span class="nav-index" aria-hidden="true">06</span><i class="bi bi-envelope nav-item-icon" aria-hidden="true"></i><span class="nav-label">Contact</span></a></li>
       </ul>
       <div class="nav-resources"><a href="https://scholar.google.com/citations?user=aHrrknoAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar<i class="bi bi-arrow-up-right nav-external" aria-hidden="true"></i></a></div>
     </nav>
@@ -92,13 +96,18 @@
   </header>
 
   <main id="main-content" class="main" tabindex="-1">
+    <div class="workbench-bar" aria-hidden="true">
+      <span class="terminal-dots"><i></i><i></i><i></i></span>
+      <span class="workbench-caption">Zhichen Lai <span>/</span> Research</span>
+      <span class="workbench-path">~/zhichen/research</span>
+    </div>
+
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="research-terminal">
-          <div class="terminal-bar" aria-hidden="true"><span class="terminal-dots"><i></i><i></i><i></i></span><span>zhichen@fzu: <span class="terminal-path">~/research</span></span></div>
           <div class="terminal-identity">
             <p class="hero-kicker">Research / Data Intelligence</p>
             <h2>Zhichen Lai <span lang="zh-CN">赖志宸</span></h2>
@@ -128,13 +137,14 @@
           <figure class="about-profile">
             <img class="about-portrait" src="assets/img/about-photo.webp" alt="Photo of Zhichen Lai" width="1235" height="1274" loading="lazy">
           </figure>
-          <div class="content">
+          <div class="content about-intro">
             <div class="bio-block">
               <h3 class="bio-label"><span aria-hidden="true"># </span>profile</h3>
               <p>
               Born in Fuzhou, China, I returned home at the end of 2025 after several years of study and research in Denmark.
-              I’m now an <strong>Associate Research Professor</strong> at <a class="about-school-link" href="https://www.fzu.edu.cn/" target="_blank" rel="noopener noreferrer"><strong>Fuzhou University</strong></a>’s College of Computer and Data Science, where I lead the <strong>Data Intelligence and Interdisciplinary Information Group</strong>.
+              I’m now an <strong>Associate Research Professor</strong> at <a class="about-school-link" href="https://en.fzu.edu.cn/" target="_blank" rel="noopener noreferrer"><strong>Fuzhou University</strong></a>’s College of Computer and Data Science, where I lead the <strong>Data Intelligence and Interdisciplinary Information Group</strong>.
               I’m also a member of the Fujian Key Laboratory of Network Computing and Intelligent Information Processing, mentored by Professor <a href="https://ccds.fzu.edu.cn/info/1207/8294.htm" target="_blank" rel="noopener noreferrer"><strong>Xing Chen</strong></a>.
+              My research is supported by the <strong>MOE National Overseas Talent Recruitment Program</strong> <span lang="zh-CN">（教育部国家海外引才专项）</span> and the <strong>NSFC Young Scientists Fund, Category C</strong> <span lang="zh-CN">（国家自然科学基金青年科学基金项目（C 类））</span>.
             
               </p>
             </div>
@@ -146,11 +156,13 @@
             
               </p>
             </div>
+          </div>
+          <div class="content about-history">
             <div class="bio-block">
               <h3 class="bio-label"><span aria-hidden="true"># </span>education</h3>
               <p>
               I earned my B.S. from <a class="about-school-link" href="https://en.uestc.edu.cn/" target="_blank" rel="noopener noreferrer"><strong>UESTC</strong></a> in 2018 and my M.S. from <a class="about-school-link" href="https://en.scu.edu.cn/" target="_blank" rel="noopener noreferrer"><strong>Sichuan University</strong></a> in 2021, advised by Professor <a href="https://cs.scu.edu.cn/info/1303/13767.htm" target="_blank" rel="noopener noreferrer"><strong>Jiancheng Lv</strong></a>.
-              I then moved to Denmark for my Ph.D. at <a class="about-school-link" href="https://www.aau.dk/" target="_blank" rel="noopener noreferrer"><strong>Aalborg University</strong></a>, which I completed in early 2025 under the supervision of Professors <a href="https://csj.cs.aau.dk/" target="_blank" rel="noopener noreferrer"><strong>Christian S. Jensen</strong></a> (Member of Academia Europaea; ACM/IEEE Fellow), <a href="https://dalinzhang.github.io/" target="_blank" rel="noopener noreferrer"><strong>Dalin Zhang</strong></a>, and <a href="https://mypage.zju.edu.cn/en/lihuan" target="_blank" rel="noopener noreferrer"><strong>Huan Li</strong></a>. I also worked as a Research Fellow with Professor <a href="https://homes.cs.aau.dk/~luhua" target="_blank" rel="noopener noreferrer"><strong>Hua Lu</strong></a>.
+              I then moved to Denmark for my Ph.D. at <a class="about-school-link" href="https://www.en.aau.dk/" target="_blank" rel="noopener noreferrer"><strong>Aalborg University</strong></a>, which I completed in early 2025 under the supervision of Professors <a href="https://csj.cs.aau.dk/" target="_blank" rel="noopener noreferrer"><strong>Christian S. Jensen</strong></a> (Member of Academia Europaea; ACM/IEEE Fellow), <a href="https://dalinzhang.github.io/" target="_blank" rel="noopener noreferrer"><strong>Dalin Zhang</strong></a>, and <a href="https://mypage.zju.edu.cn/en/lihuan" target="_blank" rel="noopener noreferrer"><strong>Huan Li</strong></a>. I also worked as a Research Fellow with Professor <a href="https://homes.cs.aau.dk/~luhua" target="_blank" rel="noopener noreferrer"><strong>Hua Lu</strong></a>.
             
               </p>
             </div>
@@ -174,7 +186,7 @@
 
   <div class="section-title">
     <div class="container">
-      <h2><span class="section-index" aria-hidden="true">02 /</span><span class="section-label">publications</span><span class="record-count">6 records</span><span class="section-description">Representative Publications</span></h2>
+      <h2><span class="section-index" aria-hidden="true">02 /</span><span class="section-label">publications</span><span class="record-count">6 records</span></h2>
     </div>
   </div>
 
@@ -317,7 +329,7 @@
 
   <div class="section-title">
     <div class="container">
-      <h2><span class="section-index" aria-hidden="true">03 /</span><span class="section-label">projects</span><span class="record-count">5 records</span><span class="section-description">Projects &amp; Awards</span></h2>
+      <h2><span class="section-index" aria-hidden="true">03 /</span><span class="section-label">projects</span><span class="record-count">5 records</span></h2>
     </div>
   </div>
 
@@ -428,10 +440,11 @@
     <!-- Organizations Section -->
 <section id="organizations" class="organizations section light-background">
   <div class="container section-title">
-    <h2><span class="section-index" aria-hidden="true">04 /</span><span class="section-label">experience</span><span class="record-count">7 records</span><span class="section-description">Experience</span></h2>
+    <h2><span class="section-index" aria-hidden="true">04 /</span><span class="section-label">experience</span><span class="record-count">7 records</span></h2>
   </div>
   <div class="container">
     <div class="experience-list">
+      <div class="experience-column">
 <div class="tl-item current">
             <div class="tl-dot-col"><div class="tl-dot"></div></div>
             <div class="tl-card">
@@ -440,7 +453,7 @@
               </span>
               <div class="tl-info">
                 <div class="tl-school">
-                  <a href="https://www.fzu.edu.cn/" target="_blank" rel="noopener noreferrer">Fuzhou University</a>
+                  <a href="https://en.fzu.edu.cn/" target="_blank" rel="noopener noreferrer">Fuzhou University</a>
                 </div>
                 <div class="tl-role">Associate Research Professor</div>
                 <div class="tl-advisor">Mentored by Professor <a href="https://ccds.fzu.edu.cn/info/1207/8294.htm" target="_blank" rel="noopener noreferrer">Xing Chen</a></div>
@@ -451,7 +464,6 @@
               </div>
             </div>
           </div>
-
 <div class="tl-item">
             <div class="tl-dot-col"><div class="tl-dot"></div></div>
             <div class="tl-card">
@@ -471,7 +483,6 @@
               </div>
             </div>
           </div>
-
 <div class="tl-item">
             <div class="tl-dot-col"><div class="tl-dot"></div></div>
             <div class="tl-card">
@@ -490,7 +501,6 @@
               </div>
             </div>
           </div>
-
 <div class="tl-item">
             <div class="tl-card">
               <span class="tl-logo" aria-hidden="true">
@@ -508,7 +518,8 @@
               </div>
             </div>
           </div>
-
+      </div>
+      <div class="experience-column">
 <div class="tl-item">
             <div class="tl-dot-col"><div class="tl-dot"></div></div>
             <div class="tl-card">
@@ -517,7 +528,7 @@
               </span>
               <div class="tl-info">
                 <div class="tl-school">
-                  <a href="https://www.scu.edu.cn/" target="_blank" rel="noopener noreferrer">Sichuan University</a>
+                  <a href="https://en.scu.edu.cn/" target="_blank" rel="noopener noreferrer">Sichuan University</a>
                 </div>
                 <div class="tl-role">M.S. in Computer Science</div>
                 <div class="tl-advisor">Advised by Professor <a href="https://cs.scu.edu.cn/info/1303/13767.htm" target="_blank" rel="noopener noreferrer">Jiancheng Lv</a></div>
@@ -527,7 +538,6 @@
               </div>
             </div>
           </div>
-
 <div class="tl-item">
             <div class="tl-dot-col"><div class="tl-dot"></div></div>
             <div class="tl-card">
@@ -536,7 +546,7 @@
               </span>
               <div class="tl-info">
                 <div class="tl-school">
-                  <a href="https://www.uestc.edu.cn/" target="_blank" rel="noopener noreferrer">University of Electronic Science and Technology of China</a>
+                  <a href="https://en.uestc.edu.cn/" target="_blank" rel="noopener noreferrer">University of Electronic Science and Technology of China</a>
                 </div>
                 <div class="tl-role">B.S. in Computer Science</div>
                 <div class="tl-advisor">Advised by Professor <a href="https://cfm.uestc.edu.cn/~shaojie/" target="_blank" rel="noopener noreferrer">Jie Shao</a></div>
@@ -546,7 +556,6 @@
               </div>
             </div>
           </div>
-
 <div class="tl-item">
             <div class="tl-dot-col"><div class="tl-dot"></div></div>
             <div class="tl-card">
@@ -564,6 +573,7 @@
               </div>
             </div>
           </div>
+      </div>
     </div>
   </div>
 </section>
@@ -627,7 +637,7 @@
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js?v=587b74b79f"></script>
+  <script src="assets/js/main.js?v=7cc8c8f779"></script>
 
 </body>
 
