@@ -92,47 +92,93 @@
   }
   window.addEventListener('load', aosInit);
 
-  // Keep a readable static fallback for visitors who prefer reduced motion.
+  // One cancellable timer keeps pause/resume from creating competing loops.
   const selectTyped = document.querySelector('.typed');
-  if (selectTyped && reducedMotion.matches) {
-    selectTyped.textContent = selectTyped.dataset.typedItems.split(',').map(item => item.trim()).join(' · ');
-  }
-  if (selectTyped && !reducedMotion.matches) {
-    const researchTyped = new Typed('.typed', {
-      strings: selectTyped.dataset.typedItems.split(',').map(item => item.trim()),
-      loop: true,
-      typeSpeed: 55,
-      backSpeed: 25,
-      backDelay: 2400
-    });
+  if (selectTyped) {
+    const topics = selectTyped.dataset.typedItems.split(',').map(item => item.trim());
     const researchStage = selectTyped.closest('.hero-research');
     const hero = researchStage.closest('#hero');
+    const cursor = document.createElement('span');
+    cursor.className = 'typed-cursor';
+    cursor.textContent = '|';
+    cursor.setAttribute('aria-hidden', 'true');
+    selectTyped.after(cursor);
+    const holdDuration = 4500;
+    let topicIndex = 0;
+    let characterCount = topics[0].length;
+    let phase = 'holding';
+    let timer = null;
+    let deadline = 0;
+    let remaining = holdDuration;
     let isHovered = false;
-    let isVisible = false;
-    let isRunning = true;
-    function syncResearchAnimation() {
-      const shouldRun = isVisible && !isHovered && !document.hidden;
-      if (shouldRun === isRunning) return;
-      isRunning = shouldRun;
-      if (shouldRun) researchTyped.start();
-      else researchTyped.stop();
-      researchStage.classList.toggle('typing-paused', !shouldRun);
+    let isVisible = !('IntersectionObserver' in window);
+
+    function pauseTimer() {
+      if (timer === null) return;
+      clearTimeout(timer);
+      timer = null;
+      remaining = Math.max(0, deadline - performance.now());
     }
-    researchStage.addEventListener('mouseenter', () => { isHovered = true; syncResearchAnimation(); });
+    function tick() {
+      timer = null;
+      if (phase === 'holding') {
+        phase = 'deleting';
+      } else if (phase === 'deleting') {
+        characterCount--;
+        if (characterCount === 0) {
+          topicIndex = (topicIndex + 1) % topics.length;
+          phase = 'typing';
+        }
+      } else {
+        characterCount++;
+        if (characterCount === topics[topicIndex].length) phase = 'holding';
+      }
+      selectTyped.textContent = topics[topicIndex].slice(0, characterCount);
+      remaining = phase === 'holding' ? holdDuration : phase === 'typing' ? 95 : 55;
+      syncResearchAnimation();
+    }
+    function syncResearchAnimation() {
+      const shouldRun = isVisible && !isHovered && !document.hidden && !reducedMotion.matches;
+      researchStage.classList.toggle('typing-paused', !shouldRun);
+      if (!shouldRun) { pauseTimer(); return; }
+      if (timer !== null) return;
+      deadline = performance.now() + remaining;
+      timer = setTimeout(tick, remaining);
+    }
+    function setMotionPreference() {
+      pauseTimer();
+      topicIndex = 0;
+      characterCount = topics[0].length;
+      phase = 'holding';
+      remaining = holdDuration;
+      selectTyped.textContent = reducedMotion.matches ? topics.join(' · ') : topics[0];
+      cursor.hidden = reducedMotion.matches;
+      syncResearchAnimation();
+    }
+    researchStage.addEventListener('mouseenter', () => {
+      isHovered = true;
+      pauseTimer();
+      // Pause on a complete phrase so hovering always leaves readable text.
+      if (!reducedMotion.matches) {
+        characterCount = topics[topicIndex].length;
+        selectTyped.textContent = topics[topicIndex];
+        phase = 'holding';
+        remaining = holdDuration;
+      }
+      syncResearchAnimation();
+    });
     researchStage.addEventListener('mouseleave', () => { isHovered = false; syncResearchAnimation(); });
     document.addEventListener('visibilitychange', syncResearchAnimation);
+    reducedMotion.addEventListener('change', setMotionPreference);
     if ('IntersectionObserver' in window) {
       const observer = new IntersectionObserver(entries => {
         isVisible = entries[0].isIntersecting;
         syncResearchAnimation();
       });
       observer.observe(hero);
-    } else {
-      isVisible = true;
     }
-    syncResearchAnimation();
+    setMotionPreference();
   }
-
 
   /**
    * Correct scrolling position upon page load for URLs containing hash links.

@@ -2056,7 +2056,7 @@ section, .section {
 @media (max-width: 767px), (pointer: coarse) {
   .email-copy { width: 44px; height: 44px; }
   #navmenu a { min-height: 44px; }
-  #publications .pub-title a { display: inline-flex; align-items: center; min-height: 44px; }
+  #publications .pub-title a { display: block; min-height: 44px; }
   .scroll-top { width: 44px; height: 44px; }
 }
 
@@ -2622,6 +2622,8 @@ section, .section {
 .section-description { font-size: 11px; }
 #about .content { border-left: 1px solid var(--workbench-rule); padding-left: 22px; }
 #about .content p { font-family: var(--default-font); font-size: 14.5px; line-height: 1.85; letter-spacing: 0; }
+#about .content p + .bio-projects { padding-top: 12px; }
+#about .bio-translation { font-size: 0.93em; color: var(--detail-muted); }
 #about .bio-block { margin-bottom: 20px; }
 #about .bio-block:last-child { margin-bottom: 0; }
 #about .bio-label { color: #5e788c; font-size: 11px; margin-bottom: 7px; }
@@ -2747,4 +2749,61 @@ section, .section {
   #organizations .experience-column { display: contents; }
   #organizations .experience-column:first-child .tl-item:last-child::before { bottom: 0; }
   #organizations .experience-column + .experience-column .tl-item:first-child::before { top: 0; }
+}
+
+/* The research loop owns its cursor; no injected vendor styles are needed. */
+.hero .typed-cursor { opacity: 1; animation: research-cursor-blink 1.1s step-end infinite; }
+@keyframes research-cursor-blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .hero .typed-cursor { display: none; animation: none; } }
+
+/* Quiet macOS-inspired chrome: shared controls, soft materials, readable records. */
+:root {
+  --chrome-control: #f4f6f8;
+  --chrome-muted: #73818d;
+  --chrome-glass: rgba(246, 248, 250, .88);
+  --workbench-selection: #edf2f6;
+}
+:root[data-theme="dark"] {
+  --chrome-control: #26313b;
+  --chrome-muted: #9caeba;
+  --chrome-glass: rgba(29, 40, 50, .9);
+  --workbench-selection: #293a48;
+}
+.header .header-toggle, .scroll-top {
+  color: var(--ui-muted);
+  background: var(--chrome-control);
+  border: 1px solid var(--ui-border);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / .04);
+  transition: background-color .16s ease, color .16s ease, border-color .16s ease;
+}
+.header .header-toggle:hover, .scroll-top:hover {
+  color: var(--accent-color);
+  background: var(--workbench-selection);
+  border-color: color-mix(in srgb, var(--accent-color) 30%, var(--ui-border));
+}
+.workbench-bar { background: var(--workbench-rail); box-shadow: none; }
+@supports (backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px)) {
+  .workbench-bar {
+    background: var(--chrome-glass);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+  }
+}
+#navmenu .catalog-group, #navmenu .nav-count,
+.catalog-heading .directory-label { color: var(--chrome-muted); }
+#navmenu a:hover { background: var(--workbench-selection); }
+.header .profile-meta .profile-email { line-height: 1.65; margin-top: 10px; margin-bottom: 0; }
+:is(#publications, #projects) .record-table .pub-card::before,
+:is(#publications, #projects) .record-table .pub-card::after,
+:is(#publications, #projects) .record-table-header::before,
+:is(#publications, #projects) .record-table-header::after { opacity: .4; }
+#about .content .bio-keyword {
+  background: color-mix(in srgb, var(--accent-color) 6%, var(--workbench-surface));
+  padding: 1px 4px;
+  font-weight: 500;
+  border-radius: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .header .header-toggle, .scroll-top { transition: none; }
 }
