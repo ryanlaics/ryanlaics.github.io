@@ -880,14 +880,6 @@ button.header-toggle:focus-visible, .scroll-top:focus-visible, a:focus-visible {
   border-radius: 4px;
 }
 
-.prog-card, .recruit-col {
-  margin-bottom: 12px;
-  padding: 16px;
-  border: 1px solid rgb(224, 228, 232);
-  border-radius: 4px;
-  background: rgb(255, 255, 255);
-}
-
 @media (max-width: 991px) {
   .tl-columns {
     grid-template-columns: 1fr;
@@ -1502,26 +1494,6 @@ section, .section {
   font-size: 25px;
 }
 
-.recruit-opening {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 6px 16px;
-  padding: 10px 14px;
-  margin: 0px 0px 12px;
-}
-
-.recruit-opening strong {
-  font-size: 14px;
-  color: rgb(37, 79, 110);
-}
-
-.recruit-opening a {
-  margin-left: auto;
-  font-size: 12px;
-  white-space: nowrap;
-}
-
 .recruit-intro {
   font-size: 13px;
   line-height: 1.65;
@@ -1529,47 +1501,7 @@ section, .section {
   margin-bottom: 16px;
 }
 
-.recruit-duo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px;
-}
 
-#recruitment .recruit-col {
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  background: transparent;
-}
-
-.recruit-col-label {
-  margin: 0px 0px 6px;
-  font-size: 13px;
-  font-weight: 600;
-  color: rgb(37, 62, 84);
-}
-
-.recruit-summary {
-  margin: 0px;
-  font-size: 12.5px;
-  line-height: 1.7;
-  color: rgb(91, 101, 112);
-}
-
-@media (max-width: 767px) {
-  .recruit-duo {
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
-
-  .recruit-opening {
-    align-items: flex-start;
-  }
-
-  .recruit-opening a {
-    margin-left: 0px;
-  }
-}
 
 :root {
   --detail-ink: #233442;
@@ -2065,9 +1997,6 @@ section, .section {
   .hero .typed-live { position: static; }
 }
 
-/* Concise application guidance */
-#recruitment .recruit-apply { font-size: 13px; line-height: 1.65; color: #53616c; }
-
 /* School names remain linked but lighter than positions and research topics. */
 #about .content .about-school-link strong { font-weight: 500; }
 
@@ -2119,7 +2048,6 @@ section, .section {
 .section-title h2::after { display: none; }
 .section-title h2 { padding-bottom: 0; }
 #about, #publications, #projects, #organizations, #recruitment, #contact { border-top: 1px solid #e5e9ed; }
-.recruit-opening { background: transparent; border-left: 0; border-block: 1px solid #e2e7eb; padding-inline: 0; }
 
 /* Editor details: compact headings, directory markers, and a quiet grid. */
 .hero::before {
@@ -2353,10 +2281,7 @@ section, .section {
 :root[data-theme="dark"] #organizations .tl-logo { background: #ffffff; border-radius: 4px; padding: 2px; width: 32px; height: 38px; }
 :root[data-theme="dark"] #organizations .tl-item.current .tl-school a { color: #91bfdc; }
 :root[data-theme="dark"] #recruitment { --background-color: #161d24; }
-:root[data-theme="dark"] .recruit-opening { border-color: #34424e; }
-:root[data-theme="dark"] :is(.recruit-opening strong, .recruit-col-label) { color: #ccdfed; }
-:root[data-theme="dark"] :is(.recruit-intro, .recruit-apply, .recruit-summary) { color: #b2c3d0; }
-:root[data-theme="dark"] #recruitment .recruit-apply { color: #b2c3d0; }
+:root[data-theme="dark"] .recruit-intro { color: #b2c3d0; }
 :root[data-theme="dark"] #contact :is(.contact-primary-note, .contact-copyright, .contact-kicker, .contact-summary-item p) { color: #aebfcd; }
 :root[data-theme="dark"] #contact .email-copy { color: #a8c6db; border-color: #34424e; }
 :root[data-theme="dark"] .email-copy:hover, :root[data-theme="dark"] .email-copy.copied { color: #cce6f7; background: #273b4a; }
@@ -2366,8 +2291,6 @@ section, .section {
 
 /* Compact recruitment copy. */
 #recruitment .recruit-intro { margin-bottom: 8px; }
-#recruitment .recruit-summary { font-size: 13px; line-height: 1.65; }
-#recruitment .recruit-apply { margin: 10px 0 0; }
 
 /* Markdown prose: macOS monospace rhythm without changing biography content. */
 :root { --mono-font: ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
@@ -2399,14 +2322,14 @@ section, .section {
 }
 :is(#publications, #projects) .pub-authors,
 #organizations :is(.tl-role, .tl-advisor),
-#recruitment :is(.recruit-intro, .recruit-summary, .recruit-apply) {
+#recruitment .recruit-intro {
   font-family: var(--mono-font);
   letter-spacing: -0.025em;
 }
 #organizations .tl-advisor { font-size: 11.5px; line-height: 1.65; }
 #organizations .tl-role { font-size: 12px; }
 #organizations .tl-year { font-size: 11px; }
-#recruitment :is(.recruit-intro, .recruit-summary, .recruit-apply) { font-size: 12px; line-height: 1.8; }
+#recruitment .recruit-intro { font-size: 12px; line-height: 1.8; }
 :root[data-theme="dark"] #about .bio-label { color: #a2c4db; }
 :root[data-theme="dark"] #about .bio-label span { color: #8da5b6; }
 :root[data-theme="dark"] #about .content a { text-decoration-color: #526c80; }
@@ -2633,7 +2556,7 @@ section, .section {
 #organizations .tl-school, #organizations .tl-role, #organizations .tl-advisor { font-family: var(--default-font); letter-spacing: 0; }
 #organizations .tl-role { font-size: 12.5px; }
 #organizations .tl-advisor { font-size: 12px; line-height: 1.65; }
-#recruitment :is(.recruit-intro, .recruit-summary, .recruit-apply) { font-family: var(--default-font); font-size: 13px; letter-spacing: 0; line-height: 1.75; }
+#recruitment .recruit-intro { font-family: var(--default-font); font-size: 13px; letter-spacing: 0; line-height: 1.75; }
 #publications .record-table-header, #projects .record-table-header { position: relative; }
 :is(#publications, #projects) .record-table .pub-card {
   background-image: linear-gradient(to right, var(--workbench-gutter) 48px, transparent 48px);
@@ -2807,3 +2730,10 @@ section, .section {
 @media (prefers-reduced-motion: reduce) {
   .header .header-toggle, .scroll-top { transition: none; }
 }
+
+/* Bilingual contact details: group identity above the address. */
+#contact .contact-group-name { margin-bottom: 12px; }
+#contact .contact-group-name p[lang="zh-CN"] { font-weight: 500; color: var(--ui-ink); }
+#contact .contact-group-name p[lang="en"] { margin-top: 3px; font-size: 11.5px; }
+#contact .contact-address p + p { margin-top: 4px; }
+#recruitment .recruit-intro a { text-decoration: underline; text-underline-offset: 3px; }
