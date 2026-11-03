@@ -213,7 +213,7 @@
     if (activeLink) {
       const sectionId = activeLink.hash.slice(1);
       const path = `~/zhichen/${pathBySection[sectionId] || sectionId}`;
-      document.querySelectorAll('.workbench-path, .catalog-path').forEach(element => {
+      document.querySelectorAll('.workbench-path').forEach(element => {
         if (element.textContent !== path) element.textContent = path;
         element.title = path;
       });
@@ -236,25 +236,27 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
   const copyStatus = document.querySelector('#email-copy-status');
-  const defaultCopyMessage = copyStatus?.textContent;
   let copyResetTimer;
   document.querySelectorAll('[data-copy-email]').forEach(button => {
     button.addEventListener('click', async () => {
       const email = button.dataset.copyEmail;
       button.disabled = true;
+      document.querySelectorAll('.email-copy.copied').forEach(other => other.classList.remove('copied'));
       try {
         await navigator.clipboard.writeText(email);
-        document.querySelectorAll('.email-copy').forEach(other => other.classList.remove('copied'));
         button.classList.add('copied');
         if (copyStatus) copyStatus.textContent = `Copied: ${email}`;
       } catch {
+        clearTimeout(copyResetTimer);
         if (copyStatus) copyStatus.textContent = `Please copy manually: ${email}`;
       } finally {
         button.disabled = false;
+      }
+      if (button.classList.contains('copied')) {
         clearTimeout(copyResetTimer);
         copyResetTimer = setTimeout(() => {
           document.querySelectorAll('.email-copy').forEach(other => other.classList.remove('copied'));
-          if (copyStatus) copyStatus.textContent = defaultCopyMessage;
+          if (copyStatus) copyStatus.textContent = '';
         }, 3000);
       }
     });
