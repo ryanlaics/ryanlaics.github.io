@@ -17,29 +17,30 @@
    * Sidebar / mobile drawer
    * ------------------------------------------------------------------ */
 
-  if (header && headerToggleBtn) {
-    const sidebarContent = [...header.children].filter((element) => element !== headerToggleBtn);
-    const isMobileDrawer = () => !desktopNavigation.matches;
+  const sidebarContent = [...(header?.children || [])].filter((element) => element !== headerToggleBtn);
+  const isMobileDrawer = () => !desktopNavigation.matches;
 
-    function setHeaderOpen(isOpen) {
-      const open = Boolean(isOpen) && isMobileDrawer();
-      header.classList.toggle("header-show", open);
-      document.body.classList.toggle("nav-open", open);
-      if (headerToggleIcon) {
-        headerToggleIcon.classList.toggle("bi-list", !open);
-        headerToggleIcon.classList.toggle("bi-x", open);
-      }
-      headerToggleBtn.setAttribute("aria-expanded", String(open));
-      sidebarContent.forEach((element) => {
-        element.inert = isMobileDrawer() && !open;
-      });
-      if (mainContent) mainContent.inert = open;
-      if (open) {
-        const firstLink = header.querySelector("#navmenu a");
-        if (firstLink) firstLink.focus({ preventScroll: true });
-      }
+  function setHeaderOpen(isOpen) {
+    if (!header || !headerToggleBtn) return;
+    const open = Boolean(isOpen) && isMobileDrawer();
+    header.classList.toggle("header-show", open);
+    document.body.classList.toggle("nav-open", open);
+    if (headerToggleIcon) {
+      headerToggleIcon.classList.toggle("bi-list", !open);
+      headerToggleIcon.classList.toggle("bi-x", open);
     }
+    headerToggleBtn.setAttribute("aria-expanded", String(open));
+    sidebarContent.forEach((element) => {
+      element.inert = isMobileDrawer() && !open;
+    });
+    if (mainContent) mainContent.inert = open;
+    if (open) {
+      const firstLink = header.querySelector("#navmenu a");
+      if (firstLink) firstLink.focus({ preventScroll: true });
+    }
+  }
 
+  if (header && headerToggleBtn) {
     function headerToggle() {
       setHeaderOpen(!header.classList.contains("header-show"));
     }
@@ -70,11 +71,7 @@
   document.querySelectorAll("#navmenu a").forEach((link) => {
     link.addEventListener("click", () => {
       if (header && header.classList.contains("header-show")) {
-        const toggle = document.querySelector(".header-toggle");
-        header.classList.remove("header-show");
-        document.body.classList.remove("nav-open");
-        if (mainContent) mainContent.inert = false;
-        if (toggle) toggle.setAttribute("aria-expanded", "false");
+        setHeaderOpen(false);
       }
       const section = document.getElementById(link.hash.slice(1));
       if (section) {
@@ -204,14 +201,8 @@
   document.addEventListener("keydown", (event) => {
     const quickNav = document.querySelector("#quick-nav");
     if (event.key === "Escape" && !quickNav?.open && document.querySelector("#header.header-show")) {
-      const toggle = document.querySelector(".header-toggle");
-      document.querySelector("#header").classList.remove("header-show");
-      document.body.classList.remove("nav-open");
-      if (mainContent) mainContent.inert = false;
-      if (toggle) {
-        toggle.setAttribute("aria-expanded", "false");
-        toggle.focus();
-      }
+      setHeaderOpen(false);
+      headerToggleBtn?.focus();
     }
   });
 
@@ -322,10 +313,7 @@
       button.addEventListener("click", () => {
         quickNav.close();
         if (document.querySelector("#header.header-show")) {
-          document.querySelector("#header").classList.remove("header-show");
-          document.body.classList.remove("nav-open");
-          if (mainContent) mainContent.inert = false;
-          document.querySelector(".header-toggle")?.setAttribute("aria-expanded", "false");
+          setHeaderOpen(false);
         }
         const section = document.getElementById(button.dataset.target.slice(1));
         location.hash = button.dataset.target;

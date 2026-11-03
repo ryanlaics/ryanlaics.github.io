@@ -1124,10 +1124,10 @@ body { font-size: 16px; }
 #hero .terminal-identity .hero-name { margin: 0; font-family: var(--default-font); font-weight: 600; font-size: clamp(34px, 4vw, 52px); line-height: 1.12; letter-spacing: -0.035em; color: var(--heading-color); }
 #hero .zh-name { margin-left: 0.28em; font-size: 0.84em; font-weight: 500; letter-spacing: 0; }
 #hero .hero-role { margin: 14px 0 0; max-width: 62ch; font: 400 14px/1.7 var(--default-font); color: var(--ink-3); letter-spacing: 0; }
-#hero .hero-focus { display: block; margin: 16px 0 0; max-width: none; font: 400 13px/1.9 var(--mono-font); color: #355d79; }
+#hero .hero-focus { display: flex; align-items: baseline; margin: 16px 0 0; max-width: none; font: 400 13px/1.9 var(--mono-font); color: #355d79; }
 #hero .hero-focus .research-prefix { margin-right: 6px; color: var(--accent-color); }
 #hero .hero-focus .research-prefix::before { content: none; }
-#hero .hero-focus-items { display: inline; }
+#hero .hero-focus-items { display: block; }
 #hero .hero-focus span { border: 0; }
 #hero .hero-focus-items span { white-space: normal; }
 #hero .hero-focus-items span + span::before { content: " · "; margin: 0; color: var(--ui-muted); }
@@ -1252,7 +1252,9 @@ body { font-size: 16px; }
 #organizations .experience-list { max-width: none; }
 
 /* A compact hero portrait: the text block sets the hero height, not the photo. */
-#hero .hero-layout { grid-template-columns: minmax(0, 1fr) clamp(116px, 12.5vw, 168px); gap: clamp(18px, 3vw, 40px); }
+@media (min-width: 641px) {
+  #hero .hero-layout { grid-template-columns: minmax(0, 1fr) clamp(116px, 12.5vw, 168px); gap: clamp(18px, 3vw, 40px); }
+}
 
 /* Scroll reveal without AOS: only hides content once JS is confirmed. */
 html.js [data-aos] { opacity: 0; transform: translate3d(0, 12px, 0); transition: opacity .4s ease, transform .4s ease; will-change: opacity, transform; }
