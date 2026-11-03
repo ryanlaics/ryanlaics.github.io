@@ -1102,15 +1102,7 @@ section, .section {
   padding-bottom: 26px;
 }
 
-.about-layout {
-  display: grid;
-  grid-template-columns: 210px minmax(0px, 1fr);
-  gap: 36px;
-}
 
-.about-profile {
-  min-width: 0px;
-}
 
 .about-portrait {
   display: block;
@@ -1187,19 +1179,7 @@ section, .section {
 }
 
 @media (max-width: 767px) {
-  .about-layout {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
 
-  .about-profile {
-    display: grid;
-    grid-template-columns: 125px minmax(0px, 1fr);
-    gap: 22px;
-    align-items: start;
-    padding-bottom: 26px;
-    border-bottom: 1px solid rgb(223, 228, 232);
-  }
 
   .hero {
     min-height: 280px;
@@ -1216,10 +1196,6 @@ section, .section {
     padding-inline: 22px;
   }
 
-  .about-profile {
-    grid-template-columns: 100px minmax(0px, 1fr);
-    gap: 18px;
-  }
 
   .pub-body {
     padding: 18px 0px;
@@ -1582,9 +1558,6 @@ section, .section {
   margin-top: 1px;
 }
 
-.about-layout {
-  align-items: start;
-}
 
 .about-portrait {
   border: 1px solid rgb(227, 232, 236);
@@ -1844,18 +1817,6 @@ section, .section {
   }
 }
 
-@media (min-width: 641px) and (max-width: 991px) {
-  .about-layout {
-    grid-template-columns: 190px minmax(0px, 1fr);
-    gap: 26px;
-  }
-
-  .about-profile {
-    display: block;
-    padding-bottom: 0px;
-    border-bottom: 0px;
-  }
-}
 
 .header .profile-img img {
   width: 96px;
@@ -1891,31 +1852,9 @@ section, .section {
   color: rgb(190, 201, 211);
 }
 
-.about-profile {
-  display: block;
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-}
 
-.about-profile .about-portrait {
-  width: 100%;
-  height: auto;
-}
 
-@media (max-width: 640px) {
-  .about-profile {
-    width: min(100%, 220px);
-    margin-inline: auto;
-  }
-}
 
-@media (min-width: 992px) {
-  .about-layout {
-    grid-template-columns: 250px minmax(0px, 1fr);
-    gap: 32px;
-  }
-}
 
 .header .profile-affiliations {
   margin: 11px 0px 10px;
@@ -1952,12 +1891,6 @@ section, .section {
   padding-bottom: 18px;
 }
 
-@media (min-width: 641px) {
-  .about-layout {
-    grid-template-columns: clamp(160px, 24%, 250px) minmax(0px, 1fr);
-    gap: clamp(22px, 3vw, 32px);
-  }
-}
 
 @media (max-width: 640px) {
   #about.section, #publications.section, #projects.section, #organizations.section, #recruitment.section {
@@ -2190,10 +2123,6 @@ section, .section {
 
 .pub-link-icon { margin-left: 5px; font-size: 12px; vertical-align: 0.03em; }
 #navmenu .nav-external { font-size: 12px; }
-@media (min-width: 992px) {
-  #about .about-layout { grid-template-columns: clamp(230px, 28%, 280px) minmax(0, 1fr); }
-  #about .about-profile { position: sticky; top: 24px; }
-}
 #contact .contact-compact-shell { grid-template-columns: max-content minmax(0, 0.9fr) minmax(0, 1.4fr); gap: 16px 24px; }
 #contact .contact-inline-title { white-space: nowrap; }
 #contact .contact-email-list { display: grid; gap: 5px; }
@@ -2292,10 +2221,8 @@ section, .section {
 /* Compact recruitment copy. */
 #recruitment .recruit-intro { margin-bottom: 8px; }
 
-/* Markdown prose: macOS monospace rhythm without changing biography content. */
+/* Biography typography */
 :root { --mono-font: ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
-#about .bio-block { margin-bottom: 17px; }
-#about .bio-block:last-child { margin-bottom: 0; }
 #about .bio-label {
   margin: 0 0 5px;
   color: #55758c;
@@ -2304,7 +2231,7 @@ section, .section {
 }
 #about .bio-label span { color: #8b9caa; }
 #about .content p {
-  margin: 0 !important;
+  margin: 0;
   font-family: var(--mono-font);
   letter-spacing: -0.025em;
   text-wrap: pretty;
@@ -2543,12 +2470,21 @@ section, .section {
 :is(#about, #publications, #projects, #organizations, #recruitment) .section-title h2 { min-height: 26px; font-size: 19px; font-weight: 500; letter-spacing: -0.025em; }
 .section-index { color: #8596a3; font-size: 12px; }
 .section-description { font-size: 12px; }
-#about .content { border-left: 1px solid var(--workbench-rule); padding-left: 22px; }
 #about .content p { font-family: var(--default-font); font-size: 14.5px; line-height: 1.85; letter-spacing: 0; }
-#about .content p + .bio-projects { padding-top: 12px; }
+/* The introduction flows around the portrait; only the career history needs a heading. */
+#about .about-layout { max-width: 94ch; }
+#about .about-intro { display: flow-root; }
+#about .about-profile {
+  float: left;
+  width: clamp(176px, 26%, 240px);
+  margin: 0 clamp(20px, 3vw, 30px) 10px 0;
+}
+#about .content p + p { margin-top: 0.75em; }
+#about .about-history { margin-top: 1.25rem; }
+@media (max-width: 640px) {
+  #about .about-profile { float: none; width: min(52vw, 210px); margin: 0 auto 1rem; }
+}
 #about .bio-translation { font-size: 0.93em; color: var(--detail-muted); }
-#about .bio-block { margin-bottom: 20px; }
-#about .bio-block:last-child { margin-bottom: 0; }
 #about .bio-label { color: #5e788c; font-size: 12px; margin-bottom: 7px; }
 #about .content .bio-keyword { font-family: var(--mono-font); font-size: 0.91em; padding: 2px 4px; }
 #about .about-portrait { border-radius: var(--radius-control); box-shadow: none; }
@@ -2616,7 +2552,6 @@ section, .section {
 :root[data-theme="dark"] #navmenu a.active, :root[data-theme="dark"] #navmenu a.active:focus { background: var(--workbench-selection); }
 :root[data-theme="dark"] #navmenu .nav-count { background: transparent; }
 :root[data-theme="dark"] #navmenu a[data-section-kind="table"] .nav-item-icon { color: #9bbbcf; }
-@media (min-width: 992px) { #about .about-profile { top: 80px; } }
 @media (max-width: 991px) {
   .workbench-bar { padding-inline: 30px; }
   :is(#publications, #projects) .record-table .pub-card::after { display: none; }
@@ -2634,7 +2569,6 @@ section, .section {
   #hero .terminal-identity h2 { font-size: 30px; }
   #hero .research-terminal .hero-research { font-size: 13px; }
   :is(#about, #publications, #projects, #organizations, #recruitment) .section-title h2 { font-size: 18px; }
-  #about .content { padding-left: 16px; }
   #about .content p { font-size: 14px; line-height: 1.85; }
   :is(#publications, #projects) .record-table .pub-card::before { left: 40px; }
   :is(#publications, #projects) .record-table .pub-card { background-image: linear-gradient(to right, var(--workbench-gutter) 40px, transparent 40px); }
@@ -2657,17 +2591,11 @@ section, .section {
 #hero.hero.section { min-height: 200px; padding-block: 30px; }
 :is(#about, #publications, #projects, #organizations, #recruitment).section { padding-block: 28px; }
 :is(#about, #publications, #projects, #organizations, #recruitment) .section-title { padding-bottom: 16px; }
-#about .about-layout { column-gap: 24px; row-gap: 22px; }
-#about .about-profile { position: static; }
-#about .about-history { grid-column: 1 / -1; }
-#about .bio-block { margin-bottom: 14px; }
-#about .bio-block:last-child { margin-bottom: 0; }
 #organizations .experience-list { grid-template-rows: none; grid-auto-flow: row; align-items: start; }
 #organizations .experience-column { min-width: 0; }
 #organizations .tl-card { height: auto; }
 @media (max-width: 640px) {
   #hero.hero.section { min-height: 0; padding-block: 26px; }
-  #about .about-layout { row-gap: 20px; }
   #organizations .experience-list { grid-template-columns: 1fr; }
   #organizations .experience-column { display: contents; }
   #organizations .experience-column:first-child .tl-item:last-child::before { bottom: 0; }
