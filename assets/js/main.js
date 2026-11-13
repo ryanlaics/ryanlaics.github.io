@@ -1,5 +1,5 @@
 /**
- * Personal homepage behaviour.
+ * Personal and DIG@FZU group homepage behaviour.
  * Page-specific, dependency-free. Section order mirrors the document.
  */
 
@@ -170,17 +170,17 @@
         activeLink;
     }
     const pathBySection = {
-      hero: "research",
+      hero: "overview",
       about: "about.md",
       publications: "publications",
       projects: "funding",
       organizations: "experience",
-      recruitment: "recruitment.md",
+      recruitment: "join-us.md",
       contact: "contact.md",
     };
     if (activeLink) {
       const sectionId = activeLink.hash.slice(1);
-      const path = `~/zhichen/${pathBySection[sectionId] || sectionId}`;
+      const path = `~/dig/${pathBySection[sectionId] || sectionId}`;
       document.querySelectorAll(".workbench-path").forEach((element) => {
         if (element.textContent !== path) element.textContent = path;
         element.title = path;
