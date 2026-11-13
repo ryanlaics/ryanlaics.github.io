@@ -238,51 +238,6 @@
   });
 
   /* ------------------------------------------------------------------ *
-   * Appearance: system, light, dark
-   * ------------------------------------------------------------------ */
-
-  const systemTheme = window.matchMedia("(prefers-color-scheme: dark)");
-  const themeToggle = document.querySelector(".theme-toggle");
-  const appearanceModes = ["system", "light", "dark"];
-
-  function applyAppearance(mode) {
-    document.documentElement.dataset.themeMode = mode;
-    document.documentElement.dataset.theme =
-      mode === "system" ? (systemTheme.matches ? "dark" : "light") : mode;
-    if (!themeToggle) return;
-    const labels = { system: "Auto", light: "Light", dark: "Dark" };
-    const icons = { system: "bi-circle-half", light: "bi-sun", dark: "bi-moon" };
-    const label = themeToggle.querySelector("span");
-    const icon = themeToggle.querySelector("i");
-    if (label) label.textContent = labels[mode];
-    if (icon) icon.className = `bi ${icons[mode]}`;
-    themeToggle.title = `Appearance: ${mode}`;
-    const next = appearanceModes[(appearanceModes.indexOf(mode) + 1) % appearanceModes.length];
-    themeToggle.setAttribute("aria-label", `Appearance: ${mode}. Switch to ${next}.`);
-  }
-
-  applyAppearance(document.documentElement.dataset.themeMode || "system");
-
-  if (themeToggle) {
-    themeToggle.addEventListener("click", () => {
-      const next =
-        appearanceModes[
-          (appearanceModes.indexOf(document.documentElement.dataset.themeMode) + 1) % appearanceModes.length
-        ];
-      try {
-        localStorage.setItem("homepage-theme", next);
-      } catch {
-        /* storage is optional */
-      }
-      applyAppearance(next);
-    });
-  }
-
-  systemTheme.addEventListener("change", () => {
-    if (document.documentElement.dataset.themeMode === "system") applyAppearance("system");
-  });
-
-  /* ------------------------------------------------------------------ *
    * Quick navigation dialog
    * ------------------------------------------------------------------ */
 

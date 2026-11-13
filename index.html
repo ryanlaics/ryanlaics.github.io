@@ -312,21 +312,10 @@
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
-  <script>
-    (() => {
-      let mode = 'system';
-      try { mode = localStorage.getItem('homepage-theme') || mode; } catch {}
-      if (!['system', 'light', 'dark'].includes(mode)) mode = 'system';
-      document.documentElement.classList.add('js');
-      document.documentElement.dataset.themeMode = mode;
-      document.documentElement.dataset.theme = mode === 'system'
-        ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : mode;
-    })();
-  </script>
-
+  <script>document.documentElement.classList.add('js');</script>
 
   <!-- Main CSS File -->
-  <link href="assets/css/site.css?v=568ae91536" rel="stylesheet">
+  <link href="assets/css/site.css?v=df39c7c8d2" rel="stylesheet">
 
 </head>
 
@@ -349,7 +338,7 @@
 
     <div class="profile-meta" role="group" aria-label="Profile details">
       <p class="profile-title">Associate Research Professor<span class="profile-group-role">Group Leader, DIG@FZU</span></p>
-      <p class="profile-university">Fuzhou University</p>
+      <p class="profile-university"><a class="university-signature" href="https://en.fzu.edu.cn/" target="_blank" rel="noopener noreferrer"><img src="assets/img/fzu.webp" alt="" aria-hidden="true" width="22" height="22" decoding="async"><span>Fuzhou University</span><span class="visually-hidden"> (opens in a new tab)</span></a></p>
       <p class="profile-email"><a href="mailto:lzc@fzu.edu.cn">lzc [at] fzu.edu.cn</a><br><a href="mailto:zhla@cs.aau.dk">zhla [at] cs.aau.dk</a></p>
     </div>
 
@@ -357,9 +346,6 @@
     <nav id="navmenu" class="navmenu" aria-label="Main navigation">
       <div class="catalog-heading">
         <p class="directory-label" aria-hidden="true">Catalog</p>
-        <div class="sidebar-tools">
-          <button class="theme-toggle" type="button" aria-label="Appearance: system. Switch to light." title="Appearance: system"><i class="bi bi-circle-half" aria-hidden="true"></i><span>Auto</span></button>
-        </div>
       </div>
       <ul>
         <li><a href="#hero" class="active" aria-current="page" data-section-kind="document"><span class="nav-index" aria-hidden="true">00</span><i class="bi bi-house nav-item-icon" aria-hidden="true"></i><span class="nav-label">Home</span></a></li>
@@ -377,7 +363,7 @@
   <main id="main-content" class="main" tabindex="-1">
     <div class="workbench-bar" aria-hidden="true">
       <span class="terminal-dots"><i></i><i></i><i></i></span>
-      <span class="workbench-caption">DIG@FZU</span>
+      <span class="workbench-caption"><span class="workbench-university">FZU</span><span class="workbench-divider">/</span>DIG@FZU</span>
       <span class="workbench-path">~/dig/overview</span>
     </div>
 
@@ -389,16 +375,32 @@
         <div class="research-terminal">
           <div class="hero-layout">
             <div class="hero-copy">
+              <a class="hero-university" href="https://en.fzu.edu.cn/" target="_blank" rel="noopener noreferrer" aria-label="Fuzhou University (opens in a new tab)">
+                <img src="assets/img/fzu.webp" alt="" aria-hidden="true" width="24" height="24" decoding="async">
+                <span lang="zh-CN">福州大学</span><span class="university-en">Fuzhou University</span>
+              </a>
               <div class="terminal-identity">
                 <h1 class="hero-name">Zhichen Lai <span class="zh-name" lang="zh-CN">赖志宸</span></h1>
               </div>
-              <p class="hero-focus"><span class="research-prefix" aria-hidden="true">$</span><span class="hero-focus-items"><span class="hero-focus-row"><span>Time Series</span><span>Spatio-Temporal Data Mining</span></span><span class="hero-focus-row"><span>GeoAI</span><span>AI for Science &amp; Health</span></span></span></p>
+              <dl class="hero-focus" aria-label="Research interests">
+                <div>
+                  <dt>Data Intelligence</dt>
+                  <dd>Time Series Analysis · Spatio-Temporal Data Mining</dd>
+                </div>
+                <div>
+                  <dt>Interdisciplinary Information</dt>
+                  <dd>GeoAI · AI for Science &amp; Health</dd>
+                </div>
+              </dl>
             </div>
             <div class="hero-visuals">
               <figure class="hero-portrait">
                 <img src="assets/img/about-photo.webp" alt="Portrait of Zhichen Lai" width="399" height="412" decoding="async" fetchpriority="high">
               </figure>
-              <img class="hero-lab-logo" src="assets/img/dig-fzu-logo.png" alt="DIG@FZU — Data Intelligence and Interdisciplinary Information Group" width="1920" height="819" decoding="async">
+              <figure class="hero-lab-card">
+                <img class="hero-lab-logo" src="assets/img/dig-fzu-logo.png?v=10d17ee1bc" alt="DIG@FZU" width="640" height="360" decoding="async">
+                <figcaption><span>Data Intelligence and<br>Interdisciplinary<br>Information Group</span></figcaption>
+              </figure>
             </div>
           </div>
         </div>
@@ -420,20 +422,20 @@
           <div class="content about-intro">
             <p id="zhichen" tabindex="-1">
               Born in Fuzhou, China, I returned home in late 2025 after several years in Denmark.
-              I’m now an <strong>Associate Research Professor</strong> at <a class="about-school-link" href="https://en.fzu.edu.cn/" target="_blank" rel="noopener noreferrer"><strong>Fuzhou University</strong></a>’s College of Computer and Data Science.
-              I lead the <strong>Data Intelligence and Interdisciplinary Information Group (DIG@FZU)</strong>.
+              I’m now an <strong>Associate Research Professor</strong> at <a class="about-school-link" href="https://en.fzu.edu.cn/" target="_blank" rel="noopener noreferrer"><strong>Fuzhou University’s</strong><img class="inline-org-logo" src="assets/img/fzu.webp" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async"></a> College of Computer and Data Science.
+              I lead the <strong>Data Intelligence and Interdisciplinary Information Group <span class="inline-group-name">(DIG@FZU)<img class="inline-org-logo inline-dig-logo" src="assets/img/dig-fzu-logo.png?v=10d17ee1bc" alt="" aria-hidden="true" width="36" height="18" loading="lazy" decoding="async"></span></strong>.
+              I’m a member of the <a href="https://ncip.fzu.edu.cn/" target="_blank" rel="noopener noreferrer">Fujian Key Laboratory of Network Computing and Intelligent Information Processing</a>, where I’m mentored by Professor <a class="advisor-with-logo" href="https://ccds.fzu.edu.cn/info/1207/8294.htm" target="_blank" rel="noopener noreferrer"><strong>Xing Chen</strong><img class="inline-org-logo" src="assets/img/fzu.webp" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async"></a>.
             </p>
             <p>
               We develop efficient methods for learning from <strong class="bio-keyword">time series and spatio-temporal data</strong>, especially when series are correlated, observations are missing, or patterns change over time.
               Our broader interests include <strong class="bio-keyword">GeoAI</strong> and <strong class="bio-keyword">AI for science and health</strong>.
-              I’m a member of the <a href="https://ncip.fzu.edu.cn/" target="_blank" rel="noopener noreferrer">Fujian Key Laboratory of Network Computing and Intelligent Information Processing</a>, where I’m mentored by Professor <a href="https://ccds.fzu.edu.cn/info/1207/8294.htm" target="_blank" rel="noopener noreferrer"><strong>Xing Chen</strong></a>.
-              My research is supported by <strong>China’s MOE National Overseas Talent Recruitment Program</strong> and the <strong>NSFC Young Scientists Fund (Category C)</strong>.
+              My research is supported by <strong>China’s MOE National Overseas Talent Recruitment Program</strong><img class="inline-org-logo" src="assets/img/moe-logo.png?v=679437547c" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async"> and the <strong>NSFC Young Scientists Fund (Category C)</strong><img class="inline-org-logo" src="assets/img/nsfc-logo.png?v=679d2f6114" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async">.
             </p>
           </div>
           <div class="content about-history">
             <p>
-              I studied Computer Science in China, earning my B.S. at <a class="about-school-link" href="https://en.uestc.edu.cn/" target="_blank" rel="noopener noreferrer"><strong>UESTC</strong></a> in 2018 and my M.S. at <a class="about-school-link" href="https://en.scu.edu.cn/" target="_blank" rel="noopener noreferrer"><strong>Sichuan University</strong></a> in 2021. My master’s advisor was Professor <a href="https://cs.scu.edu.cn/info/1303/13767.htm" target="_blank" rel="noopener noreferrer"><strong>Jiancheng Lv</strong></a>.
-              In early 2025, I completed my Ph.D. in Computer Science at <a class="about-school-link" href="https://www.en.aau.dk/" target="_blank" rel="noopener noreferrer"><strong>Aalborg University</strong></a> (Denmark) under the supervision of Professors <a href="https://csj.cs.aau.dk/" target="_blank" rel="noopener noreferrer"><strong>Christian S. Jensen</strong></a> (Member of Academia Europaea; ACM/IEEE Fellow), <a href="https://dalinzhang.github.io/" target="_blank" rel="noopener noreferrer"><strong>Dalin Zhang</strong></a>, and <a href="https://mypage.zju.edu.cn/en/lihuan" target="_blank" rel="noopener noreferrer"><strong>Huan Li</strong></a>. I also worked as a Research Fellow with Professor <a href="https://homes.cs.aau.dk/~luhua" target="_blank" rel="noopener noreferrer"><strong>Hua Lu</strong></a>.
+              I studied Computer Science in China, earning my B.S. at <a class="about-school-link" href="https://en.uestc.edu.cn/" target="_blank" rel="noopener noreferrer"><strong>UESTC</strong><img class="inline-org-logo" src="assets/img/UESTC.webp" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async"></a> in 2018 and my M.S. at <a class="about-school-link" href="https://en.scu.edu.cn/" target="_blank" rel="noopener noreferrer"><strong>Sichuan University</strong><img class="inline-org-logo" src="assets/img/SCU.webp" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async"></a> in 2021. My master’s advisor was Professor <a class="advisor-with-logo" href="https://cs.scu.edu.cn/info/1303/13767.htm" target="_blank" rel="noopener noreferrer"><strong>Jiancheng Lv</strong><img class="inline-org-logo" src="assets/img/SCU.webp" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async"></a>.
+              In early 2025, I completed my Ph.D. in Computer Science at <a class="about-school-link" href="https://www.en.aau.dk/" target="_blank" rel="noopener noreferrer"><strong>Aalborg University</strong><img class="inline-org-logo" src="assets/img/AAU.webp?v=e13a9a4902" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async"></a>, Denmark, under the supervision of Professors <a class="advisor-with-logo" href="https://csj.cs.aau.dk/" target="_blank" rel="noopener noreferrer"><strong>Christian S. Jensen</strong><img class="inline-org-logo" src="assets/img/AAU.webp?v=e13a9a4902" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async"></a> (Member of Academia Europaea; ACM/IEEE Fellow), <a class="advisor-with-logo" href="https://dalinzhang.github.io/" target="_blank" rel="noopener noreferrer"><strong>Dalin Zhang</strong><img class="inline-org-logo" src="assets/img/hdu-logo.png?v=4a9afc0852" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async"></a>, and <a class="advisor-with-logo" href="https://mypage.zju.edu.cn/en/lihuan" target="_blank" rel="noopener noreferrer"><strong>Huan Li</strong><img class="inline-org-logo" src="assets/img/zju-logo.png" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async"></a>. I also worked as a Research Fellow with Professor <a class="advisor-with-logo" href="https://homes.cs.aau.dk/~luhua" target="_blank" rel="noopener noreferrer"><strong>Hua Lu</strong><img class="inline-org-logo" src="assets/img/AAU.webp?v=e13a9a4902" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async"></a>.
             </p>
           </div>
         </div>
@@ -604,7 +606,7 @@
         <div class="pub-top-row">
           <span class="pub-index">00</span>
         </div>
-        <h3 class="pub-title">China’s MOE National Overseas Talent Recruitment Program</h3>
+        <h3 class="pub-title"><img class="funding-logo" src="assets/img/moe-logo.png?v=679437547c" alt="" aria-hidden="true" width="24" height="24" loading="lazy" decoding="async"><span>China’s MOE National Overseas Talent Recruitment Program</span></h3>
         <p class="pub-authors" lang="zh-CN">
           中国教育部国家海外引才专项
         </p>
@@ -618,7 +620,7 @@
         <div class="pub-top-row">
           <span class="pub-index">01</span>
         </div>
-        <h3 class="pub-title">National Natural Science Foundation of China — Young Scientists Fund (Category C)</h3>
+        <h3 class="pub-title"><img class="funding-logo" src="assets/img/nsfc-logo.png?v=679d2f6114" alt="" aria-hidden="true" width="24" height="24" loading="lazy" decoding="async"><span>National Natural Science Foundation of China — Young Scientists Fund (Category C)</span></h3>
         <p class="pub-authors" lang="zh-CN">
           国家自然科学基金青年科学基金项目（C 类）
         </p>
@@ -632,7 +634,7 @@
         <div class="pub-top-row">
           <span class="pub-index">02</span>
         </div>
-        <h3 class="pub-title">Open Research Grant, State Key Laboratory of Blockchain and Data Security, Zhejiang University</h3>
+        <h3 class="pub-title"><img class="funding-logo" src="assets/img/zju-logo.png" alt="" aria-hidden="true" width="24" height="24" loading="lazy" decoding="async"><span>Open Research Grant, State Key Laboratory of Blockchain and Data Security, Zhejiang University</span></h3>
         <p class="pub-authors" lang="zh-CN">浙江大学区块链与数据安全全国重点实验室开放课题</p>
       </div>
       <div class="pub-year-col">
@@ -644,7 +646,7 @@
         <div class="pub-top-row">
           <span class="pub-index">03</span>
         </div>
-        <h3 class="pub-title">Fujian Provincial High-Level Talent Program (Category C)</h3>
+        <h3 class="pub-title"><img class="funding-logo" src="assets/img/fujian-talents-logo.png?v=140e7ffd69" alt="" aria-hidden="true" width="24" height="24" loading="lazy" decoding="async"><span>Fujian Provincial High-Level Talent Program (Category C)</span></h3>
         <p class="pub-authors" lang="zh-CN">福建省高层次人才（C 类）</p>
       </div>
       <div class="pub-year-col">
@@ -656,7 +658,7 @@
         <div class="pub-top-row">
           <span class="pub-index">04</span>
         </div>
-        <h3 class="pub-title">Qishan Scholar Program (Overseas Talent Introduction), Fuzhou University</h3>
+        <h3 class="pub-title"><img class="funding-logo" src="assets/img/fzu.webp" alt="" aria-hidden="true" width="24" height="24" loading="lazy" decoding="async"><span>Qishan Scholar Program (Overseas Talent Introduction), Fuzhou University</span></h3>
         <p class="pub-authors" lang="zh-CN">福州大学旗山学者计划（海外项目）</p>
       </div>
       <div class="pub-year-col">
@@ -706,14 +708,14 @@
             <div class="tl-dot-col"><div class="tl-dot"></div></div>
             <div class="tl-card">
               <span class="tl-logo" aria-hidden="true">
-                <img src="assets/img/AAU.webp" alt="" width="192" height="192" loading="lazy" decoding="async">
+                <img src="assets/img/AAU.webp?v=e13a9a4902" alt="" width="192" height="192" loading="lazy" decoding="async">
               </span>
               <div class="tl-info">
                 <div class="tl-school">
                   <a href="https://www.en.aau.dk/" target="_blank" rel="noopener noreferrer">Aalborg University</a>
                 </div>
                 <div class="tl-role">Ph.D. in Computer Science &amp; Research Fellow</div>
-                <div class="tl-advisor">Advised by Professors <a href="https://csj.cs.aau.dk/" target="_blank" rel="noopener noreferrer">Christian S. Jensen</a>, <a href="https://homes.cs.aau.dk/~luhua" target="_blank" rel="noopener noreferrer">Hua Lu</a>, <a href="https://mypage.zju.edu.cn/en/lihuan" target="_blank" rel="noopener noreferrer">Huan Li</a>, and <a href="https://dalinzhang.github.io/" target="_blank" rel="noopener noreferrer">Dalin Zhang</a></div>
+                <div class="tl-advisor">Advised by Professors <a class="advisor-with-logo" href="https://csj.cs.aau.dk/" target="_blank" rel="noopener noreferrer">Christian S. Jensen<img class="inline-org-logo" src="assets/img/AAU.webp?v=e13a9a4902" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async"></a>, <a class="advisor-with-logo" href="https://homes.cs.aau.dk/~luhua" target="_blank" rel="noopener noreferrer">Hua Lu<img class="inline-org-logo" src="assets/img/AAU.webp?v=e13a9a4902" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async"></a>, <a class="advisor-with-logo" href="https://mypage.zju.edu.cn/en/lihuan" target="_blank" rel="noopener noreferrer">Huan Li<img class="inline-org-logo" src="assets/img/zju-logo.png" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async"></a>, and <a class="advisor-with-logo" href="https://dalinzhang.github.io/" target="_blank" rel="noopener noreferrer">Dalin Zhang<img class="inline-org-logo" src="assets/img/hdu-logo.png?v=4a9afc0852" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async"></a></div>
               </div>
               <div class="tl-meta">
                 <div class="tl-year"><time datetime="2021">2021–2025</time></div>
@@ -768,7 +770,7 @@
                   <a href="https://en.scu.edu.cn/" target="_blank" rel="noopener noreferrer">Sichuan University</a>
                 </div>
                 <div class="tl-role">M.S. in Computer Science</div>
-                <div class="tl-advisor">Advised by Professor <a href="https://cs.scu.edu.cn/info/1303/13767.htm" target="_blank" rel="noopener noreferrer">Jiancheng Lv</a></div>
+                <div class="tl-advisor">Advised by Professor <a class="advisor-with-logo" href="https://cs.scu.edu.cn/info/1303/13767.htm" target="_blank" rel="noopener noreferrer">Jiancheng Lv<img class="inline-org-logo" src="assets/img/SCU.webp" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async"></a></div>
               </div>
               <div class="tl-meta">
                 <div class="tl-year"><time datetime="2018">2018–2021</time></div>
@@ -822,7 +824,7 @@
   </div>
   <div class="container" data-aos="fade-up">
     <div class="recruit-note">
-      <p class="recruit-intro">I welcome curious, <strong>self-motivated</strong> prospective graduate students and first- or second-year undergraduates interested in research to join DIG@FZU. I offer close guidance in a supportive research environment.</p>
+      <p class="recruit-intro">I welcome curious, <strong>self-motivated</strong> prospective graduate students and first- or second-year undergraduates interested in research to join <span class="inline-group-name">DIG@FZU<img class="inline-org-logo inline-dig-logo" src="assets/img/dig-fzu-logo.png?v=10d17ee1bc" alt="" aria-hidden="true" width="36" height="18" loading="lazy" decoding="async"></span>. I offer close guidance in a supportive research environment.</p>
       <div class="recruit-apply">
         <a href="mailto:lzc@fzu.edu.cn"><i class="bi bi-envelope" aria-hidden="true"></i> Email me</a>
         <span>Include your CV and a brief description of your research interests.</span>
@@ -855,7 +857,8 @@
           </div>
           <address>
             <strong>Room 101-2, Building No. 3</strong><br>
-            College of Computer and Data Science, Fuzhou University<br>
+            College of Computer and Data Science, Fuzhou University,<br>
+            No. 2 Wulongjiang North Avenue, Fuzhou University Town,<br>
             Fuzhou, Fujian, China
           </address>
         </div>
@@ -870,7 +873,10 @@
           </ul>
       </div>
       </div>
-      <footer class="contact-copyright">© 2026 <strong>Zhichen Lai · DIG@FZU</strong>. All rights reserved.</footer>
+      <footer class="contact-copyright">
+        <span>© 2026 <strong>Zhichen Lai · DIG@FZU</strong>. All rights reserved.</span>
+        <a class="university-motto" href="https://www.fzu.edu.cn/xxgk/xbxx.htm" target="_blank" rel="noopener noreferrer"><span class="motto-label">Fuzhou University</span><span lang="zh-CN">明德至诚 · 博学远志</span><span class="visually-hidden"> (university motto; opens in a new tab)</span></a>
+      </footer>
     </article>
   </div>
 
@@ -890,7 +896,7 @@
   </dialog>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js?v=a7fc39696a"></script>
+  <script src="assets/js/main.js?v=291a913f3c"></script>
 
 </body>
 
