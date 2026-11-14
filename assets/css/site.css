@@ -1032,7 +1032,7 @@ body { font-size: 16px; }
   gap: clamp(18px, 2vw, 28px);
 }
 #hero .hero-copy { min-width: 0; }
-#hero .hero-visuals { display: grid; grid-template-columns: repeat(2, clamp(136px, 14vw, 192px)); align-items: stretch; gap: 12px; }
+#hero .hero-visuals { display: grid; grid-template-columns: repeat(2, clamp(156px, 16vw, 216px)); align-items: stretch; gap: 12px; }
 #hero .hero-lab-logo { display: block; width: 100%; height: auto; border-radius: 6px; background: transparent; }
 #hero .hero-lab-card { width: 100%; min-width: 0; aspect-ratio: 1; display: flex; flex-direction: column; justify-content: center; margin: 0; padding: 8px; border: 1px solid var(--ui-border); border-radius: var(--radius-window); background: var(--ui-panel); }
 #hero .hero-lab-card figcaption { display: grid; gap: 5px; margin-top: 6px; text-align: center; font: 400 12px/1.35 var(--default-font); color: var(--detail-muted); }
@@ -1059,7 +1059,7 @@ body { font-size: 16px; }
 
 @media (max-width: 640px) {
   #hero .hero-layout { grid-template-columns: minmax(0, 1fr); gap: 20px; }
-  #hero .hero-visuals { grid-row: 1; width: min(100%, 340px); grid-template-columns: repeat(2, minmax(0, 1fr)); justify-self: start; }
+  #hero .hero-visuals { grid-row: 1; width: min(100%, 380px); grid-template-columns: repeat(2, minmax(0, 1fr)); justify-self: start; }
   #hero .hero-copy { text-align: left; }
 }
 
@@ -1135,7 +1135,7 @@ body { font-size: 16px; }
   body.nav-open { overflow: hidden; }
   body.nav-open::after { content: ""; position: fixed; inset: 0; z-index: 996; background: rgb(12 20 28 / 0.32); }
   .header { z-index: 997; }
-  .header .header-toggle { width: 44px; height: 44px; display: grid; place-items: center; }
+  .header .header-toggle { top: 6px; width: 44px; height: 44px; display: grid; place-items: center; }
 }
 
 @media (max-width: 380px) {
@@ -1251,3 +1251,153 @@ html.js [data-aos].aos-in { opacity: 1; transform: none; will-change: auto; }
 .university-motto [lang="zh-CN"] { font-family: "Songti SC", "STSong", "Noto Serif CJK SC", serif; font-weight: 600; letter-spacing: .12em; }
 .university-motto:hover [lang="zh-CN"] { text-decoration: underline; text-underline-offset: 4px; }
 :is(.university-signature, .university-motto):focus-visible { outline: 2px solid var(--accent-color); outline-offset: 4px; border-radius: 3px; }
+
+/* A personal route above the academic record: no dates or duplicate timeline. */
+.personal-journey { margin: 4px 0 26px; padding: 12px 0 4px; }
+.journey-stops { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); list-style: none; margin: 0; padding: 0; }
+.journey-stop { position: relative; display: flex; flex-direction: column; align-items: flex-start; min-width: 0; padding-right: 16px; }
+.journey-city { color: var(--ui-ink); line-height: 22px; font-size: 15px; font-weight: 600; letter-spacing: .015em; transition: color .2s; }
+.journey-node { position: relative; display: block; width: 10px; height: 10px; margin: 13px 0; border: 1.5px solid var(--ui-muted); border-radius: 50%; background: var(--background-color, #fff); z-index: 1; transition: border-color .2s, box-shadow .2s; }
+.journey-stop:not(:last-child)::after { content: ""; position: absolute; left: 10px; right: 0; top: 40px; height: 1px; background: var(--ui-border); transform-origin: left; }
+.journey-stop:nth-child(3)::after { background: linear-gradient(90deg, var(--ui-border), var(--accent-color)); }
+.journey-caption { color: var(--detail-muted); font-size: 13px; line-height: 1.5; }
+.journey-home .journey-city, .journey-home .journey-caption { color: var(--accent-color); }
+.journey-home .journey-node { background: var(--accent-color); border-color: var(--accent-color); box-shadow: 0 0 0 4px var(--campus-tint); }
+.journey-visits { display: flex; flex-direction: column; gap: 2px; border-left: 1px solid var(--ui-border); margin-top: 10px; padding-left: 10px; color: var(--detail-muted); font-size: 12px; line-height: 1.45; }
+.journey-visits small { font-size: 12px; color: var(--ui-muted); }
+.journey-return { max-width: 180px; margin-top: 10px; color: var(--ui-muted); font-size: 12px; font-style: italic; line-height: 1.5; }
+.journey-stop:hover .journey-city { color: var(--accent-color); }
+.journey-stop:hover .journey-node { border-color: var(--accent-color); box-shadow: 0 0 0 4px var(--campus-tint); }
+.personal-journey.journey-visible .journey-stop::after { animation: journey-draw 1s ease-out both; }
+@keyframes journey-draw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@media (max-width: 600px) {
+  .personal-journey { margin-bottom: 22px; padding-top: 0; }
+  .journey-stops { grid-template-columns: 1fr; }
+  .journey-stop { display: grid; grid-template-columns: 12px 90px minmax(0, 1fr); gap: 0 13px; padding: 0 0 22px; align-items: baseline; }
+  .journey-city { grid-column: 2; font-size: 14px; }
+  .journey-node { grid-column: 1; grid-row: 1; margin: 0; align-self: center; }
+  .journey-caption { grid-column: 3; grid-row: 1; }
+  .journey-stop:not(:last-child)::after { left: 4px; right: auto; top: 16px; bottom: -2px; width: 1px; height: auto; transform-origin: top; }
+  .journey-stop:nth-child(3)::after { background: linear-gradient(180deg, var(--ui-border), var(--accent-color)); }
+  .journey-visits, .journey-return { grid-column: 3; margin-top: 7px; }
+  .journey-stop:last-child { padding-bottom: 0; }
+  .personal-journey.journey-visible .journey-stop::after { animation-name: journey-draw-vertical; }
+}
+@keyframes journey-draw-vertical { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@media (prefers-reduced-motion: reduce) {
+  .personal-journey.journey-visible .journey-stop::after { animation: none; }
+  .journey-city, .journey-node { transition: none; }
+}
+
+.journey-city { white-space: nowrap; }
+.journey-flag { font-size: .95em; }
+
+/* Small data structures: decorative, quiet, and consistent with the campus palette. */
+#hero .hero-focus dt { display: flex; align-items: center; gap: 9px; }
+.research-glyph { width: 25px; height: 23px; flex: 0 0 25px; overflow: visible; fill: none; stroke: currentColor; stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round; }
+.research-glyph circle { fill: var(--background-color); }
+#hero .hero-visuals { position: relative; isolation: isolate; }
+#hero .hero-visuals > figure { position: relative; z-index: 1; }
+#hero .hero-network { position: absolute; inset: -22px -18px; width: calc(100% + 36px); height: calc(100% + 44px); z-index: 0; pointer-events: none; overflow: visible; animation: network-arrive 1.2s ease-out both; }
+.network-edges { fill: none; stroke: var(--detail-muted); stroke-opacity: .18; stroke-width: .8; }
+.network-nodes { fill: var(--detail-muted); fill-opacity: .22; }
+.network-nodes circle:nth-child(3n + 1) { fill: var(--accent-color); fill-opacity: .42; }
+@keyframes network-arrive { from { opacity: 0; } to { opacity: 1; } }
+:is(#publications, #projects) .record-table .pub-card { transition: background-color .18s ease; }
+:is(#publications, #projects) .record-table .pub-card:hover,
+:is(#publications, #projects) .record-table .pub-card:focus-within { background-color: var(--campus-tint); }
+:is(#publications, #projects) .record-table .pub-card:hover .pub-index,
+:is(#publications, #projects) .record-table .pub-card:focus-within .pub-index { color: var(--accent-color); }
+.journey-visits { gap: 5px; padding-left: 12px; border-color: color-mix(in srgb, var(--accent-color) 22%, var(--ui-border)); }
+.journey-branch { position: relative; display: block; }
+.journey-branch::before { content: ""; position: absolute; left: -13px; top: .7em; width: 8px; height: 1px; background: var(--ui-border); }
+.journey-visits small { margin-top: 2px; }
+@media (max-width: 640px) { #hero .hero-network { inset: -10px; width: calc(100% + 20px); height: calc(100% + 20px); } }
+@media (prefers-reduced-motion: reduce) {
+  #hero .hero-network { animation: none; }
+  :is(#publications, #projects) .record-table .pub-card { transition: none; }
+}
+@media print { #hero .hero-network { display: none; } }
+
+/* A wider neural field across the hero, softened behind the reading area. */
+#hero .hero-layout { position: relative; isolation: isolate; }
+#hero .hero-copy, #hero .hero-visuals { position: relative; z-index: 1; }
+#hero .hero-network {
+  inset: -30px -28px;
+  width: calc(100% + 56px);
+  height: calc(100% + 60px);
+  z-index: -1;
+  mask-image: linear-gradient(90deg, rgba(0,0,0,.12), rgba(0,0,0,.28) 42%, #000 70%);
+}
+#hero .network-edges { stroke-opacity: .3; stroke-width: 1; }
+#hero .network-nodes { fill-opacity: .38; }
+#hero .network-nodes circle:nth-child(3n + 1) { fill-opacity: .65; }
+@media (max-width: 640px) {
+  #hero .hero-network { inset: -16px -12px; width: calc(100% + 24px); height: calc(100% + 32px); mask-image: linear-gradient(180deg, #000, rgba(0,0,0,.12) 75%); }
+}
+
+/* Neural field refinement: sparse layers and a few highlighted connections. */
+#hero .network-signal { fill: none; stroke: var(--accent-color); stroke-opacity: .24; stroke-width: 1.15; }
+#hero .network-halos { fill: none; stroke: var(--accent-color); stroke-opacity: .18; stroke-width: .8; }
+#hero .hero-portrait, #hero .hero-lab-card {
+  border-color: color-mix(in srgb, var(--accent-color) 12%, var(--ui-border));
+  box-shadow: 0 3px 12px rgba(65, 35, 39, .035), 0 1px 2px rgba(65, 35, 39, .025);
+}
+#hero .hero-lab-card { background: linear-gradient(145deg, #fff 50%, var(--campus-tint)); box-shadow: inset 0 2px var(--accent-color), 0 3px 12px rgba(65,35,39,.035); }
+#hero .hero-lab-card figcaption { line-height: 1.45; }
+#hero .hero-focus > div { padding-left: 10px; border-left: 2px solid color-mix(in srgb, var(--accent-color) 16%, transparent); }
+#hero .hero-focus dd { margin-top: 4px; }
+@media print { #hero .hero-portrait, #hero .hero-lab-card { box-shadow: none; } }
+
+/* Compact contact rows without removing information or touch targets. */
+#contact .contact-panel > .contact-email,
+#contact .contact-panel > .contact-summary { padding: 10px 14px; }
+#contact .contact-panel .contact-kicker { margin-bottom: 4px; }
+#contact .contact-email-list { gap: 0; }
+#contact .contact-email-list p { margin: 0; }
+#contact #email-copy-status:empty { min-height: 0; display: none; }
+#contact .office-plaque address { margin-top: 2px; line-height: 1.45; }
+#contact .contact-profiles { padding: 9px 14px; gap: 6px 12px; }
+@media (min-width: 600px) and (max-width: 800px) {
+  #contact .contact-email-list { display: flex; flex-wrap: wrap; gap: 2px 20px; max-width: none; }
+  #contact .contact-panel .contact-email-list p { display: flex; gap: 7px; }
+}
+
+/* Funding uses the publication record rhythm, with quiet dates. */
+#projects .pub-title { display: block; font-size: 16px; line-height: 1.55; }
+#projects .funding-logo { display: inline-block; width: 21px; height: 21px; margin: 0 0 0 4px; vertical-align: -4px; }
+#projects .pub-year-col { padding: 0; }
+#projects .pub-year-num { color: var(--detail-muted); font-weight: 400; font-size: 12px; }
+@media (max-width: 991px) {
+  #projects .pub-year-col { grid-area: 2 / 2; padding: 0; text-align: left; }
+  #projects .pub-index { grid-area: 1 / 1 / 3 / 2; }
+}
+
+/* Compact funding records: aligned leading marks and closely paired dates. */
+#projects .record-table .pub-card { padding-block: 9px; row-gap: 2px; }
+#projects .pub-title { display: flex; align-items: flex-start; gap: 8px; line-height: 1.4; }
+#projects .funding-logo { flex: 0 0 22px; width: 22px; height: 22px; margin: 0; object-fit: contain; }
+#projects .pub-title > span { flex: 1; min-width: 0; }
+#projects .pub-year-num { line-height: 1.4; }
+@media (max-width: 991px) {
+  #projects .pub-year-col { padding-left: 30px; }
+}
+
+/* Funding marks live in the record gutter. */
+#projects .pub-index { display: flex; flex-direction: column; align-items: center; gap: 5px; }
+#projects .pub-index::before, #projects .pub-index::after { content: none; }
+#projects .funding-number::before { content: "["; }
+#projects .funding-number::after { content: "]"; }
+#projects .pub-index .funding-logo { width: 22px; height: 22px; flex: 0 0 22px; }
+#projects .pub-title { display: block; }
+#projects .pub-year-col { padding-left: 0; }
+
+/* Dates are supporting metadata, not a second headline. */
+#projects .pub-year-num {
+  font-family: var(--default-font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 0;
+  color: #78808a;
+}

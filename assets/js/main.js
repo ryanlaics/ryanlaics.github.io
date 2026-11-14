@@ -344,4 +344,15 @@
       }
     });
   }
+  // Draw the personal route once when it enters the viewport.
+  const personalJourney = document.querySelector('.personal-journey');
+  if (personalJourney && 'IntersectionObserver' in window) {
+    const journeyObserver = new IntersectionObserver((entries, observer) => {
+      if (entries.some(entry => entry.isIntersecting)) {
+        personalJourney.classList.add('journey-visible');
+        observer.disconnect();
+      }
+    }, { threshold: 0.3 });
+    journeyObserver.observe(personalJourney);
+  }
 })();
