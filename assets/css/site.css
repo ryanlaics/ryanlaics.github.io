@@ -1383,12 +1383,12 @@ html.js [data-aos].aos-in { opacity: 1; transform: none; will-change: auto; }
   #projects .pub-year-col { padding-left: 30px; }
 }
 
-/* Funding marks live in the record gutter. */
-#projects .pub-index { display: flex; flex-direction: column; align-items: center; gap: 5px; }
+/* Funding numbering stays on one line. */
+#projects .pub-index { display: block; }
 #projects .pub-index::before, #projects .pub-index::after { content: none; }
 #projects .funding-number::before { content: "["; }
 #projects .funding-number::after { content: "]"; }
-#projects .pub-index .funding-logo { width: 22px; height: 22px; flex: 0 0 22px; }
+#projects .pub-title .funding-logo { display: inline-block; width: 18px; height: 18px; margin-left: 3px; vertical-align: -3px; }
 #projects .pub-title { display: block; }
 #projects .pub-year-col { padding-left: 0; }
 
