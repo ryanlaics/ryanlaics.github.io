@@ -11,7 +11,7 @@
   const headerToggleIcon = headerToggleBtn ? headerToggleBtn.querySelector("i") : null;
   const mainContent = document.querySelector("#main-content");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-  const desktopNavigation = window.matchMedia("(min-width: 1200px)");
+  const desktopNavigation = window.matchMedia("(min-width: 1000px)");
 
   /* ------------------------------------------------------------------ *
    * Sidebar / mobile drawer
@@ -355,4 +355,25 @@
     }, { threshold: 0.3 });
     journeyObserver.observe(personalJourney);
   }
+})();
+
+/* Progressive enhancement: all publications remain visible without JavaScript. */
+(() => {
+  const toolbar = document.querySelector('.publication-tools');
+  if (!toolbar) return;
+  const cards = [...document.querySelectorAll('#publications .pub-card')];
+  const buttons = [...toolbar.querySelectorAll('button[data-topic]')];
+  const status = document.querySelector('#publications .publication-status');
+  function filter(topic) {
+    let count = 0;
+    cards.forEach(card => {
+      card.hidden = topic !== 'all' && card.dataset.topic !== topic;
+      if (!card.hidden) count++;
+    });
+    buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.topic === topic)));
+    status.textContent = topic === 'all' ? `${count} publications` : `${count} of ${cards.length} publications`;
+  }
+  buttons.forEach(button => button.addEventListener('click', () => filter(button.dataset.topic)));
+  toolbar.hidden = false;
+  filter('all');
 })();
