@@ -36,10 +36,10 @@
     },
     collaboration: {
       questionZh: "怎样联系你讨论科研合作？",
-      answerZh: "欢迎介绍你想研究的问题，以及它与我们工作的交集。一个来自实际数据的例子，或一个想解释的实验现象，都可以成为第一次讨论的起点。",
-      aliases: ["collaboration", "collaborate", "partner with", "work together", "joint research", "共同研究", "合作", "产学研", "校企", "joint project", "joint proposal", "propose a joint project", "合作项目", "合作意向", "company collaborate", "collaborate with", "cooperation", "research partnership"],
-      question: 'How can I propose a collaboration?',
-      answer: 'Tell me the question you are working on and where our interests meet. One example from your data or a finding you would like to understand gives us something concrete to discuss in a first exchange.',
+      answerZh: "欢迎来信介绍你的团队和一个希望共同研究的问题。例如，如果你研究出行数据，可以说说想比较哪些行程，以及它们的相似性有助于回答什么问题。下方链接会打开合作邮件草稿。",
+      aliases: ["collaboration", "collaborate", "partner with", "work together", "joint research", "共同研究", "合作", "产学研", "校企", "joint project", "joint proposal", "propose a joint project", "合作项目", "合作意向", "company collaborate", "collaborate with", "cooperation", "research partnership", "合作方式", "如何开展合作", "科研合作"],
+      question: 'How can I propose a research collaboration?',
+      answer: 'Email me a question you would like to investigate together. For example, if you study mobility, which journeys would you like to compare, and what would their similarity tell you? You can use the draft below to introduce your team and your idea.',
       links: [{ source: 'collaboration-enquiry', label: 'Start a collaboration email' }]
     },
     service: {
@@ -75,10 +75,10 @@
       links: [{ source: 'collaboration-enquiry', label: 'Discuss a pilot by email' }]
     },
     timing: {
-      questionZh: "可以咨询哪一学期的研究生指导机会？",
+      questionZh: "我计划入学的学期有研究生指导名额吗？",
       answerZh: "可以在来信里写明计划入学的学期、目前就读的项目和希望研究的问题，再询问届时是否有指导机会。具体安排需要按学期确认。",
       aliases: ["postgraduate supervision", "taking students", "accepting students", "open positions", "student openings", "master student", "masters student", "prospective postgraduate", "招硕士", "招研究生", "研究生名额", "招生", "收学生", "读研", "master students", "masters students", "accept masters", "accept master students", "taking on students", "intake", "admitting students", "研究生还有名额", "硕士研究生", "收硕士", "招收硕士", "招生计划", "招收研究生", "硕士名额", "招收学生"],
-      question: 'When should I ask about postgraduate supervision?',
+      question: 'Are there postgraduate openings for my intake?',
       answer: 'If you have an intended start term, you can ask whether I expect to supervise new postgraduate students then. Include your programme and the topic you hope to study so I can respond to your particular enquiry.',
       links: [{ source: 'postgraduate-enquiry', label: 'Start a postgraduate enquiry' }]
     },
@@ -126,7 +126,7 @@
       questionZh: "大一或大二可以加入课题组吗？",
       answerZh: "欢迎对研究感兴趣的大一、大二同学来信。介绍一下年级、专业和你愿意花时间探索的问题，就能开始交流。",
       aliases: ["undergraduate research", "undergrad", "freshman", "freshmen", "sophomore", "first year undergraduate", "second year undergraduate", "bachelor student", "本科生", "大一", "大二", "本科科研", "undergrads", "undergraduates", "first year student", "second year student", "freshers", "early year undergraduate", "undergraduate student", "本科同学", "大一学生", "大二学生"],
-      question: 'Can I get involved in my first or second year?',
+      question: 'Can first- or second-year undergraduates join?',
       answer: 'Yes. I welcome enquiries from first- and second-year undergraduates who are curious about research. Tell me what you are studying and describe a problem you would enjoy spending time on.',
       links: [{ source: 'undergraduate-enquiry', label: 'Start an undergraduate enquiry' }]
     },
@@ -188,11 +188,35 @@
     },
     funding: {
       questionZh: "哪些项目支持你的研究？",
-      answerZh: "我的研究获得过教育部国家海外引才项目、国家自然科学基金青年科学基金项目（C 类）等支持。Funding & Honors 栏列出了各项目的名称和起止时间。",
-      aliases: ["research funding", "grants", "honors", "nsfc", "moe", "research awards", "科研经费", "国家自然科学基金", "国自然", "课题资助", "基金项目", "人才项目", "lab funded", "lab funding", "funds your research", "funds the group", "research grants", "funding and honors", "科研资助", "经费来源", "基金", "荣誉", "项目有哪些", "有哪些项目", "科研项目"],
+      answerZh: "主页列出的研究资助与人才项目如下，年份为各条目列出的支持期。",
+      aliases: ["research funding", "research support", "研究资助", "grants", "honors", "research awards", "科研经费", "课题资助", "基金项目", "人才项目", "lab funded", "lab funding", "funds your research", "funds the group", "research grants", "funding and honors", "科研资助", "经费来源", "基金", "荣誉", "项目有哪些", "有哪些项目", "科研项目", "所有项目", "list your projects", "list your grants"],
       question: 'What supports the group’s research?',
-      answer: 'My research is supported by China’s MOE National Overseas Talent Recruitment Program and the NSFC Young Scientists Fund (Category C), among other awards. The funding list gives the programme names and dates.',
-      links: [{ target: 'projects', label: 'Funding and honors' }]
+      answer: 'These are the research grants and talent programmes listed on my homepage, with their support periods.',
+      links: []
+    },
+    biography: {
+      question: 'Could you introduce yourself?',
+      questionZh: '可以简单介绍一下你自己吗？',
+      answer: 'I grew up in Fuzhou, studied computer science in Chengdu, and completed my Ph.D. at Aalborg University in early 2025. I returned to Fuzhou later that year. I now lead DIG@FZU at Fuzhou University, where we study time series and spatio-temporal data, including what we can learn when measurements are missing.',
+      answerZh: '我在福州长大，到成都学习计算机科学，2025 年初在丹麦奥尔堡大学取得博士学位，同年年底回到福州。现在我在福州大学带领 DIG@FZU，研究时间序列与时空数据，包括观测不完整时仍能从数据中学到什么。',
+      aliases: ['about', 'about you', 'short bio', 'biography', 'introduce yourself', 'about zhichen lai', '人物简介', '介绍一下自己', '个人背景', '自我介绍'],
+      links: [{ target: 'about', label: 'Read my full bio', labelZh: '阅读完整个人简介' }, { target: 'organizations', label: 'Education and appointments' }]
+    },
+    affiliation: {
+      question: 'Which key laboratory are you part of?',
+      questionZh: '你是哪个重点实验室的成员？',
+      answer: 'I am a member of the Fujian Key Laboratory of Network Computing and Intelligent Information Processing, where Professor Xing Chen mentors me. I also lead the Data Intelligence and Interdisciplinary Information Group (DIG@FZU) at Fuzhou University.',
+      answerZh: '我是福建省网络计算与智能信息处理重点实验室成员，在这里受到 Xing Chen 教授的指导。我也在福州大学带领数据智能与交叉信息课题组（DIG@FZU）。',
+      aliases: ['key lab', 'key laboratory', 'network computing and intelligent information processing', 'fujian key laboratory', '重点实验室', '福建省重点实验室', '网络计算与智能信息处理'],
+      links: [{ target: 'about', label: 'Lab affiliation and mentor', labelZh: '查看实验室和导师介绍' }]
+    },
+    applications: {
+      question: 'How could this research help with air quality or traffic?',
+      questionZh: '能举个空气质量或交通方面的例子吗？',
+      answer: 'If an air-quality station misses a reading, nearby stations may help estimate it. For a traffic forecast, the question looks forward: what do recent road speeds suggest about congestion during rush hour? Both examples use how measurements relate across time and place.',
+      answerZh: '当一个空气质量监测站漏测时，可以借助附近站点的读数估计缺失值。预测早高峰拥堵时，则可以从近期道路车速判断接下来可能发生什么。两个例子都用到了观测在时间和空间上的联系。',
+      aliases: ['air quality', 'air pollution', 'rush hour', 'traffic congestion', 'traffic speeds', 'traffic forecast', '空气质量', '监测站', '交通拥堵', '车速', '早高峰', '研究有什么用'],
+      links: [{ target: 'about', label: 'Research in context', labelZh: '了解研究背景' }, { target: 'research', label: 'Research interests' }]
     },
     office: {
       questionZh: "课题组办公室在哪里？",
@@ -203,12 +227,12 @@
       links: [{ target: 'contact', label: 'Office address and contact details' }]
     },
     overview: {
-      question: "What are your main research interests?",
-      questionZh: "你的主要研究方向是什么？",
-      answer: "We study time series and spatio-temporal data, particularly forecasting, missing observations and changes over time. Our broader interests include GeoAI and AI for science and health.",
-      answerZh: "我们研究时间序列与时空数据，尤其关心预测、观测缺失和随时间发生的变化。交叉方向包括 GeoAI 以及面向科学与健康的人工智能。",
+      question: "What does DIG@FZU study?",
+      questionZh: "DIG@FZU 的主要研究方向是什么？",
+      answer: "We study time series and spatio-temporal data. LightCTS explores how to forecast several related signals efficiently, while MovSemCL asks how to compare trajectories using the way people or objects move. Our wider interests include GeoAI and AI for science and health.",
+      answerZh: "我们研究时间序列分析与时空数据挖掘。例如，LightCTS 研究如何高效预测多条相关序列，MovSemCL 关注如何利用运动特征衡量轨迹相似性。我们也关注 GeoAI 和面向科学与健康的 AI。",
       aliases: ["research interests", "research directions", "research focus", "research areas", "what do you study", "what does the lab do", "what do you work on", "research topics", "研究方向", "研究兴趣", "做什么研究", "研究什么", "主要做什么", "时空挖掘", "research field", "what is your research about", "spatio temporal data mining", "spatial temporal mining", "研究啥方向", "研究领域", "研究啥", "时空数据挖掘", "科研方向"],
-      links: [{ target: "research", label: "Research interests" }]
+      links: [{ target: "research", label: "Research interests" }, { target: "publications-selected", label: "Selected publications" }]
     },
     identity: {
       question: "Who is Zhichen Lai?",
@@ -227,10 +251,10 @@
       links: [{ target: "contact", label: "Email and contact details" }]
     },
     joining: {
-      question: "How can I join DIG@FZU?",
-      questionZh: "想加入课题组，该怎么联系？",
-      answer: "I welcome enquiries from prospective postgraduate students and first- or second-year undergraduates. Choose the draft that matches your situation and tell me about a question you would like to explore. Please attach your CV.",
-      answerZh: "欢迎有意读研的同学和对科研感兴趣的大一、大二本科生来信。可以选下方相应的邮件模板，附上简历，再用自己的话讲一个想探索的问题。",
+      question: "Which students can join the group?",
+      questionZh: "课题组欢迎哪些学生？",
+      answer: "I welcome enquiries from prospective postgraduate students and from first- or second-year undergraduates who are curious about research and enjoy working independently. Choose the email draft for your stage of study, attach your CV and tell me what you would like to explore.",
+      answerZh: "欢迎有意读研的同学，以及对科研好奇、愿意主动探索的大一和大二本科生来信。可以选择与你学习阶段对应的邮件草稿，附上简历，并说说你想研究什么。",
       aliases: ["how to apply", "how do i apply", "how can i apply", "join the group", "join your lab", "join dig", "join the lab", "apply to the lab", "加入课题组", "进组", "如何申请", "怎么申请", "加组", "加入实验室", "how do i join your group", "how can i join", "join your group", "join the team", "get involved in the lab", "怎么加入", "如何加入", "如何进组", "报名科研"],
       links: [{ source: 'postgraduate-enquiry', label: 'Postgraduate enquiry' }, { source: 'undergraduate-enquiry', label: 'Undergraduate enquiry' }]
     },
@@ -243,18 +267,21 @@
       links: [{ source: "postgraduate-enquiry", label: "Ask about postgraduate supervision" }]
     },
     admissions: {
-      question: "Are there deadlines or entry requirements?",
-      questionZh: "有申请截止日期或成绩要求吗？",
-      answer: "This homepage does not list an application deadline, GPA cutoff or language-score requirement. For a particular programme and intake, check the university’s admissions information and mention the programme and term if you email me.",
-      answerZh: "主页没有列出统一的申请截止日期、绩点或语言成绩门槛。具体项目和批次请以学校招生信息为准；来信时可以注明项目名称和计划入学学期。",
-      aliases: ["application deadline", "deadline", "requirements", "gpa", "ielts", "toefl", "application dates", "language requirement", "cutoff", "截止", "绩点", "分数线", "英语要求", "语言成绩", "报名时间", "申请条件", "保研条件", "application requirements", "admission requirements", "需要什么条件", "申请要求", "成绩要求", "admission criteria", "guarantee admission", "ielts score", "toefl score", "minimum gpa", "entry requirement"],
-      links: [{ source: "postgraduate-enquiry", label: "Ask about your intended intake" }]
+      question: "What are the postgraduate entry requirements?",
+      questionZh: "研究生招生有哪些申请要求？",
+      answer: "Check the Fuzhou University Graduate School notice for your programme and entry year for eligibility, required documents and deadlines. To ask about supervision in DIG@FZU, email me your intended start term, your CV and a research question you would like to pursue.",
+      answerZh: "报考资格、申请材料和时间安排，请查阅福州大学研究生院对应项目和入学年份的招生简章。想了解课题组该学期的指导机会，可以来信注明计划入学时间，附上简历，谈谈你想研究的问题。",
+      aliases: ["application deadline", "deadline", "requirements", "gpa", "ielts", "toefl", "application dates", "language requirement", "cutoff", "截止", "绩点", "分数线", "英语要求", "语言成绩", "报名时间", "申请条件", "保研条件", "application requirements", "admission requirements", "需要什么条件", "申请要求", "成绩要求", "admission criteria", "guarantee admission", "ielts score", "toefl score", "minimum gpa", "entry requirement", "招生要求", "招生条件", "报考条件", "研究生报考资格"],
+      links: [
+        { href: 'https://yjsy.fzu.edu.cn/index/zsjz.htm', label: 'FZU graduate admissions (Chinese)', labelZh: '查看福大研究生招生简章' },
+        { source: 'postgraduate-enquiry', label: 'Ask about supervision' }
+      ]
     },
     studentFunding: {
       question: "Is funding available for students?",
       questionZh: "有没有学生奖学金或津贴？",
       answer: "The awards listed here support my research. This homepage does not specify a student stipend, scholarship amount or funded place for a particular intake. Please include your programme and intended start term if you want to ask about financial support.",
-      answerZh: "Funding & Honors 栏列的是研究项目和荣誉。主页没有公布特定批次的奖学金、津贴金额或受资助学生名额。想咨询资助时，可在邮件里注明项目和计划入学学期。",
+      answerZh: "Research Support 栏列的是研究项目和荣誉。主页没有公布特定批次的奖学金、津贴金额或受资助学生名额。想咨询资助时，可在邮件里注明项目和计划入学学期。",
       aliases: ["scholarship", "stipend", "studentship", "student funding", "funded position", "tuition", "financial support", "奖学金", "助学金", "补助", "津贴", "学费", "全奖", "funded phd", "phd funding", "financial aid", "financial assistance", "学生资助", "资助博士"],
       links: [{ source: "postgraduate-enquiry", label: "Enquire about student funding" }]
     },
@@ -285,18 +312,26 @@
     advisors: {
       question: "Who were your research advisors?",
       questionZh: "你的导师有哪些？",
-      answer: "My master’s advisor at Sichuan University was Jiancheng Lv. My Ph.D. supervisors at Aalborg University were Christian S. Jensen, Dalin Zhang and Huan Li. I also worked with Hua Lu as a Research Fellow, and Xing Chen mentors me at Fuzhou University.",
-      answerZh: "我的硕士导师是四川大学的 Jiancheng Lv。博士期间在奥尔堡大学由 Christian S. Jensen、Dalin Zhang 和 Huan Li 指导，之后作为 Research Fellow 与 Hua Lu 合作。目前在福州大学，Xing Chen 教授指导我的研究工作。",
+      answer: "My master’s advisor at Sichuan University was Jiancheng Lv. My Ph.D. supervisors at Aalborg University were Christian S. Jensen (a member of Academia Europaea and an ACM and IEEE Fellow), Dalin Zhang and Huan Li. I also worked with Hua Lu as a Research Fellow, and Xing Chen mentors me at Fuzhou University.",
+      answerZh: "我的硕士导师是四川大学的 Jiancheng Lv。博士期间在奥尔堡大学由 Christian S. Jensen（欧洲科学院院士、ACM 和 IEEE 会士）、Dalin Zhang 和 Huan Li 指导。我也曾作为 Research Fellow 与 Hua Lu 合作。目前在福州大学，Xing Chen 教授指导我的研究工作。",
       aliases: ["your advisor", "your supervisor", "your advisors", "phd supervisors", "who supervised", "doctoral advisor", "christian s jensen", "jiancheng lv", "xing chen", "huan li", "dalin zhang", "hua lu", "你的导师", "您的导师", "博士导师是谁", "硕士导师", "师从", "phd supervisor", "phd advisor", "your phd supervisor", "your current mentor", "who is your mentor", "who was your supervisor", "who was your phd advisor", "博士导师", "你的博导", "博士生导师是谁", "博士期间的导师"],
       links: [{ target: "about", label: "Academic background and advisors" }]
     },
     publications: {
       question: "Where can I find the full publication list?",
       questionZh: "完整论文列表在哪里？",
-      answer: "Selected Publications highlights work from 2023 onward. My Google Scholar profile links to the fuller publication list.",
-      answerZh: "主页展示的是 2023 年以来的代表性论文，较完整的论文列表可在我的 Google Scholar 主页查看。",
+      answer: "Open All to browse my work from newest to oldest. You can also filter by topic or choose First Author to see the papers and thesis on which I am the first author.",
+      answerZh: "选择 All 可按年份从新到旧浏览我的作品，也可以按研究主题筛选，或选择 First Author 查看我署名第一的作品。",
       aliases: ["publications", "publication list", "papers", "full list", "google scholar", "scholar profile", "bibliography", "代表作", "论文列表", "发表了哪些论文", "谷歌学术", "所有论文", "发表的论文", "list of papers", "recent papers", "recent work", "代表论文", "研究成果", "谷歌学者", "发过什么论文"],
-      links: [{ source: "guide-scholar", label: "Open Google Scholar" }]
+      links: [{ target: "publications-all", label: "Browse all publications" }, { target: "publications-first-author", label: "First-author works" }, { source: "guide-scholar", label: "Open Google Scholar" }]
+    },
+    downloads: {
+      question: 'Where can I download your papers?',
+      questionZh: '在哪里可以下载论文全文？',
+      answer: 'The links below open PDFs or publisher pages for six selected papers. Browse all publications for the rest of my work.',
+      answerZh: '下方链接可打开六篇代表作的 PDF 或出版社页面。其他作品的入口见完整论文列表。',
+      aliases: ['pdf', 'full text', 'fulltext', 'download papers', 'download a paper', 'paper download', 'paper pdf', 'open access papers', 'read your papers', '下载论文', '论文下载', '下载文章', '论文全文', '论文原文', '论文 PDF', '获取全文'],
+      links: []
     },
     profiles: {
       question: "Where are your academic profiles?",
@@ -315,12 +350,44 @@
       links: [{ source: "guide-github", label: "Open GitHub" }]
     },
     health: {
-      question: "How does AI for science and health fit in?",
-      questionZh: "课题组也关注科学和健康方向吗？",
-      answer: "AI for science and health is one of our broader interests. For example, a sequence of measurements from an experiment can raise questions about missing observations or changes over time. I welcome discussions about a specific scientific question and the measurements available to study it.",
-      answerZh: "面向科学与健康的 AI 是我们的交叉兴趣之一。例如，实验中连续采集的测量值可能存在缺测或随时间变化的问题。欢迎围绕一个具体科学问题及其可用的观测数据展开讨论。",
+      question: "How does your work connect to orthodontics?",
+      questionZh: "你们的研究怎样用到正畸领域？",
+      answer: "In work with dental researchers, we studied how to assess the midpalatal suture, the joint down the middle of the roof of the mouth. Its stage of maturation is relevant when clinicians consider expanding the upper jaw. Our Scientific Reports paper describes the assessment in detail.",
+      answerZh: "我们与口腔研究者合作，研究如何评估上腭中间的骨缝，也就是腭中缝。医生考虑是否进行上颌扩弓时，会关注这条骨缝的成熟程度。下面这篇 Scientific Reports 论文介绍了我们如何做这项评估。",
       aliases: ["ai for science", "ai for health", "scientific data", "health", "healthcare", "interdisciplinary", "科学智能", "科学与健康", "医疗", "健康", "交叉研究", "交叉方向", "ai medicine", "health ai", "ai for healthcare", "医疗人工智能"],
-      links: [{ target: "research", label: "Interdisciplinary research interests" }]
+      links: [{ target: 'paper-midpalatal-suture', label: 'Read the Scientific Reports study', labelZh: '查看腭中缝评估论文' }, { target: 'publications-interdisciplinary', label: 'Interdisciplinary publications' }]
+    },
+    energy: {
+      question: 'What can wind turbines and smart meters tell us?',
+      questionZh: '风机和智能电表的数据能用来研究什么？',
+      answer: 'With wind turbines, one question is whether sensor readings reveal ice on the blades. FreqICE examines changes in signal frequencies to detect icing. For smart meters, we studied a different question: when does a reading look unusual given its context?',
+      answerZh: '在风机上，我们关心传感器读数能否反映叶片结冰。FreqICE 从信号的频率特征中识别结冰。智能电表对应的是另一个问题：一个读数单看可能正常，放在当时的用电情境里是否异常？',
+      aliases: ['energy research', 'ai for energy', 'wind energy', 'wind turbines', 'blade icing', 'smart meters', 'smart meter', 'wind power', '能源方向', '能源论文', '风电', '风机结冰', '叶片结冰', '智能电表'],
+      links: [{ target: 'paper-freqice', label: 'FreqICE' }, { target: 'paper-smart-meters', label: 'Smart-meter anomaly detection', labelZh: '智能电表异常检测' }, { target: 'publications-interdisciplinary', label: 'Interdisciplinary publications' }]
+    },
+    generative: {
+      question: 'What did you work on before time series?',
+      questionZh: '在研究时间序列之前，你做过什么？',
+      answer: 'One project asked how to generate a Chinese font from a single reference. Other work explored generating different views of an image, composing Chinese palindrome poetry with Liao Chen, and creating abstract paintings with FusionGAN.',
+      answerZh: '我们曾研究如何从一个参考样例生成中文字体，也探索过图像的多视角生成。我还与 Liao Chen 合作研究过中文回文诗生成，并参与了用 FusionGAN 创作抽象画的工作。',
+      aliases: ['generative model', 'generative models', 'generative papers', 'image generation', 'chinese fonts', 'palindrome poetry', 'liao chen', 'earlier work', '生成模型', '生成式模型', '生成模型论文', '图像生成', '字体生成', '回文诗', '抽象画'],
+      links: [{ target: 'publications-generative', label: 'Generative model publications' }]
+    },
+    readingTopics: {
+      question: 'Which papers should I read for my topic?',
+      questionZh: '想按研究方向读论文，从哪里开始？',
+      answer: 'For forecasting, missing readings or trajectories, start with Time Series. For wind energy, smart meters or dental research, choose Interdisciplinary Information. Generative Model collects the earlier work on images, fonts and poetry.',
+      answerZh: '想读预测、数据补全或轨迹分析，可以从时间序列开始。风电、智能电表和口腔研究归在交叉研究里。生成模型则收录了早期关于图像、字体和诗歌的工作。',
+      aliases: ['papers by topic', 'publications by topic', 'paper categories', 'publication filters', 'topic filters', 'reading list by topic', '论文分类', '按研究方向找论文', '按主题找论文', '按方向读论文'],
+      links: [{ target: 'publications-time-series', label: 'Time Series' }, { target: 'publications-interdisciplinary', label: 'Interdisciplinary Information' }, { target: 'publications-generative', label: 'Generative Model' }]
+    },
+    talks: {
+      question: 'Where have you given research talks?',
+      questionZh: '你在哪些地方做过学术报告？',
+      answer: 'Selected hosts include BUPT, Fuzhou University, Huawei, Tianjin University of Technology, Xidian University, Xiamen University and Zhejiang University.',
+      answerZh: '我在北京邮电大学、福州大学、华为、天津理工大学、西安电子科技大学、厦门大学、浙江大学等高校与机构做过报告。',
+      aliases: ['talks', 'seminars', 'invited talk', 'research talk', 'talk hosts', '学术报告', '受邀报告', '讲座', '报告单位'],
+      links: [{ target: 'service', label: 'View talks and academic service', labelZh: '查看学术报告与服务' }]
     },
     evaluation: {
       question: "How should we evaluate a forecasting model?",
@@ -357,8 +424,8 @@
     cv: {
       question: "Where can I find your CV?",
       questionZh: "怎样了解你的履历或获取个人简历？",
-      answer: "The Experience section lists my education and appointments. Selected Publications, Funding & Honors and Academic Service cover other parts of my academic record. If you need a CV document, you can contact me at lzc@fzu.edu.cn.",
-      answerZh: "Experience 中有我的教育和工作经历；论文、项目荣誉和学术服务分别列在对应栏目。如需简历文件，可以通过 lzc@fzu.edu.cn 联系我。",
+      answer: "The Experience section lists my education and appointments. Publications, Research Support and Academic Service cover other parts of my academic record. If you need a CV document, you can contact me at lzc@fzu.edu.cn.",
+      answerZh: "Experience 中有我的教育和工作经历；论文、科研资助和学术服务分别列在对应栏目。如需简历文件，可以通过 lzc@fzu.edu.cn 联系我。",
       aliases: ["your cv", "download cv", "your resume", "curriculum vitae", "academic cv", "您的简历", "老师的简历", "下载简历", "个人履历", "你的 cv", "老师的 cv", "your academic cv", "哪里有简历"],
       links: [{ target: "organizations", label: "Education and appointments" }]
     }
@@ -389,21 +456,68 @@
     links: [{ target: 'email-templates', label: 'Choose an enquiry draft' }]
   };
   const byAudience = {
-    researcher: ['missing', 'forecasting', 'trajectories', 'regimes', 'collaboration', 'service'],
-    industry: ['industryFit', 'outages', 'regimes', 'trajectories', 'pilot', 'collaboration'],
-    postgraduate: ['timing', 'interests', 'chooseTopic', 'entryPaper', 'mentor', 'apply'],
-    student: ['undergrad', 'firstExperience', 'firstProject', 'entryPaper', 'mentor', 'studentEmail'],
-    curious: ['name', 'everyday', 'career', 'visits', 'funding', 'office']
+    researcher: ['overview', 'readingTopics', 'downloads', 'collaboration', 'code', 'funding'],
+    industry: ['industryFit', 'energy', 'health', 'projectBrief', 'pilot', 'collaboration'],
+    postgraduate: ['admissions', 'timing', 'chooseTopic', 'apply', 'mentor', 'entryPaper'],
+    student: ['undergrad', 'firstExperience', 'firstProject', 'studentEmail', 'entryPaper', 'office'],
+    curious: ['everyday', 'name', 'generative', 'career', 'talks', 'office']
   };
+
+  // Use the displayed titles and periods so the Guide stays in sync with Research Support.
+  const grantNames = {
+    'grant-moe': ['教育部国家海外引才专项', ['MOE', 'MOE talent programme', 'overseas talent recruitment', '教育部引才', '教育部海外引才', '海外引才专项']],
+    'grant-nsfc': ['国家自然科学基金青年科学基金项目（C 类）', ['NSFC', 'Young Scientists Fund', '国自然', '国家自然科学基金', '青年科学基金', '国自然青年基金', '青基C', '青年基金']],
+    'grant-zju': ['浙江大学区块链与数据安全全国重点实验室开放课题', ['ZJU open grant', 'Zhejiang University grant', 'blockchain and data security', 'open research grant', '浙大开放课题', '区块链开放课题', '浙大区块链', '浙大项目']],
+    'grant-fujian': ['福建省高层次人才（C 类）', ['Fujian talent program', 'Fujian high-level talent', 'provincial talent', '福建省人才项目', '福建省高层次人才', '福建高层次人才', '福建省人才计划']],
+    'grant-qishan': ['福州大学旗山学者计划', ['Qishan Scholar', 'Qishan', '旗山学者', '旗山学者计划']]
+  };
+  for (const card of document.querySelectorAll('#projects .pub-card[id]')) {
+    const title = card.querySelector('.pub-title').textContent.trim();
+    const period = card.querySelector('time').textContent.trim();
+    const [titleZh, aliases] = grantNames[card.id] || [title, []];
+    entries[card.id] = {
+      question: title, questionZh: titleZh,
+      answer: title + ' (' + period + ').', answerZh: titleZh + '，支持期为 ' + period + ' 年。',
+      aliases: [title, titleZh, ...aliases],
+      links: [{ target: card.id, label: 'View grant record', labelZh: '查看项目条目' }]
+    };
+    entries.funding.links.push({ target: card.id, label: title + ' · ' + period, labelZh: titleZh + ' · ' + period });
+  }
 
   // Read titles, venues and author lists from the same records visitors see.
   const paperNotes = {
     'paper-impute': ['Impute On-Demand', 'It studies adaptive imputation of missing values in correlated time series when the environment changes.', '这项工作研究环境变化时，如何自适应地补全相关时间序列中的缺失值。'],
     'paper-movsemcl': ['MovSemCL', 'It studies how to learn trajectory similarity from movement semantics using contrastive learning.', '这项工作用对比学习建模轨迹中的运动语义，以研究轨迹相似度。'],
-    'paper-distillation': ['model distillation', 'It studies how model distillation can support lightweight forecasting of correlated time series.', '这项工作研究如何用模型蒸馏增强相关时间序列的轻量预测。'],
+    'paper-distillation': ['LightCTS⋆', 'It studies how model distillation can support lightweight forecasting of correlated time series.', '这项工作研究如何用模型蒸馏增强相关时间序列的轻量预测。'],
     'paper-rectsi': ['ReCTSi', 'It studies resource-efficient imputation using decoupled pattern learning and completeness-aware attention.', '这项工作通过解耦模式学习和对完整度的感知，高效补全相关时间序列。'],
     'paper-e2usd': ['E2USD', 'It studies efficient, unsupervised detection of states in multivariate time series.', '这项工作研究如何高效地从多元时间序列中无监督识别状态。'],
-    'paper-lightcts': ['LightCTS', 'It introduces a lightweight framework for forecasting several related time series.', '这项工作提出用于多条相关时间序列预测的轻量框架。']
+    'paper-lightcts': ['LightCTS', 'It introduces a lightweight framework for forecasting several related time series.', '这项工作提出用于多条相关时间序列预测的轻量框架。'],
+    'paper-saurl-ts': ['SaURL-TS', 'It studies how to learn representations of time series without labels using a self-adaptive framework.', '这项工作研究如何用自适应框架从无标签时间序列中学习表示。', ['SaURL TS', '无监督时序表示学习']],
+    'paper-latte': ['LATTE', 'It studies how to divide trajectories into segments when learning to compare their similarity.', '这篇论文研究怎样自适应地分段轨迹，以学习轨迹之间的相似性。', ['自适应轨迹分段']],
+    'paper-frequency-aware': ['Frequency-aware augmentation and alignment', 'It studies how to use frequency information when augmenting and aligning time series for contrastive learning.', '这篇论文研究在时间序列对比学习中，怎样利用频率信息进行数据增强和对齐。', ['frequency aware augmentation', '频率感知增强', '频域增强与对齐']],
+    'paper-ostar': ['OSTAR', 'It studies how to detect an unusual portion of a trajectory online using topological information and autoregressive reasoning.', '这篇论文利用拓扑信息和自回归推理，研究如何在线检测轨迹中的异常片段。', ['异常子轨迹检测']],
+    'paper-orangetree': ['OrangeTree', 'It combines linear and tree-based forecasting and supports different input lengths and forecast horizons.', '这项工作结合线性模型和树模型，支持不同的历史输入长度与预测长度。', ['orange tree', '树模型时序预测']],
+    'paper-thesis': ['Doctoral thesis', 'My thesis brings together research on efficient deep learning for the analysis of correlated time series.', '我的博士论文围绕一个共同问题展开：如何用高效的深度学习方法分析多条相关时间序列。', ['PhD thesis', 'dissertation', '博士论文', '博士学位论文']],
+    'paper-freqice': ['FreqICE', 'It studies whether frequency patterns in turbine measurements can reveal ice on the blades.', '这项工作研究如何从风机测量信号的频率特征中检测叶片结冰。', ['频率学习检测结冰']],
+    'paper-digital-twin': ['Industrial symbiosis digital twin', 'This preprint examines the use of a digital twin to study carbon dioxide emission reduction in a Norwegian industrial symbiosis supply chain.', '这篇预印本以挪威的工业共生供应链为案例，研究如何用数字孪生分析二氧化碳减排。', ['digital twin', 'carbon dioxide emission reduction', '数字孪生', '工业共生供应链']],
+    'paper-lightwind': ['LightWind', 'It studies lightweight forecasting of wind power output.', '这项工作研究如何用轻量模型预测风电功率。', ['light wind', '风电功率预测']],
+    'paper-midpalatal-suture': ['Midpalatal suture assessment', 'It studies multimodal deep learning for assessing the midpalatal suture in the context of maxillary expansion.', '这篇论文研究如何在上颌扩弓评估中，使用多模态深度学习分析腭中缝。', ['maxillary expansion paper', '腭中缝评估', '上颌扩弓论文']],
+    'paper-deepmsm': ['DeepMSM', 'This abstract describes multimodal deep learning for staging the maturation of the midpalatal suture.', '这篇摘要介绍了用多模态深度学习判断腭中缝成熟阶段的工作。', ['midpalatal suture maturation staging', '腭中缝成熟分期']],
+    'paper-mate': ['MATE', 'It studies multimodal time series forecasting using adaptive fusion and expert models that incorporate timestamps.', '这篇论文将自适应的模态融合与使用时间戳的专家模型结合，用于多模态时间序列预测。', ['时间戳专家模型']],
+    'paper-aira': ['AIRa', 'This building case study examines a blockchain-based alert system for assessing infection risk and informing decisions.', '这项工作以建筑空间为案例，研究如何用基于区块链的预警系统评估感染风险并支持决策。', ['infection risk assessment', '感染风险评估', '区块链预警系统']],
+    'paper-blade-icing': ['Wavelet-based blade icing detection', 'It uses a multiscale wavelet-driven graph convolutional network to study wind turbine blade icing.', '这项工作研究如何用多尺度小波驱动的图卷积网络检测风机叶片结冰。', ['wavelet driven graph convolutional network', 'multiscale wavelet', '小波结冰', '小波图卷积']],
+    'paper-fusiongan': ['FusionGAN', 'It explores how to combine certainty and uncertainty in a generative model for abstract paintings.', '这篇论文探索怎样在生成模型中结合确定性与不确定性，用于创作抽象画。', ['fusion gan', '生成抽象画']],
+    'paper-chinese-fonts': ['Single-reference Chinese font generation', 'It studies generating Chinese fonts using a single reference example.', '这项工作研究如何从一个参考样例生成中文字体。', ['Chinese font generation', 'single reference font', '单样例字体生成', '中文字体生成']],
+    'paper-palindrome-poetry': ['Chinese palindrome poetry', 'This work with Liao Chen and colleagues explores how to generate Chinese palindrome poetry.', '我与 Liao Chen 等人合作，探索了中文回文诗的生成。', ['palindrome poetry generation', '回文诗生成', '中文回文诗']],
+    'paper-smart-meters': ['Smart-meter anomaly detection', 'It studies how the context of a smart-meter reading can help detect anomalies in a stream of energy measurements.', '这篇论文研究如何结合上下文，在连续的智能电表读数中检测异常。', ['smart meter', 'smart meters', '智能电表', '电表异常检测']],
+    'paper-multi-view': ['Multi-view image generation', 'It explores generating multiple views of an image with a Cycle CVAE-GAN network.', '这项工作研究如何用 Cycle CVAE-GAN 网络生成不同视角的图像。', ['cycle CVAE GAN', 'multi view generation', '多视角图像生成', '多视图图像生成']]
+  };
+  const paperPdfs = {
+    'paper-impute': { href: 'https://arxiv.org/pdf/2607.23503', label: 'Impute On-Demand (PDF)' },
+    'paper-movsemcl': { href: 'https://arxiv.org/pdf/2511.12061', label: 'MovSemCL (extended PDF)', labelZh: 'MovSemCL（扩展版 PDF）' },
+    'paper-rectsi': { href: 'https://rucforsk.ruc.dk/ws/portalfiles/portal/106424853/3637528.3671816.pdf', label: 'ReCTSi (PDF)' },
+    'paper-e2usd': { href: 'https://arxiv.org/pdf/2402.14041', label: 'E2USD (PDF)' },
+    'paper-lightcts': { href: 'https://arxiv.org/pdf/2302.11974', label: 'LightCTS (PDF)' }
   };
   const papers = [...document.querySelectorAll('#publications .pub-card[id]')].map(card => {
     const titleLink = card.querySelector('.pub-title a').cloneNode(true);
@@ -413,16 +527,23 @@
     const venueYear = card.querySelector('.pub-venue').textContent.trim();
     const year = card.querySelector('time').dateTime;
     const venue = venueYear.replace(year, '').trim();
-    const [short, note, noteZh] = paperNotes[card.id] || [title, '', ''];
-    entries[card.id] = {
-      question: 'What is the ' + short + ' paper?',
-      questionZh: short + ' 这篇论文研究什么？',
-      answer: [title + ' (' + venueYear + ').', note, 'Authors: ' + authors + '.'].join(' '),
-      answerZh: '《' + title + '》发表于 ' + venueYear + '。' + noteZh + ' 作者为 ' + authors + '。',
-      aliases: [short, title], links: [{ target: card.id, label: 'View publication', labelZh: '查看论文条目' }]
+    const [short, note, noteZh, aliases = []] = paperNotes[card.id] || [titleLink.querySelector('.paper-token')?.textContent.trim() || title, '', ''];
+    const readingLink = paperPdfs[card.id] || {
+      href: titleLink.href, label: short + ' (publication page)', labelZh: short + '（作品页面）'
     };
-    return { key: card.id, title, year, venue };
+    entries[card.id] = {
+      question: short === title ? title : 'What is ' + short + ' about?',
+      questionZh: short + ' 研究什么？',
+      answer: [title + ' (' + venueYear + ').', note, 'Authors: ' + authors + '.'].filter(Boolean).join(' '),
+      answerZh: '《' + title + '》（' + venueYear + '）。' + noteZh + ' 作者为 ' + authors + '。',
+      aliases: [short, title, ...aliases], links: [readingLink, { target: card.id, label: 'View publication details', labelZh: '查看论文条目' }]
+    };
+    return { key: card.id, title, year, venue, readingLink, selected: card.dataset.filters.split(' ').includes('selected') };
   });
+  entries.downloads.links = [...papers.filter(p => p.selected).map(p => p.readingLink), { target: 'publications-all', label: 'Browse all publications' }];
+  const paperNames = papers.flatMap(paper =>
+    entries[paper.key].aliases.map(alias => ({ name: normalize(alias), paper }))
+  ).sort((a, b) => b.name.length - a.name.length);
 
   const audience = document.getElementById('guide-audience');
   const questions = document.getElementById('guide-questions');
@@ -432,8 +553,10 @@
   const phone = window.matchMedia('(max-width: 767px)');
   const han = /\p{Script=Han}/u;
   const localizedLinks = {
-    about: '关于赖志宸', research: '研究兴趣', organizations: '教育与工作经历',
-    contact: '联系信息', recruitment: '学生招募', projects: '项目与荣誉', service: '学术服务',
+    about: '关于赖志宸', research: '研究兴趣', organizations: '教育与工作经历', publications: '论文',
+    'publications-all': '查看全部论文', 'publications-selected': '代表性论文', 'publications-first-author': '查看第一作者作品',
+    'publications-time-series': '时间序列论文', 'publications-interdisciplinary': '交叉研究论文', 'publications-generative': '生成模型论文', 'paper-freqice': 'FreqICE',
+    contact: '联系信息', recruitment: '学生招募', projects: '科研资助', service: '学术服务',
     'postgraduate-enquiry': '打开研究生咨询草稿', 'undergraduate-enquiry': '打开本科科研咨询草稿',
     'collaboration-enquiry': '打开科研合作草稿', 'email-templates': '选择邮件模板',
     'personal-profiles': '个人学术主页', 'guide-github': '打开 GitHub', 'guide-scholar': '打开 Google Scholar',
@@ -444,6 +567,8 @@
   function normalize(text) {
     return text.normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase()
       .replace(/\bph\.d\.?/g, 'phd').replace(/['’]s\b/g, '')
+      .replace(/\blightcts\s*[*⋆★]/g, 'lightcts star')
+      .replace(/(\p{Script=Han})([a-z0-9])/gu, '$1 $2').replace(/([a-z0-9])(\p{Script=Han})/gu, '$1 $2')
       .replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
   }
 
@@ -535,6 +660,10 @@
         link.href = original.href;
         link.target = original.target;
         link.rel = original.rel;
+      } else if (resource.href) {
+        link.href = resource.href;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
       } else {
         link.href = '#' + resource.target;
       }
@@ -577,7 +706,7 @@
     return button;
   }
 
-  function paperList(query, chinese) {
+  function paperList(query, chinese, wantsFullText) {
     if (/\breview(?:ing|er)?\b|审稿/.test(query)) return false;
     if (!/\b(papers?|publications?|publish(?:ed)?|articles?)\b|论文|发表|文章/.test(query)) return false;
     const year = query.match(/(?:19|20)\d{2}/)?.[0];
@@ -589,10 +718,10 @@
     const matches = papers.filter(p => (!year || p.year === year) && (!venue || p.venue === venue));
     const filter = [venue, year].filter(Boolean).join(' ');
     const note = matches.length
-      ? (chinese ? '主页列出的代表作如下。' : 'These works appear in the selected publications on this homepage.')
-      : (chinese ? '主页精选论文中没有符合这个条件的条目。完整发表记录请查 Google Scholar。' : 'There is no matching entry in this selected list. Google Scholar has the fuller publication record.');
-    showReply((chinese ? '代表性论文 · ' : 'Selected publications · ') + filter, note, matches.length
-      ? matches.map(p => ({ target: p.key, label: p.title, labelZh: p.title }))
+      ? (chinese ? '主页列出的相关作品如下。' : 'These works appear in Publications.')
+      : (chinese ? '主页没有符合这个条件的条目。也可以查看 Google Scholar。' : 'The homepage has no matching entry. You can also check Google Scholar.');
+    showReply((chinese ? '论文 · ' : 'Publications · ') + filter, note, matches.length
+      ? matches.map(p => wantsFullText ? p.readingLink : { target: p.key, label: p.title, labelZh: p.title })
       : [{ source: 'guide-scholar', label: 'Open Google Scholar' }], chinese);
     return true;
   }
@@ -613,8 +742,6 @@
 
   function showQuestions() {
     const role = audience.querySelector('input:checked')?.value;
-    lastPaper = null;
-    result.replaceChildren();
     questions.replaceChildren();
     questions.hidden = !role;
     if (!role) return;
@@ -631,6 +758,49 @@
   function keepSelection() {
     phone.removeEventListener('change', setDefaultAudience);
   }
+  function answerQuery(query, chinese) {
+    for (const button of questions.children) button.setAttribute('aria-pressed', 'false');
+    // Citation counts change independently of the static publication records.
+    if (/\bcitations\b|\bcitation count|\bh index\b|被引|引用次数|引用量|引用数/.test(query)) {
+      selectQuestion('citations', chinese);
+      return;
+    }
+    const namedPaper = paperNames.find(({ name }) => containsPhrase(query, name))?.paper ||
+      (/\bdistillation\b|蒸馏/.test(query) && papers.find(p => p.key === 'paper-distillation'));
+    const asksMetadata = /autho(?:r|red)|wrote|published|which venue|which year|what year|作者|哪年|哪一年|发表在哪里|哪个会议|哪个期刊/.test(query);
+    const asksSubject = /\b(?:paper|thesis|study|summary|summarize|about)\b|研究什么|研究了什么|主要内容|论文简介|介绍一下这篇/.test(query);
+    const asksForText = /\b(?:pdf|download|full ?text)\b|下载|全文|原文/.test(query) &&
+      !/\b(?:code|datasets?|cv|resume)\b|代码|数据集|简历/.test(query);
+    const referredPaper = namedPaper || (/\bit\b|\bthis (paper|work)\b|这篇|它|这项/.test(query) && papers.find(p => p.key === lastPaper));
+    if (referredPaper && asksForText) {
+      lastPaper = referredPaper.key;
+      const isPdf = Boolean(paperPdfs[referredPaper.key]);
+      const note = isPdf
+        ? (chinese ? '打开下方 PDF 即可阅读全文或保存副本。' : 'Open the PDF below to read the paper or save a copy.')
+        : (chinese ? '下方链接通往这项作品的发表或收录页面，可在该页查看全文获取方式。' : 'The link below opens the publication record, where you can check the full-text options.');
+      showReply(referredPaper.title, note, entries[referredPaper.key].links, chinese);
+      return;
+    }
+    if (referredPaper && asksMetadata) {
+      selectQuestion(referredPaper.key, chinese);
+      return;
+    }
+    lastPaper = null;
+    if (!namedPaper && paperList(query, chinese, asksForText)) return;
+    if (asksForText && /\b(papers?|publications?|articles?)\b|论文|文章/.test(query)) {
+      selectQuestion('downloads', chinese);
+      return;
+    }
+    const matches = rank(query);
+    const [best, next] = matches;
+    if (best?.confident && (!next || best.score - next.score >= 1)) {
+      selectQuestion(best.key, chinese);
+    } else if (referredPaper && asksSubject) {
+      selectQuestion(referredPaper.key, chinese);
+    } else {
+      suggest(matches, chinese);
+    }
+  }
   form.addEventListener('submit', event => {
     event.preventDefault();
     const chinese = han.test(input.value);
@@ -641,28 +811,7 @@
       return;
     }
     keepSelection();
-    for (const button of questions.children) button.setAttribute('aria-pressed', 'false');
-    // Citation counts change independently of the static publication records.
-    if (/\bcitations\b|\bcitation count|\bh index\b|被引|引用次数|引用量|引用数/.test(query)) {
-      selectQuestion('citations', chinese);
-      return;
-    }
-    const namedPaper = papers.find(p => containsPhrase(query, normalize(entries[p.key].aliases[0]))) ||
-      (/\bdistillation\b|蒸馏/.test(query) ? papers.find(p => p.key === 'paper-distillation') : null);
-    const asksMetadata = /autho(?:r|red)|wrote|published|which venue|which year|what year|作者|哪年|哪一年|发表在哪里|哪个会议|哪个期刊/.test(query);
-    if (asksMetadata && (namedPaper || (lastPaper && /\bit\b|\bthis (paper|work)\b|这篇|它|这项/.test(query)))) {
-      selectQuestion(namedPaper?.key || lastPaper, chinese);
-      return;
-    }
-    lastPaper = null;
-    if (!namedPaper && paperList(query, chinese)) return;
-    const matches = rank(query);
-    const [best, next] = matches;
-    if (best?.confident && (!next || best.score - next.score >= 1)) {
-      selectQuestion(best.key, chinese);
-    } else {
-      suggest(matches, chinese);
-    }
+    answerQuery(query, chinese);
   });
   input.addEventListener('input', () => {
     input.setCustomValidity('');
@@ -671,6 +820,8 @@
   audience.addEventListener('click', keepSelection, { once: true });
   audience.addEventListener('change', () => {
     keepSelection();
+    lastPaper = null;
+    result.replaceChildren();
     input.value = '';
     input.setCustomValidity('');
     showQuestions();

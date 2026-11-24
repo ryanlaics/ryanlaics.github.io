@@ -13,6 +13,63 @@
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const desktopNavigation = window.matchMedia("(min-width: 1000px)");
 
+  const publicationFilters = document.querySelector(".publication-filters");
+  const publicationCards = [...document.querySelectorAll("#publication-list .pub-card")];
+  const filterButtons = [...publicationFilters.querySelectorAll("button")];
+  const publicationStatus = document.getElementById("publication-status");
+  const publicationCount = document.querySelector("#publications .record-count");
+
+  function matchesPublicationFilter(card, filter) {
+    return filter === "all" || card.dataset.filters.split(" ").includes(filter);
+  }
+
+  function filterPublications(button) {
+    const filter = button.dataset.filter;
+    for (const card of publicationCards) {
+      card.hidden = !matchesPublicationFilter(card, filter);
+    }
+    for (const choice of filterButtons) {
+      choice.setAttribute("aria-pressed", String(choice === button));
+    }
+    const count = button.querySelector(".filter-count").textContent;
+    publicationCount.textContent = filter === "all" ? count + " works" : count + " of " + publicationCards.length + " works";
+    publicationStatus.textContent = publicationCount.textContent + " shown.";
+  }
+
+  const renamedPublicationFilters = {
+    "#publications-health": "#publications-interdisciplinary",
+    "#publications-energy": "#publications-interdisciplinary",
+    "#publications-image": "#publications-generative",
+  };
+
+  function followPublicationHash() {
+    const replacement = renamedPublicationFilters[location.hash];
+    if (replacement) {
+      location.replace(replacement);
+      return;
+    }
+    const target = document.getElementById(location.hash.slice(1));
+    if (filterButtons.includes(target)) {
+      filterPublications(target);
+    } else if (publicationCards.includes(target) && target.hidden) {
+      filterPublications(document.getElementById("publications-all"));
+      target.scrollIntoView({ block: "start" });
+    }
+  }
+
+  for (const button of filterButtons) {
+    const count = publicationCards.filter(card => matchesPublicationFilter(card, button.dataset.filter)).length;
+    button.querySelector(".filter-count").textContent = count;
+    button.addEventListener("click", () => {
+      filterPublications(button);
+      history.replaceState(history.state, "", "#" + button.id);
+    });
+  }
+  publicationFilters.hidden = false;
+  filterPublications(document.getElementById("publications-selected"));
+  followPublicationHash();
+  window.addEventListener("hashchange", followPublicationHash);
+
   /* ------------------------------------------------------------------ *
    * Sidebar / mobile drawer
    * ------------------------------------------------------------------ */
@@ -30,6 +87,7 @@
       headerToggleIcon.classList.toggle("bi-x", open);
     }
     headerToggleBtn.setAttribute("aria-expanded", String(open));
+    headerToggleBtn.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
     sidebarContent.forEach((element) => {
       element.inert = isMobileDrawer() && !open;
     });
@@ -156,6 +214,12 @@
   });
 
   const navmenulinks = document.querySelectorAll(".navmenu a");
+  const pathBySection = new Map();
+  for (const link of navmenulinks) {
+    const id = link.hash.slice(1);
+    const label = document.getElementById(id)?.querySelector(".section-label");
+    pathBySection.set(id, label?.textContent.trim() || link.querySelector(".nav-label").textContent.toLowerCase());
+  }
 
   function navmenuScrollspy() {
     // The portrait and the guide share the first navigation entry.
@@ -165,25 +229,20 @@
       const section = link.hash && document.getElementById(link.hash.slice(1));
       if (section && section.offsetTop <= position) activeLink = link;
     });
-    // Short sections at the bottom must still receive the active marker.
+    // A short section near the footer may never reach the top of the viewport.
     if (window.scrollY > 0 && window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
-      activeLink =
-        [...navmenulinks].reverse().find((link) => link.hash && document.getElementById(link.hash.slice(1))) ||
-        activeLink;
+      const requestedLink = [...navmenulinks].find((link) => link.hash === location.hash);
+      const requestedSection = requestedLink && document.getElementById(requestedLink.hash.slice(1));
+      activeLink = navmenulinks[navmenulinks.length - 1];
+      if (requestedSection) {
+        const top = requestedSection.getBoundingClientRect().top;
+        const anchorOffset = parseFloat(getComputedStyle(requestedSection).scrollMarginTop);
+        if (top >= anchorOffset - 2 && top < window.innerHeight) activeLink = requestedLink;
+      }
     }
-    const pathBySection = {
-      about: "about.md",
-      research: "research-interests.md",
-      publications: "publications.md",
-      projects: "funding.md",
-      organizations: "experience.md",
-      service: "service.md",
-      recruitment: "join-us.md",
-      contact: "contact.md",
-    };
     if (activeLink) {
       const sectionId = activeLink.hash.slice(1);
-      const path = `~/dig/${pathBySection[sectionId] || sectionId}`;
+      const path = `~/dig/${pathBySection.get(sectionId)}`;
       document.querySelectorAll(".workbench-path").forEach((element) => {
         if (element.textContent !== path) element.textContent = path;
         element.title = path;
@@ -198,14 +257,25 @@
   }
 
   window.addEventListener("load", navmenuScrollspy);
+  window.addEventListener("hashchange", navmenuScrollspy);
   window.addEventListener("resize", navmenuScrollspy);
   document.addEventListener("scroll", navmenuScrollspy);
 
   document.addEventListener("keydown", (event) => {
     const quickNav = document.querySelector("#quick-nav");
-    if (event.key === "Escape" && !quickNav?.open && document.querySelector("#header.header-show")) {
+    if (quickNav?.open || !header.classList.contains("header-show")) return;
+    if (event.key === "Escape") {
       setHeaderOpen(false);
       headerToggleBtn?.focus();
+    } else if (event.key === "Tab") {
+      const lastLink = header.querySelector("#navmenu li:last-child a");
+      if (event.shiftKey && document.activeElement === headerToggleBtn) {
+        event.preventDefault();
+        lastLink.focus();
+      } else if (!event.shiftKey && document.activeElement === lastLink) {
+        event.preventDefault();
+        headerToggleBtn.focus();
+      }
     }
   });
 

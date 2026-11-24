@@ -1,7 +1,6 @@
 /* A quieter academic reading layer, retaining FZU identity and content. */
 #hero .hero-layout { align-items: center; }
 #hero .hero-network { opacity: .55; }
-#about .about-layout { max-width: 82ch; }
 #about .content p { line-height: 1.75; }
 
 /* Publications: title first, quiet metadata, no spreadsheet columns. */
@@ -118,7 +117,6 @@
 :is(.section-title h2, #contact .contact-inline-title) .section-index { opacity: .65; }
 .section-title .record-count { font-size: 11px; }
 #publications .pub-venue { border-radius: 999px; }
-#recruitment .recruit-note { border: 1px solid #eadce0; border-left: 3px solid var(--accent-color); border-radius: 12px; padding: 16px 20px; }
 #contact .profile-links a { border-color: #e6d7db; }
 
 /* Funding and honors: compact institutional list. */
@@ -247,6 +245,10 @@
 .service-list dt { color: var(--heading-color); font-size: 14px; line-height: 1.5; font-weight: 600; }
 .service-list dt span { display: block; color: var(--detail-muted); font-size: 12px; font-weight: 400; }
 .service-list dd { margin: 0; font-size: 14px; line-height: 1.55; }
+.talk-hosts { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; list-style: none; margin: 0; padding: 0; }
+.talk-hosts li { display: inline-flex; align-items: center; gap: 5px; }
+.talk-hosts img { object-fit: contain; }
+.talk-hosts abbr[title] { text-decoration: none; }
 @media (max-width: 640px) {
   .service-list > div { grid-template-columns: 1fr; gap: 3px; }
   .service-list dt { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 8px; }

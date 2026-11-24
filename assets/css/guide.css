@@ -10,6 +10,42 @@
   letter-spacing: -.025em;
 }
 #publications .section-title { padding-bottom: 10px; }
+.publication-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 12px;
+}
+.publication-filters button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 11px;
+  border: 1px solid var(--reader-rule);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--detail-muted);
+  font: 500 13px/1.4 var(--default-font);
+  cursor: pointer;
+  scroll-margin-top: 76px;
+}
+.publication-filters button:hover { border-color: var(--accent-color); color: var(--accent-color); }
+.publication-filters button[aria-pressed="true"] {
+  border-color: var(--accent-color);
+  background: var(--accent-color);
+  color: #fff;
+}
+.publication-filters button:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 2px; }
+.publication-filters .filter-count { font-size: 11px; font-variant-numeric: tabular-nums; }
+.publication-filters[hidden], #publication-list .pub-card[hidden] { display: none; }
+#publications .pub-classifications { flex-wrap: wrap; }
+#publications .pub-version { color: var(--accent-color); font-size: 12px; text-decoration: underline; }
+@media (pointer: coarse) {
+  .publication-filters button { min-height: 44px; }
+}
+@media print {
+  .publication-filters { display: none; }
+}
 #publications .record-table { gap: 0; }
 #publications .record-table .pub-card {
   border: 0;
@@ -54,7 +90,7 @@
   font-size: 13px;
 }
 #guide-audience label:hover span { color: var(--accent-color); border-color: var(--accent-color); }
-#guide-audience input:checked + span { color: var(--accent-color); border-color: var(--accent-color); background: var(--campus-tint); }
+#guide-audience input:checked + span { color: white; border-color: var(--accent-color); background: var(--accent-color); }
 #guide-audience input:focus-visible + span,
 .reader-guide :is(button, a, input[type="search"]):focus-visible,
 .contact-enquiries a:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 2px; }
@@ -78,12 +114,22 @@
   cursor: pointer;
 }
 .guide-choice:hover, .guide-choice[aria-pressed="true"] { border-color: var(--accent-color); color: var(--accent-color); }
-#guide-form { display: flex; gap: 6px; margin-top: 12px; }
+.guide-choice[aria-pressed="true"] { box-shadow: inset 3px 0 var(--accent-color); background: var(--campus-tint); }
+#guide-form {
+  display: flex;
+  gap: 4px;
+  padding: 3px;
+  margin-top: 12px;
+  border: 1px solid var(--reader-rule);
+  border-radius: 9px;
+  background: white;
+}
+#guide-form:focus-within { border-color: var(--accent-color); }
 #guide-input {
   flex: 1 1 0;
   min-width: 0;
   padding: 8px 12px;
-  border: 1px solid var(--reader-rule);
+  border: 0;
   border-radius: 6px;
   background: white;
   color: var(--heading-color);
@@ -102,13 +148,22 @@
   font-weight: 600;
   cursor: pointer;
 }
-#guide-answer:not(:empty) { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--reader-rule); }
+#guide-answer:not(:empty) {
+  margin-top: 12px;
+  padding: 12px 16px;
+  border-inline-start: 3px solid var(--accent-color);
+  background: white;
+  overflow-wrap: anywhere;
+}
 #guide-answer h3 { margin: 0 0 5px; font: 600 15px/1.45 var(--default-font); }
 #guide-answer p { margin: 0; font-size: 14px; line-height: 1.6; }
-.guide-links { display: flex; flex-wrap: wrap; gap: 3px 14px; margin-top: 6px; }
+.guide-links { display: flex; flex-wrap: wrap; gap: 5px 16px; margin-top: 8px; }
 .guide-links a { color: var(--accent-color); font-size: 13px; text-decoration: underline; text-underline-offset: 3px; }
 .guide-suggestions { margin-top: 8px; }
 html:not(.js) :is(#guide-audience, #guide-form) { display: none; }
+@media (pointer: coarse) {
+  #guide-audience span, .guide-choice, #guide-form button { min-height: 44px; }
+}
 
 #research { padding-block: 30px; border-top: 1px solid var(--ui-border); }
 #research .section-title { padding-bottom: 16px; }
@@ -138,7 +193,7 @@ html:not(.js) :is(#guide-audience, #guide-form) { display: none; }
   text-decoration: none;
 }
 .enquiry-actions a:hover, .enquiry-actions a:focus-visible { border-color: var(--accent-color); background: var(--campus-tint); }
-#email-templates, #undergraduate-enquiry, #publications .pub-card[id] { scroll-margin-top: 76px; }
+#email-templates, #undergraduate-enquiry, :is(#publications, #projects) .pub-card[id] { scroll-margin-top: 76px; }
 @media print {
   #guide { display: none; }
 }
