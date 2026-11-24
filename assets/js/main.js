@@ -138,17 +138,18 @@
    * ------------------------------------------------------------------ */
 
   window.addEventListener("load", () => {
+    const initialHash = location.hash;
     let section;
     try {
-      section = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      section = document.getElementById(decodeURIComponent(initialHash.slice(1)));
     } catch {
       return;
     }
     if (!section) return;
     setTimeout(() => {
-      const scrollMarginTop = parseFloat(getComputedStyle(section).scrollMarginTop) || 0;
-      window.scrollTo({
-        top: section.offsetTop - scrollMarginTop,
+      if (location.hash !== initialHash) return;
+      section.scrollIntoView({
+        block: "start",
         behavior: reducedMotion.matches ? "auto" : "smooth",
       });
     }, 100);
@@ -157,7 +158,8 @@
   const navmenulinks = document.querySelectorAll(".navmenu a");
 
   function navmenuScrollspy() {
-    let activeLink = null;
+    // The portrait and the guide share the first navigation entry.
+    let activeLink = navmenulinks[0];
     const position = window.scrollY + 120;
     navmenulinks.forEach((link) => {
       const section = link.hash && document.getElementById(link.hash.slice(1));
@@ -170,11 +172,12 @@
         activeLink;
     }
     const pathBySection = {
-      hero: "overview",
       about: "about.md",
-      publications: "publications",
-      projects: "funding",
-      organizations: "experience",
+      research: "research-interests.md",
+      publications: "publications.md",
+      projects: "funding.md",
+      organizations: "experience.md",
+      service: "service.md",
       recruitment: "join-us.md",
       contact: "contact.md",
     };
@@ -344,36 +347,5 @@
       }
     });
   }
-  // Draw the personal route once when it enters the viewport.
-  const personalJourney = document.querySelector('.personal-journey');
-  if (personalJourney && 'IntersectionObserver' in window) {
-    const journeyObserver = new IntersectionObserver((entries, observer) => {
-      if (entries.some(entry => entry.isIntersecting)) {
-        personalJourney.classList.add('journey-visible');
-        observer.disconnect();
-      }
-    }, { threshold: 0.3 });
-    journeyObserver.observe(personalJourney);
-  }
-})();
 
-/* Progressive enhancement: all publications remain visible without JavaScript. */
-(() => {
-  const toolbar = document.querySelector('.publication-tools');
-  if (!toolbar) return;
-  const cards = [...document.querySelectorAll('#publications .pub-card')];
-  const buttons = [...toolbar.querySelectorAll('button[data-topic]')];
-  const status = document.querySelector('#publications .publication-status');
-  function filter(topic) {
-    let count = 0;
-    cards.forEach(card => {
-      card.hidden = topic !== 'all' && card.dataset.topic !== topic;
-      if (!card.hidden) count++;
-    });
-    buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.topic === topic)));
-    status.textContent = topic === 'all' ? `${count} publications` : `${count} of ${cards.length} publications`;
-  }
-  buttons.forEach(button => button.addEventListener('click', () => filter(button.dataset.topic)));
-  toolbar.hidden = false;
-  filter('all');
 })();

@@ -499,7 +499,7 @@ section, .section { padding-block: 58px; }
 @media (max-width: 767px), (pointer: coarse) {
   .email-copy { width: 44px; height: 44px; }
   #navmenu a { min-height: 44px; }
-  #publications .pub-title a { display: block; min-height: 44px; }
+  #publications .pub-title a { display: block; min-height: 24px; }
   .scroll-top { width: 44px; height: 44px; }
 }
 
@@ -784,15 +784,6 @@ section, .section { padding-block: 58px; }
 .section-description { font-size: 12px; }
 #about .content p { font-family: var(--default-font); letter-spacing: 0; }
 
-/* Portrait and opening paragraphs share a spread; affiliations follow at full width. */
-#about .about-intro { grid-template-columns: clamp(176px, 26%, 240px) minmax(0, 1fr); gap: 12px clamp(20px, 3vw, 30px); align-items: start; }
-#about .about-intro > p:last-child { grid-column: 1 / -1; }
-#about .about-history { border-top: 1px solid var(--workbench-rule); }
-#about .about-history p + p { margin-top: .75em; }
-
-@media (max-width: 640px) {
-  #about .about-intro { grid-template-columns: minmax(0, 1fr); }
-}
 #publications .pub-authors, #projects .pub-authors { font-family: var(--default-font); font-size: 12px; letter-spacing: 0; }
 #organizations .tl-school, #organizations .tl-role, #organizations .tl-advisor { font-family: var(--default-font); letter-spacing: 0; }
 #organizations .tl-role { font-size: 12.5px; }
@@ -852,14 +843,14 @@ section, .section { padding-block: 58px; }
 }
 
 /* Compact whitespace: introduction above full-width academic background. */
-#hero.hero.section { min-height: 0; padding-block: 30px; }
+#hero.hero.section { min-height: 0; padding-block: 30px 12px; }
 :is(#about, #publications, #projects, #organizations, #recruitment).section { padding-block: 28px; }
 #organizations .experience-list { grid-template-rows: none; grid-auto-flow: row; align-items: start; }
 #organizations .experience-column { min-width: 0; }
 #organizations .tl-card { height: auto; }
 
 @media (max-width: 640px) {
-  #hero.hero.section { min-height: 0; padding-block: 26px; }
+  #hero.hero.section { min-height: 0; padding-block: 26px 12px; }
   #organizations .experience-list { grid-template-columns: 1fr; }
   #organizations .experience-column { display: contents; }
   #organizations .experience-column:first-child .tl-item:last-child::before { bottom: 0; }
@@ -936,15 +927,14 @@ body { font-size: 16px; }
 .recruit-apply a { display: inline-flex; align-items: center; gap: 6px; min-height: 32px; color: var(--accent-color); font-weight: 600; white-space: nowrap; }
 .recruit-apply a:is(:hover, :focus-visible) { text-decoration: underline; }
 #contact .contact-compact-shell { grid-template-columns: minmax(0, 1fr); border-top: 0; }
-.contact-panel { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); background: var(--ui-panel); border: 1px solid var(--ui-border); border-radius: var(--radius-window); }
+.contact-panel { display: grid; grid-template-columns: minmax(330px, .95fr) minmax(0, 1.05fr); background: var(--ui-panel); border: 1px solid var(--ui-border); border-radius: var(--radius-window); }
 .contact-panel > .contact-email, #contact .contact-panel > .contact-summary { padding: 14px clamp(12px, 2vw, 22px); }
-#contact .contact-panel > .contact-summary { border-inline-start: 1px solid var(--ui-border); }
+#contact .contact-panel > .contact-summary { grid-column: 1 / -1; border-top: 1px solid var(--ui-border); }
 #contact .contact-panel .contact-kicker { margin-bottom: 7px; }
 #contact .contact-copyright { border: 0; padding: 0; }
 
-@media (max-width: 800px) {
+@media (max-width: 679px) {
   .contact-panel { grid-template-columns: minmax(0, 1fr); }
-  #contact .contact-panel > .contact-summary { border-inline-start: 0; border-top: 1px solid var(--ui-border); }
 }
 
 @media (max-width: 400px) {
@@ -1016,27 +1006,21 @@ body { font-size: 16px; }
 
 /* Fuzhou identity: a compact university signature and restrained red rules. */
 .workbench-bar { border-top: 2px solid var(--accent-color); }
-#hero .hero-university { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 7px; margin-bottom: 10px; color: var(--accent-color); font: 600 13px/1.4 var(--default-font); text-decoration: none; }
-#hero .hero-university img { width: 24px; height: 24px; object-fit: contain; background: transparent; border-radius: 50%; }
-#hero .hero-university .university-en { color: var(--detail-muted); font-size: 12px; font-weight: 400; padding-left: 7px; border-left: 1px solid var(--ui-border); }
+#hero .hero-university { display: inline-flex; flex-wrap: wrap; align-items: center; gap: clamp(4px, 1.4vw, 10.5px); margin-bottom: 10px; color: var(--accent-color); font: 600 19.5px/1.4 var(--default-font); text-decoration: none; }
+#hero .hero-university img { width: 36px; height: 36px; object-fit: contain; background: transparent; border-radius: 50%; }
+#hero .hero-university .university-en { color: var(--detail-muted); font-size: 18px; font-weight: 400; padding-left: 7px; border-left: 1px solid var(--ui-border); }
 #hero .hero-university:hover .university-en { color: var(--accent-color); }
 #hero .hero-university:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 4px; border-radius: 3px; }
-#hero .hero-lab-card { box-shadow: inset 0 2px var(--accent-color); }
 .section-title .section-index, #contact .contact-heading .section-index { color: var(--accent-color); }
 
-/* The researcher and group share one compact introduction. */
+/* Homepage introduction. */
 #hero .hero-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: start;
   gap: clamp(18px, 2vw, 28px);
 }
-#hero .hero-copy { min-width: 0; }
-#hero .hero-visuals { display: grid; grid-template-columns: repeat(2, clamp(156px, 16vw, 216px)); align-items: stretch; gap: 12px; }
-#hero .hero-lab-logo { display: block; width: 100%; height: auto; border-radius: 6px; background: transparent; }
-#hero .hero-lab-card { width: 100%; min-width: 0; aspect-ratio: 1; display: flex; flex-direction: column; justify-content: center; margin: 0; padding: 8px; border: 1px solid var(--ui-border); border-radius: var(--radius-window); background: var(--ui-panel); }
-#hero .hero-lab-card figcaption { display: grid; gap: 5px; margin-top: 6px; text-align: center; font: 400 12px/1.35 var(--default-font); color: var(--detail-muted); }
-#hero .hero-lab-card figcaption span:first-child { color: var(--heading-color); font-weight: 500; }
+#hero .hero-copy { position: relative; z-index: 1; min-width: 0; }
 #about .about-school-link, .advisor-with-logo, :is(#about, #recruitment) .inline-group-name { white-space: nowrap; }
 :is(#about, #recruitment, #organizations) .inline-org-logo { display: inline-block; width: 18px; height: 18px; object-fit: contain; margin-left: 4px; vertical-align: -3px; border-radius: 3px; background: transparent; }
 :is(#about, #recruitment) .inline-dig-logo { width: 36px; }
@@ -1047,35 +1031,28 @@ body { font-size: 16px; }
   letter-spacing: -0.035em;
   color: var(--heading-color);
 }
-#hero .zh-name { display: inline-block; margin-left: 0.18em; font-size: 1em; letter-spacing: 0; }
-#hero .hero-portrait { position: relative; min-height: 0; margin: 0; padding: 4px; background: var(--ui-panel); border: 1px solid var(--ui-border); border-radius: var(--radius-window); }
-#hero .hero-portrait img { position: absolute; inset: 4px; display: block; width: calc(100% - 8px); height: calc(100% - 8px); object-fit: cover; object-position: center; border-radius: var(--radius-control); }
+#hero .zh-name {
+  display: inline-block;
+  margin-inline-end: 0.18em;
+  font-size: .94em;
+  vertical-align: .09em;
+  letter-spacing: 0;
+}
+#hero .hero-name [lang="en"] { display: inline-block; }
+#hero .hero-portrait { width: clamp(162.5px, calc(18.125vw - 6.25px), 256.25px); margin: 0; }
+#hero .hero-portrait img { display: block; width: 100%; height: auto; filter: drop-shadow(0 2px 3px rgba(56, 20, 23, .09)); }
 
 /* Research themes and their topics. */
-#hero .hero-focus { display: grid; gap: 9px; margin: 14px 0 0; }
-#hero .hero-focus dt { color: var(--accent-color); font: 600 clamp(13px, 1.2vw, 15px)/1.45 var(--mono-font); }
-#hero .hero-focus dd { margin: 2px 0 0; color: var(--detail-muted); font-size: 13px; line-height: 1.5; text-wrap: pretty; }
 #zhichen { scroll-margin-top: 80px; }
 
 @media (max-width: 640px) {
   #hero .hero-layout { grid-template-columns: minmax(0, 1fr); gap: 20px; }
-  #hero .hero-visuals { grid-row: 1; width: min(100%, 380px); grid-template-columns: repeat(2, minmax(0, 1fr)); justify-self: start; }
   #hero .hero-copy { text-align: left; }
+  #hero .hero-portrait { width: min(calc(62.5% - 6.25px), 193.75px); justify-self: center; }
 }
 
 @media print {
   #hero .hero-portrait { display: none; }
-}
-
-/* About: one measure for the body text, history aligned under it. */
-#about .about-layout { --about-photo: clamp(176px, 26%, 240px); --about-gap: clamp(20px, 3vw, 30px); }
-
-@media (min-width: 641px) {
-  #about .about-intro > p:last-child { grid-column: 2; }
-}
-
-@media (max-width: 640px) {
-  #about .about-history { margin-left: 0; }
 }
 
 /* Metadata contrast. */
@@ -1157,20 +1134,11 @@ body { font-size: 16px; }
   #organizations .tl-item::before { display: none; }
 }
 
-/* Personal biography and education share the main text measure. */
-#about .about-intro { display: block; }
-#about .about-intro > p + p { margin-top: 0.85em; }
-#about .about-history { margin-left: 0; margin-top: 20px; padding-top: 18px; }
-
-
 /* About reads at the full workbench width, aligned with the record tables. */
 #about .about-layout { max-width: none; }
 #about .content p { max-width: none; font-size: 16px; line-height: 1.75; margin-bottom: 0; }
 #about .content p + p { margin-top: 16px; }
-#about .about-intro > p + p { margin-top: 16px; }
-#about .about-history p + p { margin-top: 16px; }
 #about .content a[href="https://ncip.fzu.edu.cn/"] { font-weight: 500; }
-#about .about-history { max-width: none; }
 
 /* Experience shares the record-table measure used by publications and funding. */
 #organizations .experience-list { max-width: none; }
@@ -1259,6 +1227,17 @@ html.js [data-aos].aos-in { opacity: 1; transform: none; will-change: auto; }
 .journey-city { color: var(--ui-ink); line-height: 22px; font-size: 15px; font-weight: 600; letter-spacing: .015em; transition: color .2s; }
 .journey-node { position: relative; display: block; width: 10px; height: 10px; margin: 13px 0; border: 1.5px solid var(--ui-muted); border-radius: 50%; background: var(--background-color, #fff); z-index: 1; transition: border-color .2s, box-shadow .2s; }
 .journey-stop:not(:last-child)::after { content: ""; position: absolute; left: 10px; right: 0; top: 40px; height: 1px; background: var(--ui-border); transform-origin: left; }
+/* Put each arrowhead beside the city it leads to. */
+.journey-stop + .journey-stop .journey-node::before {
+  content: "";
+  position: absolute;
+  right: calc(100% + 3px);
+  top: 50%;
+  transform: translateY(-50%);
+  border: 4px solid transparent;
+  border-left: 7px solid var(--accent-color);
+  border-right: 0;
+}
 .journey-stop:nth-child(3)::after { background: linear-gradient(90deg, var(--ui-border), var(--accent-color)); }
 .journey-caption { color: var(--detail-muted); font-size: 13px; line-height: 1.5; }
 .journey-home .journey-city, .journey-home .journey-caption { color: var(--accent-color); }
@@ -1276,6 +1255,16 @@ html.js [data-aos].aos-in { opacity: 1; transform: none; will-change: auto; }
   .journey-stop { display: grid; grid-template-columns: 12px 90px minmax(0, 1fr); gap: 0 13px; padding: 0 0 22px; align-items: baseline; }
   .journey-city { grid-column: 2; font-size: 14px; }
   .journey-node { grid-column: 1; grid-row: 1; margin: 0; align-self: center; }
+  .journey-stop + .journey-stop .journey-node::before {
+    right: auto;
+    top: auto;
+    bottom: calc(100% + 3px);
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid transparent;
+    border-top: 7px solid var(--accent-color);
+    border-bottom: 0;
+  }
   .journey-caption { grid-column: 3; grid-row: 1; }
   .journey-stop:not(:last-child)::after { left: 4px; right: auto; top: 16px; bottom: -2px; width: 1px; height: auto; transform-origin: top; }
   .journey-stop:nth-child(3)::after { background: linear-gradient(180deg, var(--ui-border), var(--accent-color)); }
@@ -1293,11 +1282,8 @@ html.js [data-aos].aos-in { opacity: 1; transform: none; will-change: auto; }
 .journey-flag { font-size: .95em; }
 
 /* Small data structures: decorative, quiet, and consistent with the campus palette. */
-#hero .hero-focus dt { display: flex; align-items: center; gap: 9px; }
 .research-glyph { width: 25px; height: 23px; flex: 0 0 25px; overflow: visible; fill: none; stroke: currentColor; stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round; }
 .research-glyph circle { fill: var(--background-color); }
-#hero .hero-visuals { position: relative; isolation: isolate; }
-#hero .hero-visuals > figure { position: relative; z-index: 1; }
 #hero .hero-network { position: absolute; inset: -22px -18px; width: calc(100% + 36px); height: calc(100% + 44px); z-index: 0; pointer-events: none; overflow: visible; animation: network-arrive 1.2s ease-out both; }
 .network-edges { fill: none; stroke: var(--detail-muted); stroke-opacity: .18; stroke-width: .8; }
 .network-nodes { fill: var(--detail-muted); fill-opacity: .22; }
@@ -1321,7 +1307,6 @@ html.js [data-aos].aos-in { opacity: 1; transform: none; will-change: auto; }
 
 /* A wider neural field across the hero, softened behind the reading area. */
 #hero .hero-layout { position: relative; isolation: isolate; }
-#hero .hero-copy, #hero .hero-visuals { position: relative; z-index: 1; }
 #hero .hero-network {
   inset: -30px -28px;
   width: calc(100% + 56px);
@@ -1339,15 +1324,6 @@ html.js [data-aos].aos-in { opacity: 1; transform: none; will-change: auto; }
 /* Neural field refinement: sparse layers and a few highlighted connections. */
 #hero .network-signal { fill: none; stroke: var(--accent-color); stroke-opacity: .24; stroke-width: 1.15; }
 #hero .network-halos { fill: none; stroke: var(--accent-color); stroke-opacity: .18; stroke-width: .8; }
-#hero .hero-portrait, #hero .hero-lab-card {
-  border-color: color-mix(in srgb, var(--accent-color) 12%, var(--ui-border));
-  box-shadow: 0 3px 12px rgba(65, 35, 39, .035), 0 1px 2px rgba(65, 35, 39, .025);
-}
-#hero .hero-lab-card { background: linear-gradient(145deg, #fff 50%, var(--campus-tint)); box-shadow: inset 0 2px var(--accent-color), 0 3px 12px rgba(65,35,39,.035); }
-#hero .hero-lab-card figcaption { line-height: 1.45; }
-#hero .hero-focus > div { padding-left: 10px; border-left: 2px solid color-mix(in srgb, var(--accent-color) 16%, transparent); }
-#hero .hero-focus dd { margin-top: 4px; }
-@media print { #hero .hero-portrait, #hero .hero-lab-card { box-shadow: none; } }
 
 /* Compact contact rows without removing information or touch targets. */
 #contact .contact-panel > .contact-email,
@@ -1358,7 +1334,7 @@ html.js [data-aos].aos-in { opacity: 1; transform: none; will-change: auto; }
 #contact #email-copy-status:empty { min-height: 0; display: none; }
 #contact .office-plaque address { margin-top: 2px; line-height: 1.45; }
 #contact .contact-profiles { padding: 9px 14px; gap: 6px 12px; }
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 679px) {
   #contact .contact-email-list { display: flex; flex-wrap: wrap; gap: 2px 20px; max-width: none; }
   #contact .contact-panel .contact-email-list p { display: flex; gap: 7px; }
 }
