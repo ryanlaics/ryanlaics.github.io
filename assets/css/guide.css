@@ -165,13 +165,7 @@ html:not(.js) :is(#guide-audience, #guide-form) { display: none; }
   #guide-audience span, .guide-choice, #guide-form button { min-height: 44px; }
 }
 
-#research { padding-block: 30px; border-top: 1px solid var(--ui-border); }
-#research .section-title { padding-bottom: 16px; }
-#research .section-title h2 { font-size: 19px; }
-.research-topics { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 245px), 1fr)); gap: 16px 28px; margin: 0; }
-.research-topics > div { border-inline-start: 2px solid var(--accent-color); padding-inline-start: 14px; }
-.research-topics dt { display: flex; align-items: center; gap: 8px; color: var(--accent-color); font-size: 16px; font-weight: 600; }
-.research-topics dd { margin: 4px 0 0; color: var(--detail-muted); font-size: 14px; line-height: 1.5; }
+#research { scroll-margin-top: 76px; }
 
 .contact-enquiries { padding: 10px 14px; border-inline-start: 1px solid var(--ui-border); }
 @media (max-width: 679px) {
@@ -196,4 +190,26 @@ html:not(.js) :is(#guide-audience, #guide-form) { display: none; }
 #email-templates, #undergraduate-enquiry, :is(#publications, #projects) .pub-card[id] { scroll-margin-top: 76px; }
 @media print {
   #guide { display: none; }
+}
+
+#contact .contact-profiles { padding-block: 4px; gap: 4px 10px; }
+#contact .contact-profiles .profile-links { flex: 0 1 auto; width: auto; gap: 2px; }
+#contact .profile-links a { width: 32px; height: 32px; justify-content: center; padding: 0; border: 0; }
+#contact .profile-links svg { width: 19px; height: 19px; }
+#contact .contact-enquiries { padding-block: 6px; }
+#recruitment .recruit-emphasis, #guide-answer .recruit-emphasis { color: var(--accent-color); font-weight: 700; }
+
+#contact #email-templates { grid-column: 1 / -1; display: flex; align-items: center; flex-wrap: wrap; gap: 3px 10px; }
+#contact #email-templates .enquiry-actions { margin: 0; gap: 4px; }
+#email-templates .enquiry-actions a { min-height: 28px; padding: 3px 8px; font-size: 12px; }
+
+/* Keep section names and record totals easy to scan down the main column. */
+.main .section-title h2, #contact .contact-inline-title { column-gap: 10px; row-gap: 3px; }
+.main .section-title .record-count { margin-inline-start: auto; padding-inline: 0; white-space: nowrap; }
+#publications .pub-title { font-size: clamp(15px, 1.2vw, 17px); line-height: 1.45; }
+#publications .pub-authors { line-height: 1.5; }
+@media screen and (max-width: 640px) {
+  #about .content p { line-height: 1.65; }
+  #about .content p + p { margin-block-start: 14px; }
+  #publications .record-table .pub-card { padding-inline: 0; }
 }

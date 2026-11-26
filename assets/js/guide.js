@@ -96,7 +96,7 @@
       aliases: ["supervision style", "mentoring", "mentorship", "working style", "guidance", "mentoring style", "指导风格", "指导方式", "如何指导学生", "带学生", "what is it like working with you", "how do you mentor students", "指导学生", "带组风格"],
       question: 'What kind of supervision do you offer?',
       answer: 'I offer close guidance and welcome students who like to explore a question independently. If you have already tried something, tell me what you expected, what happened and what still puzzles you. That is a good place for us to begin a discussion.',
-      links: [{ target: 'recruitment', label: 'Read the invitation to students' }]
+      links: [{ target: 'email-templates', label: 'Student enquiry drafts', labelZh: '查看学生咨询邮件模板' }]
     },
     entryPaper: {
       questionZh: "第一次读课题组的论文，推荐从哪篇开始？",
@@ -175,7 +175,7 @@
       answerZh: "福州是我从小生活、读书的地方。后来我到成都读计算机，再去丹麦奥尔堡读博并继续做研究。2025 年底，我回到了家乡福州。",
       aliases: ["hometown", "back to fuzhou", "return home", "grew up", "born", "家乡", "哪里人", "回福州", "出生", "成长经历"],
       question: 'What brought you back to Fuzhou?',
-      answer: 'Fuzhou is where I grew up and went to school. I left for Chengdu to study computer science, then moved to Aalborg for my Ph.D. and stayed on as a Research Fellow. In late 2025 I came home to Fuzhou.',
+      answer: 'Fuzhou is where I grew up and went to school. I left for Chengdu to study computer science, then moved to Aalborg for my Ph.D. and stayed on as a Postdoctoral Research Fellow. In late 2025 I came home to Fuzhou.',
       links: [{ target: 'organizations', label: 'Follow my academic journey' }]
     },
     visits: {
@@ -245,8 +245,8 @@
     email: {
       question: "What is your preferred email address?",
       questionZh: "请问怎么联系你？",
-      answer: "My preferred address is lzc@fzu.edu.cn. You can also reach me at zhla@cs.aau.dk. The Contact section has a copy button for each address.",
-      answerZh: "首选邮箱是 lzc@fzu.edu.cn，另一个邮箱是 zhla@cs.aau.dk。Contact 栏里两个地址旁都有复制按钮。",
+      answer: "Email me at lzc@fzu.edu.cn. In Contact, you can copy the address or open a draft for your enquiry.",
+      answerZh: "我的邮箱是 lzc@fzu.edu.cn。你可以在 Contact 栏复制地址，也可以按咨询类型打开邮件草稿。",
       aliases: ["email", "e mail", "contact", "reach you", "write to you", "get in touch", "mail address", "邮箱", "联系方式", "怎么联系", "邮件地址", "电邮", "联系您", "office email", "preferred email", "send you an email", "contact information", "联系老师", "联系方式是什么", "邮箱地址", "如何联系您", "怎么联系老师", "联系邮箱", "怎样联系您", "首选邮箱"],
       links: [{ target: "contact", label: "Email and contact details" }]
     },
@@ -312,8 +312,8 @@
     advisors: {
       question: "Who were your research advisors?",
       questionZh: "你的导师有哪些？",
-      answer: "My master’s advisor at Sichuan University was Jiancheng Lv. My Ph.D. supervisors at Aalborg University were Christian S. Jensen (a member of Academia Europaea and an ACM and IEEE Fellow), Dalin Zhang and Huan Li. I also worked with Hua Lu as a Research Fellow, and Xing Chen mentors me at Fuzhou University.",
-      answerZh: "我的硕士导师是四川大学的 Jiancheng Lv。博士期间在奥尔堡大学由 Christian S. Jensen（欧洲科学院院士、ACM 和 IEEE 会士）、Dalin Zhang 和 Huan Li 指导。我也曾作为 Research Fellow 与 Hua Lu 合作。目前在福州大学，Xing Chen 教授指导我的研究工作。",
+      answer: "My master’s advisor at Sichuan University was Jiancheng Lv. My Ph.D. supervisors at Aalborg University were Christian S. Jensen (a member of Academia Europaea and an ACM and IEEE Fellow), Dalin Zhang and Huan Li. I also worked with Hua Lu as a Postdoctoral Research Fellow, and Xing Chen mentors me at Fuzhou University.",
+      answerZh: "我的硕士导师是四川大学的 Jiancheng Lv。博士期间在奥尔堡大学由 Christian S. Jensen（欧洲科学院院士、ACM 和 IEEE 会士）、Dalin Zhang 和 Huan Li 指导。我也曾作为博士后研究员 与 Hua Lu 合作。目前在福州大学，Xing Chen 教授指导我的研究工作。",
       aliases: ["your advisor", "your supervisor", "your advisors", "phd supervisors", "who supervised", "doctoral advisor", "christian s jensen", "jiancheng lv", "xing chen", "huan li", "dalin zhang", "hua lu", "你的导师", "您的导师", "博士导师是谁", "硕士导师", "师从", "phd supervisor", "phd advisor", "your phd supervisor", "your current mentor", "who is your mentor", "who was your supervisor", "who was your phd advisor", "博士导师", "你的博导", "博士生导师是谁", "博士期间的导师"],
       links: [{ target: "about", label: "Academic background and advisors" }]
     },
@@ -455,12 +455,47 @@
     aliases: ['remote', 'part time', 'work from home', 'online internship', '远程', '兼职', '线上实习', '异地参与'],
     links: [{ target: 'email-templates', label: 'Choose an enquiry draft' }]
   };
+  entries.eligibility = {
+    question: 'Who can apply to join DIG@FZU?',
+    questionZh: '目前哪些学生可以申请加入课题组？',
+    answer: 'I welcome self-motivated students who are considering postgraduate study or looking for research experience in their first two undergraduate years. I am not currently accepting postgraduate applications from non-Chinese citizens. For postgraduate admission dates and programme requirements, check the university notice for your entry year.',
+    answerZh: '欢迎有自驱力、计划读研或希望在大一大二尝试科研的同学来信。目前我暂不接收非中国籍学生的研究生申请。研究生报名时间和专业要求请以福州大学当年的招生简章为准。',
+    aliases: ['international students', 'international applicant', 'non Chinese', 'foreign students', 'citizenship', 'nationality', 'can international students apply', '外国学生', '留学生', '国际生', '非中国籍', '国籍', '招国际学生吗'],
+    links: [{ href: 'https://yjsy.fzu.edu.cn/index/zsjz.htm', label: 'FZU admissions notices', labelZh: '福大招生简章' }]
+  };
+  entries.recognition = {
+    question: 'Which SIGMOD paper did Paper Digest highlight?',
+    questionZh: '哪篇 SIGMOD 论文入选了 Paper Digest 榜单？',
+    answer: 'LightCTS, our SIGMOD 2023 paper on lightweight forecasting for related time series, is included in Paper Digest’s September 2025 list of influential SIGMOD papers.',
+    answerZh: '入选的是 SIGMOD 2023 论文 LightCTS，研究如何用轻量模型预测多条相关时间序列。它收录在 Paper Digest 2025 年 9 月发布的 SIGMOD 影响力论文榜单中。',
+    aliases: ['Paper Digest', 'PaperDigest', 'influential SIGMOD papers', 'most influential', '影响力论文', '影响力榜单', '哪篇论文入选'],
+    links: [{ target: 'paper-lightcts', label: 'LightCTS (SIGMOD 2023)' }, { source: 'lightcts-recognition', label: 'Open the Paper Digest list', labelZh: '查看 Paper Digest 榜单' }]
+  };
+  entries.international = {
+    question: 'Do you accept postgraduate applications from non-Chinese citizens?',
+    questionZh: '目前接收非中国籍学生的研究生申请吗？',
+    answer: 'I am not currently accepting postgraduate applications from non-Chinese citizens.',
+    answerZh: '目前我的课题组暂不接收非中国籍学生的研究生申请。',
+    aliases: entries.eligibility.aliases,
+    links: []
+  };
+  entries.eligibility.aliases = ['who is eligible to join', 'student eligibility', '哪些学生可以申请'];
+  for (const key of ['joining', 'timing', 'phd', 'admissions']) {
+    entries[key].answer += ' I am not currently accepting postgraduate applications from non-Chinese citizens.';
+    entries[key].answerZh += '目前我的课题组暂不接收非中国籍学生的研究生申请。';
+  }
+  const followUps = {
+    overview: ['readingTopics', 'applications'], readingTopics: ['recognition', 'downloads'],
+    recognition: ['forecasting'], eligibility: ['apply', 'undergrad'], admissions: ['eligibility', 'timing'],
+    joining: ['eligibility', 'apply'], undergrad: ['firstProject', 'studentEmail'],
+    industryFit: ['pilot', 'collaboration'], pilot: ['projectBrief'], everyday: ['health', 'energy']
+  };
   const byAudience = {
-    researcher: ['overview', 'readingTopics', 'downloads', 'collaboration', 'code', 'funding'],
+    researcher: ['overview', 'readingTopics', 'downloads', 'code', 'collaboration', 'funding'],
     industry: ['industryFit', 'energy', 'health', 'projectBrief', 'pilot', 'collaboration'],
-    postgraduate: ['admissions', 'timing', 'chooseTopic', 'apply', 'mentor', 'entryPaper'],
-    student: ['undergrad', 'firstExperience', 'firstProject', 'studentEmail', 'entryPaper', 'office'],
-    curious: ['everyday', 'name', 'generative', 'career', 'talks', 'office']
+    postgraduate: ['eligibility', 'timing', 'admissions', 'chooseTopic', 'mentor', 'apply'],
+    student: ['undergrad', 'firstExperience', 'firstProject', 'mentor', 'studentEmail', 'office'],
+    curious: ['name', 'everyday', 'applications', 'career', 'talks', 'office']
   };
 
   // Use the displayed titles and periods so the Guide stays in sync with Research Support.
@@ -503,7 +538,6 @@
     'paper-lightwind': ['LightWind', 'It studies lightweight forecasting of wind power output.', '这项工作研究如何用轻量模型预测风电功率。', ['light wind', '风电功率预测']],
     'paper-midpalatal-suture': ['Midpalatal suture assessment', 'It studies multimodal deep learning for assessing the midpalatal suture in the context of maxillary expansion.', '这篇论文研究如何在上颌扩弓评估中，使用多模态深度学习分析腭中缝。', ['maxillary expansion paper', '腭中缝评估', '上颌扩弓论文']],
     'paper-deepmsm': ['DeepMSM', 'This abstract describes multimodal deep learning for staging the maturation of the midpalatal suture.', '这篇摘要介绍了用多模态深度学习判断腭中缝成熟阶段的工作。', ['midpalatal suture maturation staging', '腭中缝成熟分期']],
-    'paper-mate': ['MATE', 'It studies multimodal time series forecasting using adaptive fusion and expert models that incorporate timestamps.', '这篇论文将自适应的模态融合与使用时间戳的专家模型结合，用于多模态时间序列预测。', ['时间戳专家模型']],
     'paper-aira': ['AIRa', 'This building case study examines a blockchain-based alert system for assessing infection risk and informing decisions.', '这项工作以建筑空间为案例，研究如何用基于区块链的预警系统评估感染风险并支持决策。', ['infection risk assessment', '感染风险评估', '区块链预警系统']],
     'paper-blade-icing': ['Wavelet-based blade icing detection', 'It uses a multiscale wavelet-driven graph convolutional network to study wind turbine blade icing.', '这项工作研究如何用多尺度小波驱动的图卷积网络检测风机叶片结冰。', ['wavelet driven graph convolutional network', 'multiscale wavelet', '小波结冰', '小波图卷积']],
     'paper-fusiongan': ['FusionGAN', 'It explores how to combine certainty and uncertainty in a generative model for abstract paintings.', '这篇论文探索怎样在生成模型中结合确定性与不确定性，用于创作抽象画。', ['fusion gan', '生成抽象画']],
@@ -556,7 +590,7 @@
     about: '关于赖志宸', research: '研究兴趣', organizations: '教育与工作经历', publications: '论文',
     'publications-all': '查看全部论文', 'publications-selected': '代表性论文', 'publications-first-author': '查看第一作者作品',
     'publications-time-series': '时间序列论文', 'publications-interdisciplinary': '交叉研究论文', 'publications-generative': '生成模型论文', 'paper-freqice': 'FreqICE',
-    contact: '联系信息', recruitment: '学生招募', projects: '科研资助', service: '学术服务',
+    contact: '联系信息', projects: '科研资助', service: '学术服务',
     'postgraduate-enquiry': '打开研究生咨询草稿', 'undergraduate-enquiry': '打开本科科研咨询草稿',
     'collaboration-enquiry': '打开科研合作草稿', 'email-templates': '选择邮件模板',
     'personal-profiles': '个人学术主页', 'guide-github': '打开 GitHub', 'guide-scholar': '打开 Google Scholar',
@@ -648,7 +682,16 @@
     const title = document.createElement('h3');
     title.textContent = heading;
     const paragraph = document.createElement('p');
-    paragraph.textContent = text;
+    const keyword = chinese ? '有自驱力' : 'self-motivated';
+    const offset = text.indexOf(keyword);
+    if (offset < 0) {
+      paragraph.textContent = text;
+    } else {
+      const emphasis = document.createElement('strong');
+      emphasis.className = 'recruit-emphasis';
+      emphasis.textContent = keyword;
+      paragraph.append(text.slice(0, offset), emphasis, text.slice(offset + keyword.length));
+    }
     result.replaceChildren(title, paragraph);
     if (!resources.length) return;
     const links = document.createElement('div');
@@ -681,6 +724,14 @@
       button.setAttribute('aria-pressed', String(button.dataset.key === key));
     }
     showReply(chinese ? entry.questionZh : entry.question, chinese ? entry.answerZh : entry.answer, entry.links, chinese);
+    if (followUps[key]) {
+      const next = document.createElement('div');
+      next.className = 'guide-suggestions';
+      next.setAttribute('role', 'group');
+      next.setAttribute('aria-label', chinese ? '相关问题' : 'Related questions');
+      next.append(...followUps[key].map(topic => questionButton(topic, chinese)));
+      result.append(next);
+    }
   }
 
   function questionButton(key, chinese = false) {
@@ -712,7 +763,7 @@
     const year = query.match(/(?:19|20)\d{2}/)?.[0];
     const venues = new Map(papers.map(p => [normalize(p.venue.replace(/^IEEE /, '')), p.venue]));
     venues.set('kdd', 'SIGKDD').set('webconf', 'WWW').set('thewebconf', 'WWW');
-    for (const other of ['ICLR', 'ICML', 'NeurIPS', 'CVPR', 'VLDB', 'CIKM', 'ICDM', 'CSCWD']) venues.set(other.toLowerCase(), other);
+    for (const other of ['ICLR', 'ICML', 'NeurIPS', 'CVPR', 'VLDB', 'CIKM', 'ICDM', 'DASFAA', 'CSCWD']) venues.set(other.toLowerCase(), other);
     const venue = [...venues].find(([name]) => new RegExp('(?:^|[^a-z])' + name + '(?:$|[^a-z])').test(query))?.[1];
     if (!year && !venue) return false;
     const matches = papers.filter(p => (!year || p.year === year) && (!venue || p.venue === venue));
@@ -760,6 +811,16 @@
   }
   function answerQuery(query, chinese) {
     for (const button of questions.children) button.setAttribute('aria-pressed', 'false');
+    if (/non chinese|nonchinese|foreign students?|international (?:students?|applicants?)|not a chinese citizen|非中国籍|外国籍|外籍|外国学生|国际生|留学生/.test(query)) {
+      const undergraduate = /undergrad|freshm[ae]n|sophomore|first year undergraduate|本科|大一|大二/.test(query);
+      const postgraduate = /postgrad|graduate school|master|phd|研究生|读研|硕士|博士/.test(query);
+      selectQuestion(undergraduate && !postgraduate ? 'undergrad' : 'international', chinese);
+      return;
+    }
+    if (/paper\s*digest|most influential sigmod|影响力榜单|影响力论文/.test(query)) {
+      selectQuestion('recognition', chinese);
+      return;
+    }
     // Citation counts change independently of the static publication records.
     if (/\bcitations\b|\bcitation count|\bh index\b|被引|引用次数|引用量|引用数/.test(query)) {
       selectQuestion('citations', chinese);

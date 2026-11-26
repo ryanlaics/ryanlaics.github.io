@@ -1320,7 +1320,7 @@ html.js [data-aos].aos-in { opacity: 1; transform: none; will-change: auto; }
 
 /* Compact contact rows without removing information or touch targets. */
 #contact .contact-panel > .contact-email,
-#contact .contact-panel > .contact-summary { padding: 10px 14px; }
+#contact .contact-panel > .contact-summary { padding: 6px 14px; }
 #contact .contact-panel .contact-kicker { margin-bottom: 4px; }
 #contact .contact-email-list { gap: 0; }
 #contact .contact-email-list p { margin: 0; }
